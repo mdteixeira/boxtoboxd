@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  font-family: 'Rubik';
+}
+
+.popup-content {
+  margin: auto;
+  background: rgb(255, 255, 255);
+  @apply rounded-3xl px-4 !important;
+}
+.popup-arrow {
+  color: rgb(255, 255, 255);
+}
+[role='tooltip'].popup-content {
+  width: 200px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 0px 3px;
+}
+
+.popup-overlay {
+  background: rgba(0, 0, 0, 0.5);
+}
+[data-popup='tooltip'].popup-overlay {
+  background: transparent;
+}
+
+.sc-gswNZR {
+  @apply w-full border rounded-2xl py-2 pl-4 mt-2 focus:outline-none focus:border-emerald-400 focus:ring-1 focus:ring-emerald-200 !important;
+}
+
+.react-search-box-dropdown {
+  @apply shadow-none !important;
+}
+
+.react-search-box-dropdown > ul > li:first-child {
+  @apply rounded-t-2xl !important;
+}
+.react-search-box-dropdown > ul > li:last-child {
+  @apply rounded-b-2xl !important;
+}
+
+.react-search-box-dropdown-list-item {
+  @apply !important;
+}
+
+.style-module_starRatingWrap__q-lJC * {
+  display: inline-block !important;
+}
+
+.react-simple-star-rating-tooltip {
+  width: 55% !important;
+  font-size: 0.75rem !important;
+  float: inline-end;
+  margin: 0 !important;
+  text-align: center;
+}
