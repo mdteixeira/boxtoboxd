@@ -13,7 +13,7 @@ import React, { useState } from 'react';
 import { Rating } from 'react-simple-star-rating';
 import Popup from 'reactjs-popup';
 
-function MatchInfo(partida) {
+function MatchInfo(partida: boolean) {
   const [like, setLike] = useState(false);
   const [presente, setPresente] = useState(false);
   const [loading, setLoading] = useState(false);
@@ -81,7 +81,11 @@ function MatchInfo(partida) {
         <hr />
         <div className="grid grid-cols-3 gap-3 w-full p-3 justify-between text-slate-700">
           <p
-            className="flex items-center gap-2 hover:bg-emerald-200 rounded-2xl px-4 cursor-pointer justify-center bg-neutral-50"
+            className={
+              like
+                ? 'flex items-center gap-2 bg-emerald-100 hover:bg-emerald-200 rounded-2xl px-4 cursor-pointer justify-center border-emerald-200 border-2'
+                : 'flex items-center gap-2 hover:bg-emerald-200 rounded-2xl px-4 cursor-pointer justify-center bg-neutral-50 border-2'
+            }
             onClick={() => setLike(!like)}
           >
             <Heart
@@ -91,7 +95,11 @@ function MatchInfo(partida) {
             Curtir
           </p>
           <p
-            className="flex items-center gap-2 hover:bg-emerald-200 rounded-2xl px-4 cursor-pointer justify-center bg-neutral-50"
+            className={
+              presente
+                ? 'flex items-center gap-2 bg-emerald-100 hover:bg-emerald-200 rounded-2xl px-4 cursor-pointer justify-center border-emerald-200 border-2'
+                : 'flex items-center gap-2 hover:bg-emerald-200 rounded-2xl px-4 cursor-pointer justify-center bg-neutral-50 border-2'
+            }
             onClick={() => setPresente(!presente)}
           >
             {/* <SoccerBall

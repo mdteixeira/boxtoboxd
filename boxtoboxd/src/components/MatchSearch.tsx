@@ -8,27 +8,13 @@ export default function MatchSearch() {
       placeholder="Time 1 x Time 2"
       data={[
         {
-          key: 'portuguesavscorinthians',
-          value: 'portuguesa x corinthians',
-        },
-        {
-          key: 'jane',
-          value: 'Jane Doe',
-        },
-        {
-          key: 'mary',
-          value: 'Mary Phillips',
-        },
-        {
-          key: 'robert',
-          value: 'Robert',
-        },
-        {
-          key: 'karius',
-          value: 'Karius',
+          key: 'portuguesavsguarani',
+          value: 'Portuguesa x Guarani',
         },
       ]}
-      onSelect={(partida: any) => MatchInfo(partida)}
+      onSelect={() => {
+        return true;
+      }}
       onFocus={() => {
         // console.log('This function is called when is focussed');
       }}

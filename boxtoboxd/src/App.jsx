@@ -8,6 +8,9 @@ import { X } from '@phosphor-icons/react';
 import MatchSearch from './components/MatchSearch';
 import MatchInfo from './components/MatchInfo';
 
+import React from 'react';
+import ReactSearchBox from 'react-search-box';
+
 import { Rating } from 'react-simple-star-rating';
 
 function App() {
@@ -17,6 +20,8 @@ function App() {
     setRatingValue(rate);
   };
   const [count, setCount] = useState(0);
+
+  const [partida, setPartida] = useState(false);
 
   return (
     <>
@@ -34,11 +39,35 @@ function App() {
               <hr />
 
               <div className="content py-3">
-                <label htmlFor="partida" className="">
-                  Qual partida?
-                </label>
-                <MatchSearch />
-                <MatchInfo />
+                {partida == true ? (
+                  <MatchInfo />
+                ) : (
+                  <>
+                    <label htmlFor="partida" className="">
+                      Qual partida?
+                    </label>
+                    <ReactSearchBox
+                      placeholder="Time 1 x Time 2"
+                      data={[
+                        {
+                          key: 'portuguesavsguarani',
+                          value: 'Portuguesa x Guarani',
+                        },
+                      ]}
+                      onSelect={() => {
+                        setPartida(true);
+                      }}
+                      onFocus={() => {
+                        // console.log('This function is called when is focussed');
+                      }}
+                      onChange={(value) => {
+                        // console.log(value)
+                      }}
+                      autoFocus
+                      iconBoxSize="48px"
+                    />
+                  </>
+                )}
               </div>
             </div>
           )}
