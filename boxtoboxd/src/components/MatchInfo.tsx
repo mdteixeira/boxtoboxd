@@ -27,7 +27,7 @@ function MatchInfo(partida: boolean) {
 
   return (
     <>
-      <div className=" mt-3">
+      <form className=" mt-3">
         <div className="grid grid-cols-3 p-3">
           <div className="left flex items-center gap-4">
             <img
@@ -80,43 +80,60 @@ function MatchInfo(partida: boolean) {
         </div>
         <hr />
         <div className="grid grid-cols-3 gap-3 w-full p-3 justify-between text-slate-700">
-          <p
-            className={
-              like
-                ? 'flex items-center gap-2 bg-emerald-100 hover:bg-emerald-200 rounded-2xl px-4 cursor-pointer justify-center border-emerald-200 border-2'
-                : 'flex items-center gap-2 hover:bg-emerald-200 rounded-2xl px-4 cursor-pointer justify-center bg-neutral-50 border-2'
-            }
-            onClick={() => setLike(!like)}
+          <input
+            type="checkbox"
+            name="curtir"
+            id="curtir"
+            className="peer/curtir hidden"
+          />
+          <label
+            htmlFor="curtir"
+            className="flex items-center gap-2 rounded-2xl px-4 cursor-pointer justify-center border-2 transition-colors
+            
+            bg-neutral-50
+            active:bg-neutral-300
+            hover:bg-neutral-200 
+            
+            peer-checked/curtir:active:bg-emerald-300
+            peer-checked/curtir:bg-emerald-100
+            peer-checked/curtir:border-emerald-200
+            
+            peer-checked/curtir:hover:bg-emerald-200
+            "
           >
-            <Heart
-              weight={like ? 'fill' : 'regular'}
-              className="text-xl my-1 text-red-300"
-            />
+            <Heart weight="fill" className="text-xl my-1 text-red-300" />
             Curtir
-          </p>
-          <p
-            className={
-              presente
-                ? 'flex items-center gap-2 bg-emerald-100 hover:bg-emerald-200 rounded-2xl px-4 cursor-pointer justify-center border-emerald-200 border-2'
-                : 'flex items-center gap-2 hover:bg-emerald-200 rounded-2xl px-4 cursor-pointer justify-center bg-neutral-50 border-2'
-            }
-            onClick={() => setPresente(!presente)}
+          </label>
+          <input
+            type="checkbox"
+            name="presente"
+            id="presente"
+            className="peer/presente hidden"
+          />
+          <label
+            htmlFor="presente"
+            className="flex items-center gap-2 rounded-2xl px-4 cursor-pointer justify-center border-2 transition-colors
+            
+            bg-neutral-50
+            active:bg-neutral-300
+            hover:bg-neutral-200 
+            
+            peer-checked/presente:active:bg-emerald-300
+            peer-checked/presente:bg-emerald-100
+            peer-checked/presente:border-emerald-200
+            
+            peer-checked/presente:hover:bg-emerald-200
+            "
           >
-            {/* <SoccerBall
-              weight={presente ? 'fill' : 'regular'}
-              className="text-xl my-1 text-red-300"
-            /> */}
+            {/* <Heart weight="fill" className="text-xl my-1 text-red-300" /> */}
             <img
-              src={
-                presente
-                  ? 'https://img.icons8.com/?size=256&id=6FiQaPDOGwJN&format=png'
-                  : 'https://img.icons8.com/?size=256&id=JlLTMd4NfTIp&format=png'
-              }
+              src="https://www.svgrepo.com/show/220564/stadium.svg"
+              className="size-6"
               alt=""
-              className="size-5"
             />
             No estádio
-          </p>
+          </label>
+
           <Rating
             className="float-end ml-4"
             size={32}
@@ -137,6 +154,14 @@ function MatchInfo(partida: boolean) {
               'Absolute Cinema',
             ]}
             transition
+          />
+          <input
+            type="number"
+            name="rating"
+            id="rating"
+            value={rating}
+            className="hidden"
+            readOnly
           />
           <textarea
             name="comentarios"
@@ -169,6 +194,7 @@ function MatchInfo(partida: boolean) {
               onClick={() => {
                 setLoading(!loading);
               }}
+              type="submit"
             >
               {loading ? (
                 <div className="animate-spin">
@@ -180,7 +206,7 @@ function MatchInfo(partida: boolean) {
             </button>
           </div>
         </div>
-      </div>
+      </form>
     </>
   );
 }
