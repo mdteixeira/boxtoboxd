@@ -9,34 +9,29 @@
 }
 
 .popup-content {
-  margin: auto;
   background: rgb(255, 255, 255);
-  @apply rounded-3xl px-4 !important;
+  @apply rounded-3xl dark:bg-slate-900 dark:border-slate-800 !important;
 }
 
 .addRating-content {
   margin: auto;
   background: rgb(255, 255, 255);
-  @apply w-full max-w-[900px] mx-1 sm:mx-auto !important;
+  @apply w-full rounded-3xl px-4 max-w-[900px] mx-1 sm:mx-auto !important;
 }
 
 .sc-gswNZR {
-  @apply w-full border rounded-2xl py-2 pl-4 mt-2 focus:outline-none focus:border-emerald-400 focus:ring-1 focus:ring-emerald-200 !important;
+  @apply w-full border dark:bg-slate-800 dark:border-slate-700 dark:text-white rounded-2xl py-2 pl-4 mt-2 focus:outline-none focus:border-emerald-400 focus:ring-1 focus:ring-emerald-200 !important;
 }
 
 .react-search-box-dropdown {
-  @apply shadow-none !important;
+  @apply shadow-none bg-transparent !important;
 }
-
-.react-search-box-dropdown > ul > li:first-child {
-  @apply rounded-t-2xl !important;
-}
-.react-search-box-dropdown > ul > li:last-child {
-  @apply rounded-b-2xl !important;
+.react-search-box-dropdown > ul > li {
+  @apply border-x-0 border-t-0 border-b rounded-xl dark:border-slate-800 m-2 hover:bg-slate-100 dark:hover:bg-slate-800 bg-transparent !important;
 }
 
 .react-search-box-dropdown-list-item {
-  @apply !important;
+  @apply bg-transparent !important;
 }
 
 .style-module_starRatingWrap__q-lJC * {

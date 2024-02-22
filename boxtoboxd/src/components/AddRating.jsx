@@ -28,14 +28,12 @@ function AddRating() {
         {(close) => (
           <div className="modal">
             <button
-              className="absolute right-0 top-0 me-1.5 mt-1.5 text-red-500 bg-red-300 bg-opacity-20 rounded-full p-2"
+              className="absolute right-0 top-0 me-1.5 mt-1.5 text-red-500 bg-red-200 dark:bg-red-950 rounded-full p-2 hover:bg-opacity-85"
               onClick={close}
             >
               <X size={20} weight="bold" />
             </button>
-            <div className="header text-2xl font-bold my-2"> Adicionar Partida </div>
-            <hr />
-
+            <div className="header text-2xl font-bold mt-2"> Adicionar Partida </div>
             <div className="content py-3">
               {partida == true ? (
                 <MatchInfo />
@@ -48,8 +46,16 @@ function AddRating() {
                     placeholder="Time 1 x Time 2"
                     data={[
                       {
-                        key: 'portuguesavsguarani',
+                        key: 'portuguesa, guarani',
                         value: 'Portuguesa x Guarani',
+                      },
+                      {
+                        key: 'corinthians, portuguesa',
+                        value: 'Corinthians x Portuguesa',
+                      },
+                      {
+                        key: 'corinthians, palmeiras',
+                        value: 'Corinthians x Palmeiras',
                       },
                     ]}
                     onSelect={() => {

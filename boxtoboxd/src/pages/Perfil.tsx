@@ -60,7 +60,7 @@ function Perfil() {
     usuario: [`mdteixeira`, ``],
     jogo: jogo2,
     curtir: false,
-    presente: true,
+    presente: false,
     rating: 5,
     comentario: 'Futebol 2 oficialmente lançado.',
   };

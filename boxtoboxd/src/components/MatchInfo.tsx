@@ -5,6 +5,7 @@ import {
   Share,
   SoccerBall,
   SpinnerGap,
+  Star,
   X,
 } from '@phosphor-icons/react';
 import { Heart } from '@phosphor-icons/react/dist/ssr';
@@ -28,7 +29,7 @@ function MatchInfo(partida: boolean) {
   return (
     <>
       <form className="mt-3">
-        <div className="grid grid-cols-3 p-3">
+        <div className="grid grid-cols-3 p-3 dark:border-slate-600">
           <div className="left flex flex-col items-center gap-2">
             <img
               src="https://ssl.gstatic.com/onebox/media/sports/logos/a9BSJk9BywwXNj4LJPq5jg_96x96.png"
@@ -51,31 +52,31 @@ function MatchInfo(partida: boolean) {
             <h2>Guarani</h2>
           </div>
         </div>
-        <div className="grid grid-cols-2 pb-2">
-          <ul className="text-slate-500 text-xs border-e px-5">
+        <div className="grid grid-cols-2 pb-2 text-slate-500 dark:text-slate-200">
+          <ul className=" text-xs border-e px-5">
             <li className="flex justify-between">
               <p>Giovani Augusto</p>
               <p>45+7</p>
             </li>
           </ul>
-          <ul className="text-slate-500 text-xs border-s px-5">
+          <ul className=" text-xs border-s px-5">
             <li className="flex flex-row-reverse justify-between">
               {/* <p>Giovani Augusto</p>
               <p>45+7</p> */}
             </li>
           </ul>
         </div>
-        <div className="grid sm:grid-cols-3 gap-1 w-full place-items-center p-1 bg-neutral-50 rounded-2xl">
-          <h2 className="text-sm text-slate-500 flex gap-2 items-center">
+        <div className="grid sm:grid-cols-3 gap-1 w-full place-items-center p-1 bg-neutral-100 dark:bg-slate-800 py-2 rounded-2xl">
+          <h2 className="text-sm  flex gap-2 items-center">
             <MapPin className="text-base" weight="bold" /> Estádio do Canindé
           </h2>
           <div className="flex gap-2">
-            <h2 className="text-sm text-slate-500 flex gap-2 pr-2 items-center border-e">
+            <h2 className="text-sm  flex gap-2 pr-2 items-center border-e">
               <Calendar className="text-base" weight="bold" /> 18/02/2024
             </h2>
-            <h2 className="text-sm text-slate-500 items-center">18:00</h2>
+            <h2 className="text-sm  items-center">18:00</h2>
           </div>
-          <h2 className="text-sm text-slate-500 flex gap-2 items-center">Paulistão</h2>
+          <h2 className="text-sm  flex gap-2 items-center">Paulistão</h2>
         </div>
         <div className="flex flex-wrap py-3">
           <div className="grid grid-cols-2 gap-2 w-full sm:w-2/3">
@@ -101,41 +102,44 @@ function MatchInfo(partida: boolean) {
             />
             <label
               htmlFor="curtir"
-              className="flex items-center gap-2 rounded-2xl px-4 py-2 cursor-pointer justify-center border-2 transition-colors
+              className="flex items-center gap-2 rounded-2xl px-4 py-2 cursor-pointer justify-center border-2 dark:border-slate-700 transition-colors
               
-              bg-neutral-50
-              active:bg-neutral-300
-              hover:bg-neutral-200 
+              bg-neutral-50 dark:bg-slate-800
+              active:bg-neutral-300 dark:active:bg-slate-950
+              hover:bg-neutral-200  dark:hover:bg-slate-900
               
-              peer-checked/curtir:active:bg-emerald-300
-              peer-checked/curtir:bg-emerald-100
-              peer-checked/curtir:border-emerald-200
+              peer-checked/curtir:active:bg-emerald-300 dark:peer-checked/curtir:active:bg-emerald-800
+              peer-checked/curtir:bg-emerald-100 dark:peer-checked/curtir:bg-emerald-500
+              peer-checked/curtir:border-emerald-200 dark:peer-checked/curtir:border-emerald-700
               
-              peer-checked/curtir:hover:bg-emerald-200
+              peer-checked/curtir:hover:bg-emerald-200 dark:peer-checked/curtir:hover:bg-emerald-700
               "
             >
-              <Heart weight="fill" className="text-xl my-1 text-red-300" />
+              <Heart
+                weight="fill"
+                className="text-xl my-1 text-red-300 dark:text-red-500"
+              />
               Curtir
             </label>
             <label
               htmlFor="presente"
-              className="flex items-center gap-2 rounded-2xl px-4 py-2 cursor-pointer justify-center border-2 transition-colors
+              className="flex items-center gap-2 rounded-2xl px-4 py-2 cursor-pointer justify-center border-2 dark:border-slate-700 transition-colors
               
-              bg-neutral-50
-              active:bg-neutral-300
-              hover:bg-neutral-200 
+              bg-neutral-50 dark:bg-slate-800
+              active:bg-neutral-300 dark:active:bg-slate-950
+              hover:bg-neutral-200  dark:hover:bg-slate-900
               
-              peer-checked/presente:active:bg-emerald-300
-              peer-checked/presente:bg-emerald-100
-              peer-checked/presente:border-emerald-200
+              peer-checked/presente:active:bg-emerald-300 dark:peer-checked/presente:active:bg-emerald-800
+              peer-checked/presente:bg-emerald-100 dark:peer-checked/presente:bg-emerald-500
+              peer-checked/presente:border-emerald-200 dark:peer-checked/presente:border-emerald-700
               
-              peer-checked/presente:hover:bg-emerald-200
+              peer-checked/presente:hover:bg-emerald-200 dark:peer-checked/presente:hover:bg-emerald-700
               "
             >
               {/* <Heart weight="fill" className="text-xl my-1 text-red-300" /> */}
               <img
                 src="https://www.svgrepo.com/show/220564/stadium.svg"
-                className="size-6"
+                className="size-6 dark:invert"
                 alt=""
               />
               No estádio
@@ -143,6 +147,8 @@ function MatchInfo(partida: boolean) {
           </div>
           <div className="grid place-content-center w-full sm:w-1/3 pt-2">
             <Rating
+              fillIcon={<Star className="text-2xl" weight="fill" />}
+              emptyIcon={<Star className="text-2xl dark:text-slate-600" />}
               allowFraction
               onClick={handleRating}
               transition
@@ -179,13 +185,13 @@ function MatchInfo(partida: boolean) {
         <textarea
           name="comentarios"
           id="comentarios"
-          className="border w-full rounded-xl py-2 px-3 focus-within:outline-none focus-within:ring-1 focus-within:ring-emerald-300"
+          className="dark:bg-slate-800 bg-neutral-100 w-full rounded-xl py-2 px-3 focus-within:outline-none focus-within:ring-1 focus-within:ring-emerald-300"
           placeholder="Comentários"
         ></textarea>
         <div className="grid place-content-center relative">
           <Popup
             trigger={
-              <div className="absolute right-0 bottom-0 bg-emerald-400 hover:bg-emerald-500 hover:ring-4 ring-emerald-200 active:bg-emerald-600 focus:ring-4 focus:bg-emerald-500 p-2 rounded-xl flex items-center gap-3 text-white ">
+              <div className="absolute right-0 bottom-0 bg-emerald-400 hover:bg-emerald-500 hover:ring-4 ring-emerald-200 dark:ring-emerald-700 active:bg-emerald-600 focus:ring-4 focus:bg-emerald-500 p-2 rounded-xl flex items-center gap-3 text-white">
                 <Share size={20} />
               </div>
             }
@@ -198,12 +204,12 @@ function MatchInfo(partida: boolean) {
               <img
                 src="https://cdn.worldvectorlogo.com/logos/x-2.svg"
                 alt=""
-                className="size-8 bg-neutral-50 p-1 rounded-md"
+                className="size-8 dark:invert p-1 rounded-md"
               />
             </div>
           </Popup>
           <button
-            className="bg-emerald-400 hover:bg-emerald-500 hover:ring-4 ring-emerald-200 active:bg-emerald-600 focus:ring-4 focus:bg-emerald-500 py-2 px-5 rounded-2xl flex items-center gap-3 text-white w-full"
+            className="bg-emerald-400 hover:bg-emerald-500 hover:ring-4 ring-emerald-200 dark:ring-emerald-700 active:bg-emerald-600 focus:ring-4 focus:bg-emerald-500 py-2 px-5 rounded-2xl flex items-center gap-3 text-white w-full"
             onClick={() => {
               setLoading(!loading);
             }}

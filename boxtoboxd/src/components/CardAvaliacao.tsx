@@ -7,7 +7,7 @@ import { Heart } from '@phosphor-icons/react/dist/ssr';
 
 function CardAvaliacao(avaliacao: Avaliacao) {
   return (
-    <div className="border rounded-3xl p-3 m-2 bg-white">
+    <div className="border dark:border-slate-700 rounded-3xl p-3 m-2 bg-white dark:bg-slate-900">
       <div className="flex items-center justify-between mb-3">
         <div className="flex gap-2 items-center">
           {avaliacao.usuario[1] == '' ? (
@@ -16,19 +16,21 @@ function CardAvaliacao(avaliacao: Avaliacao) {
             <img
               src={avaliacao.usuario[1]}
               alt=""
-              className="size-10 rounded-full border"
+              className="size-10 rounded-full border dark:border-slate-700"
             />
           )}
           <h3>{avaliacao.usuario[0]}</h3>
         </div>
         <div className="inline-flex gap-1 items-center">
-          <button className="px-3 py-1 border rounded-2xl">Seguindo</button>
-          <button className="p-1 border rounded-full">
+          <button className="px-3 py-1 border dark:border-slate-700 rounded-2xl">
+            Seguindo
+          </button>
+          <button className="p-1 border dark:border-slate-700 rounded-full">
             <DotsThree className="text-2xl" />
           </button>
         </div>
       </div>
-      <div className="grid grid-cols-3 p-3 bg-neutral-50 rounded-t-2xl">
+      <div className="grid grid-cols-3 p-3 bg-slate-50 dark:bg-slate-900 rounded-t-2xl">
         <div className="left flex flex-col items-center gap-2">
           <img src={avaliacao.jogo.mandante[1]} className="md:size-12 size-10" alt="" />
 
@@ -44,7 +46,7 @@ function CardAvaliacao(avaliacao: Avaliacao) {
         </div>
       </div>
       {/* {avaliacao.jogo.eventos.map(() => {})}
-      <ul className="text-slate-500 text-xs border-e px-5">
+      <ul className="text-slate-500 dark:text-slate-300 text-xs border dark:border-slate-700-e px-5">
         <li className="flex justify-between">
           <p>Giovani Augusto</p>
           <p>45+7</p>
@@ -52,19 +54,19 @@ function CardAvaliacao(avaliacao: Avaliacao) {
       </ul> */}
 
       <div className="">
-        <div className="grid grid-cols-3 w-full place-items-center p-3 text-xs bg-neutral-100 rounded-b-2xl">
-          <h2 className=" text-slate-500 flex gap-1 items-center">
+        <div className="grid grid-cols-3 w-full place-items-center p-3 text-xs bg-slate-100 dark:bg-slate-800 rounded-b-2xl dark:rounded-2xl">
+          <h2 className=" text-slate-500 dark:text-slate-300 flex gap-1 items-center">
             <MapPin weight="bold" /> {avaliacao.jogo.local}
           </h2>
           <div className="flex gap-2">
-            <h2 className=" text-slate-500 flex gap-1 pr-2 items-center">
+            <h2 className=" text-slate-500 dark:text-slate-300 flex gap-1 pr-2 items-center">
               <Calendar weight="bold" /> {avaliacao.jogo.data[0]}
             </h2>
-            {/* <h2 className=" text-slate-500 items-center">
+            {/* <h2 className=" text-slate-500 dark:text-slate-300 items-center">
               {avaliacao.jogo.data[1]}
             </h2> */}
           </div>
-          <h2 className=" text-slate-500 flex gap-2 items-center">
+          <h2 className=" text-slate-500 dark:text-slate-300 flex gap-2 items-center">
             {avaliacao.jogo.torneio}
           </h2>
         </div>
@@ -75,6 +77,8 @@ function CardAvaliacao(avaliacao: Avaliacao) {
           <div className="grid">
             <div className="">
               <Rating
+                fillIcon={<Star className="text-2xl" weight="fill" />}
+                emptyIcon={<Star className="text-2xl dark:text-slate-600" />}
                 className="float-start"
                 style={{ display: 'flex' }}
                 size={32}
@@ -112,10 +116,10 @@ function CardAvaliacao(avaliacao: Avaliacao) {
           </div>
           <div className="flex gap-3 items-center justify-end">
             {avaliacao.presente == true ? (
-              <div className="flex gap-2 items-center bg-neutral-50 py-1 px-3 rounded-xl">
+              <div className="flex gap-2 items-center bg-slate-50 dark:bg-slate-800 py-1 px-3 rounded-xl">
                 <img
                   src="https://www.svgrepo.com/show/220564/stadium.svg"
-                  className="size-6"
+                  className="size-6 dark:invert"
                   alt=""
                 />
                 <p>No estádio</p>
@@ -127,7 +131,7 @@ function CardAvaliacao(avaliacao: Avaliacao) {
         </div>
         <textarea
           name="comentario"
-          className="bg-neutral-50 rounded-2xl mt-2 resize-none px-3 py-2 hover:none active:none focus-within:outline-none"
+          className="bg-slate-50 dark:bg-slate-800 rounded-2xl mt-2 resize-none px-3 py-2 hover:none active:none focus-within:outline-none"
           id="comentario"
           readOnly
         >
