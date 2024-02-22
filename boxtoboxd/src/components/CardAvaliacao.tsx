@@ -73,14 +73,18 @@ function CardAvaliacao(avaliacao: Avaliacao) {
       </div>
 
       <div className="mt-3 flex flex-col">
-        <div className="flex justify-between w-full">
+        <div className="flex justify-between items-center w-full">
           <Rating
             readonly
             initialValue={5}
             showTooltip
             allowFraction
             tooltipClassName=""
-            tooltipStyle={{ marginLeft: '0.5rem', borderRadius: '12px' }}
+            tooltipStyle={{
+              marginLeft: '0.5rem',
+              borderRadius: '12px',
+              fontSize: '12px',
+            }}
             tooltipArray={[
               'Tenebroso',
               'Terrível',
@@ -94,7 +98,6 @@ function CardAvaliacao(avaliacao: Avaliacao) {
               'Absolute Cinema',
             ]}
             size={24}
-            className="bg-neutral-50 rounded-xl"
           />
           <div className="flex gap-3 items-center">
             {avaliacao.curtir == true ? (
