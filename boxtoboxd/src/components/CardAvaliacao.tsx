@@ -9,9 +9,9 @@ function CardAvaliacao(avaliacao: Avaliacao) {
   return (
     <div className="border-2 rounded-3xl p-3">
       <div className="flex items-center justify-between mb-3">
-        <div className="flex gap-3 items-center">
+        <div className="flex gap-2 items-center">
           {avaliacao.usuario[1] == '' ? (
-            <UserCircle className="size-10 text-emerald-500" />
+            <UserCircle className="size-10 text-emerald-500" weight="duotone" />
           ) : (
             <img
               src={avaliacao.usuario[1]}
