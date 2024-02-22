@@ -134,9 +134,8 @@ function CardAvaliacao(avaliacao: Avaliacao) {
           className="bg-slate-50 dark:bg-slate-800 rounded-2xl mt-2 resize-none px-3 py-2 hover:none active:none focus-within:outline-none"
           id="comentario"
           readOnly
-        >
-          {avaliacao.comentario}
-        </textarea>
+          value={avaliacao.comentario}
+        ></textarea>
       </div>
     </div>
   );

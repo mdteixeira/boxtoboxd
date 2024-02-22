@@ -34,7 +34,7 @@ function Perfil() {
   };
 
   var jogo2: Jogo = {
-    id: 0,
+    id: 1,
     mandante: [
       'Palmeiras',
       'https://ssl.gstatic.com/onebox/media/sports/logos/7spurne-xDt2p6C0imYYNA_96x96.png',
