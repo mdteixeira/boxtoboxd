@@ -140,6 +140,19 @@ function MatchInfo(partida: boolean) {
             allowFraction
             onClick={handleRating}
             showTooltip
+            transition
+            fillColorArray={[
+              '#f14f45',
+              '#f14f45',
+              '#f16c45',
+              '#f16c45',
+              '#f18845',
+              '#f18845',
+              '#f1b345',
+              '#f1b345',
+              '#f1d045',
+              '#f1d045',
+            ]}
             initialValue={2.5}
             tooltipArray={[
               'Tenebroso',
@@ -153,7 +166,6 @@ function MatchInfo(partida: boolean) {
               'Jogaço',
               'Absolute Cinema',
             ]}
-            transition
           />
           <input
             type="number"

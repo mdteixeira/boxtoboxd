@@ -6,7 +6,7 @@ import Jogo from '../models/Jogo';
 function Perfil() {
   const [avaliacoes, setAvaliacoes] = useState<Avaliacao[]>([]);
 
-  var jogo2: Jogo = {
+  var jogo1: Jogo = {
     id: 0,
     mandante: [
       'Portuguesa',
@@ -19,22 +19,54 @@ function Perfil() {
     local: 'Canindé',
     gols: [1, 0],
     eventos: [['Giovani Augusto', 'gol', 0]],
-    data: ['18/02/2024', '18:00'],
+    data: ['11/02/2024', '18:00'],
     torneio: 'Paulistão',
   };
 
   var avaliacao1: Avaliacao = {
+    id: jogo1.id,
+    usuario: [`mdteixeira`, ``],
+    jogo: jogo1,
+    curtir: true,
+    presente: true,
+    rating: 4,
+    comentario: 'Jogo muito bom, emoção do início ao fim!',
+  };
+
+  var jogo2: Jogo = {
+    id: 0,
+    mandante: [
+      'Palmeiras',
+      'https://ssl.gstatic.com/onebox/media/sports/logos/7spurne-xDt2p6C0imYYNA_96x96.png',
+    ],
+    visitante: [
+      'Corinthians',
+      'https://ssl.gstatic.com/onebox/media/sports/logos/tCMSqgXVHROpdCpQhzTo1g_96x96.png',
+    ],
+    local: 'Arena Barueri',
+    gols: [1, 0],
+    eventos: [
+      ['Endrick', 'gol', 44],
+      ['José Manuel Alberto López', 'gol', 68],
+      ['Yuri Alberto', 'gol', 87],
+      ['Yuri Alberto', 'gol', 100],
+    ],
+    data: ['18/02/2024', '18:00'],
+    torneio: 'Paulistão',
+  };
+
+  var avaliacao2: Avaliacao = {
     id: jogo2.id,
     usuario: [`mdteixeira`, ``],
     jogo: jogo2,
     curtir: true,
-    presente: true,
-    rating: 10,
-    comentario: 'Jogo muito bom, emoção do início ao fim!',
+    presente: false,
+    rating: 5,
+    comentario: 'Futebol 2 oficialmente lançado.',
   };
 
   useEffect(() => {
-    setAvaliacoes([...avaliacoes, avaliacao1]);
+    setAvaliacoes([avaliacao1, avaliacao2]);
   }, []);
 
   return (

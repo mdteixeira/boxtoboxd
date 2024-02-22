@@ -4,7 +4,7 @@ export default interface Jogo {
   visitante: [nome: string, foto: string];
   local: string;
   gols: [gols_mandante: number, gols_visitante: number];
-  eventos: [[jogador: string, evento: string, momento: number]];
+  eventos: [jogador: string, evento: string, momento: number][];
   data: [string, string];
   torneio: string;
 }
