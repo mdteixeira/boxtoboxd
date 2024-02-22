@@ -24,7 +24,7 @@ function AddRating() {
 
   return (
     <>
-      <Popup trigger={AddButton} modal nested>
+      <Popup trigger={AddButton} modal nested className="addRating">
         {(close) => (
           <div className="modal">
             <button

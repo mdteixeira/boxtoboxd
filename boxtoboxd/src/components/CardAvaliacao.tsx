@@ -7,7 +7,7 @@ import { Heart } from '@phosphor-icons/react/dist/ssr';
 
 function CardAvaliacao(avaliacao: Avaliacao) {
   return (
-    <div className="border rounded-3xl p-3 m-2">
+    <div className="border rounded-3xl p-3 m-2 bg-white">
       <div className="flex items-center justify-between mb-3">
         <div className="flex gap-2 items-center">
           {avaliacao.usuario[1] == '' ? (
@@ -29,16 +29,16 @@ function CardAvaliacao(avaliacao: Avaliacao) {
         </div>
       </div>
       <div className="grid grid-cols-3 p-3 bg-neutral-50 rounded-t-2xl">
-        <div className="left flex flex-col md:flex-row items-center gap-2">
-          <img src={avaliacao.jogo.mandante[1]} className="size-12" alt="" />
+        <div className="left flex flex-col items-center gap-2">
+          <img src={avaliacao.jogo.mandante[1]} className="md:size-12 size-10" alt="" />
 
           <h2 className="">{avaliacao.jogo.mandante[0]}</h2>
         </div>
         <div className="placar tabular-nums flex items-center justify-around text-2xl font-bold">
           {avaliacao.jogo.gols[0]} {<X size={16} />} {avaliacao.jogo.gols[1]}
         </div>
-        <div className="right flex flex-col md:flex-row items-center gap-2">
-          <img src={avaliacao.jogo.visitante[1]} className="size-12" alt="" />
+        <div className="right flex flex-col items-center gap-2">
+          <img src={avaliacao.jogo.visitante[1]} className="md:size-12 size-10" alt="" />
 
           <h2>{avaliacao.jogo.visitante[0]}</h2>
         </div>
@@ -52,19 +52,19 @@ function CardAvaliacao(avaliacao: Avaliacao) {
       </ul> */}
 
       <div className="">
-        <div className="grid grid-cols-3 w-full place-items-center p-3  bg-neutral-100 rounded-b-2xl">
-          <h2 className="text-sm text-slate-500 flex gap-2 items-center">
-            <MapPin className="text-base" weight="bold" /> {avaliacao.jogo.local}
+        <div className="grid grid-cols-3 w-full place-items-center p-3 text-xs bg-neutral-100 rounded-b-2xl">
+          <h2 className=" text-slate-500 flex gap-1 items-center">
+            <MapPin weight="bold" /> {avaliacao.jogo.local}
           </h2>
           <div className="flex gap-2">
-            <h2 className="text-sm text-slate-500 flex gap-2 pr-2 items-center">
-              <Calendar className="text-base" weight="bold" /> {avaliacao.jogo.data[0]}
+            <h2 className=" text-slate-500 flex gap-1 pr-2 items-center">
+              <Calendar weight="bold" /> {avaliacao.jogo.data[0]}
             </h2>
-            {/* <h2 className="text-sm text-slate-500 items-center">
+            {/* <h2 className=" text-slate-500 items-center">
               {avaliacao.jogo.data[1]}
             </h2> */}
           </div>
-          <h2 className="text-sm text-slate-500 flex gap-2 items-center">
+          <h2 className=" text-slate-500 flex gap-2 items-center">
             {avaliacao.jogo.torneio}
           </h2>
         </div>
@@ -94,27 +94,23 @@ function CardAvaliacao(avaliacao: Avaliacao) {
                   '#f1d045',
                 ]}
                 initialValue={avaliacao.rating}
-                tooltipArray={[
-                  'Tenebroso',
-                  'Terrível',
-                  'Ruim demais',
-                  'Ruim',
-                  'Assistível',
-                  'Legalzinho',
-                  'Bom',
-                  'Jogão',
-                  'Jogaço',
-                  'Absolute Cinema',
-                ]}
+                // tooltipClassName="tooltip"
+                // tooltipArray={[
+                //   'Tenebroso',
+                //   'Terrível',
+                //   'Ruim demais',
+                //   'Ruim',
+                //   'Assistível',
+                //   'Legalzinho',
+                //   'Bom',
+                //   'Jogão',
+                //   'Jogaço',
+                //   'Absolute Cinema',
+                // ]}
               />
             </div>
           </div>
           <div className="flex gap-3 items-center justify-end">
-            {avaliacao.curtir == true ? (
-              <Heart className="text-2xl text-red-400" weight="fill" />
-            ) : (
-              <Heart className="text-2xl text-slate-700" weight="bold" />
-            )}
             {avaliacao.presente == true ? (
               <div className="flex gap-2 items-center bg-neutral-50 py-1 px-3 rounded-xl">
                 <img
@@ -122,7 +118,7 @@ function CardAvaliacao(avaliacao: Avaliacao) {
                   className="size-6"
                   alt=""
                 />
-                No estádio
+                <p>No estádio</p>
               </div>
             ) : (
               ''
@@ -131,10 +127,9 @@ function CardAvaliacao(avaliacao: Avaliacao) {
         </div>
         <textarea
           name="comentario"
-          className="bg-neutral-50 rounded-2xl mt-2 resize-none px-3 py-2"
+          className="bg-neutral-50 rounded-2xl mt-2 resize-none px-3 py-2 hover:none active:none focus-within:outline-none"
           id="comentario"
           readOnly
-          disabled
         >
           {avaliacao.comentario}
         </textarea>

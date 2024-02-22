@@ -59,8 +59,8 @@ function Perfil() {
     id: jogo2.id,
     usuario: [`mdteixeira`, ``],
     jogo: jogo2,
-    curtir: true,
-    presente: false,
+    curtir: false,
+    presente: true,
     rating: 5,
     comentario: 'Futebol 2 oficialmente lançado.',
   };
@@ -71,10 +71,8 @@ function Perfil() {
 
   return (
     <>
-      {avaliacoes.length === 0 && (
-        <div className="container mx-auto my-4 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4"></div>
-      )}
-      <div className="container mx-auto my-4 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+      {avaliacoes.length === 0 && <div></div>}
+      <div className="container mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
         {avaliacoes.map((avaliacao) => (
           <CardAvaliacao
             key={avaliacao.id}

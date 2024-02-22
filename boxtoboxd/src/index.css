@@ -13,19 +13,11 @@
   background: rgb(255, 255, 255);
   @apply rounded-3xl px-4 !important;
 }
-.popup-arrow {
-  color: rgb(255, 255, 255);
-}
-[role='tooltip'].popup-content {
-  width: 200px;
-  box-shadow: rgba(0, 0, 0, 0.16) 0px 0px 3px;
-}
 
-.popup-overlay {
-  background: rgba(0, 0, 0, 0.5);
-}
-[data-popup='tooltip'].popup-overlay {
-  background: transparent;
+.addRating-content {
+  margin: auto;
+  background: rgb(255, 255, 255);
+  @apply w-full max-w-[900px] mx-1 sm:mx-auto !important;
 }
 
 .sc-gswNZR {
@@ -49,12 +41,4 @@
 
 .style-module_starRatingWrap__q-lJC * {
   display: inline-block !important;
-}
-
-.react-simple-star-rating-tooltip {
-  width: 55% !important;
-  font-size: 0.75rem !important;
-  float: inline-end;
-  margin: 0 !important;
-  text-align: center;
 }
