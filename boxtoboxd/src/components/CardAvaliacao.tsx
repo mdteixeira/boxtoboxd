@@ -1,13 +1,23 @@
 import React from 'react';
 import Jogo from '../models/Jogo';
-import { X, MapPin, Calendar, DotsThree, UserCircle, Star } from '@phosphor-icons/react';
+import {
+  X,
+  MapPin,
+  Calendar,
+  DotsThree,
+  UserCircle,
+  Star,
+  Share,
+} from '@phosphor-icons/react';
 import { Rating } from 'react-simple-star-rating';
 import Avaliacao from '../models/Avaliacao';
 import { Heart } from '@phosphor-icons/react/dist/ssr';
+import Popup from 'reactjs-popup';
+import { TwitterIcon, TwitterShareButton } from 'react-share';
 
 function CardAvaliacao(avaliacao: Avaliacao) {
   return (
-    <div className="border dark:border-slate-700 rounded-3xl p-3 m-2 bg-white dark:bg-slate-900">
+    <div className="border dark:border-slate-700 rounded-3xl p-3 bg-white dark:bg-slate-900">
       <div className="flex items-center justify-between mb-3">
         <div className="flex gap-2 items-center">
           {avaliacao.usuario[1] == '' ? (
@@ -16,18 +26,50 @@ function CardAvaliacao(avaliacao: Avaliacao) {
             <img
               src={avaliacao.usuario[1]}
               alt=""
-              className="size-10 rounded-full border dark:border-slate-700"
+              className="size-10 rounded-full border-2 dark:border-slate-700"
             />
           )}
           <h3>{avaliacao.usuario[0]}</h3>
         </div>
-        <div className="inline-flex gap-1 items-center">
-          <button className="px-3 py-1 border dark:border-slate-700 rounded-2xl">
+        <div className="inline-flex gap-2 items-center">
+          {avaliacao.curtir ? (
+            <Heart className="text-3xl text-red-400" weight="fill" />
+          ) : (
+            <Heart className="text-3xl" weight="bold" />
+          )}
+          {/* <button className="px-3 py-1 border dark:border-slate-700 rounded-2xl">
             Seguindo
-          </button>
-          <button className="p-1 border dark:border-slate-700 rounded-full">
-            <DotsThree className="text-2xl" />
-          </button>
+          </button> */}
+          <Popup
+            trigger={
+              <button
+                type="button"
+                className=" bg-neutral-400 hover:bg-neutral-500 hover:ring-4 ring-neutral-200 dark:ring-neutral-700 active:bg-neutral-600 focus:ring-4 focus:bg-neutral-500 p-2 rounded-xl flex items-center gap-3 text-white"
+              >
+                <Share size={20} />
+              </button>
+            }
+            position={'left center'}
+            on={'click'}
+            arrow={false}
+            contentStyle={{
+              border: 'none',
+              boxShadow: 'none',
+              width: 'auto',
+              backgroundColor: 'transparent',
+              paddingRight: '10px',
+            }}
+          >
+            <div className="flex flex-row-reverse gap-2">
+              <TwitterShareButton
+                url={'http://localhost:5173/'}
+                title={`Minha nota para ${avaliacao.jogo.mandante[0]} ${avaliacao.jogo.gols[0]} x ${avaliacao.jogo.gols[1]} ${avaliacao.jogo.visitante[0]} no BoxToBoxD é de ${avaliacao.rating}⭐`}
+                hashtags={['BoxToBoxD']}
+              >
+                <TwitterIcon size={32} round />
+              </TwitterShareButton>
+            </div>
+          </Popup>
         </div>
       </div>
       <div className="grid grid-cols-3 p-3 bg-slate-50 dark:bg-slate-900 rounded-t-2xl">

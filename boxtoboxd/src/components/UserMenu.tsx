@@ -1,4 +1,4 @@
-import { Moon, SignOut, User, UserCircle } from '@phosphor-icons/react';
+import { CircleHalfTilt, Moon, SignOut, Sun, User, UserCircle } from '@phosphor-icons/react';
 import { SignIn } from '@phosphor-icons/react/dist/ssr';
 import {
   browserLocalPersistence,
@@ -15,8 +15,6 @@ function UserMenu() {
   const user = auth.currentUser;
 
   const [Logado, setLogado] = useState(user != null);
-
-  console.log(Logado);
 
   function handleSignout() {
     signOut(auth)
@@ -54,6 +52,25 @@ function UserMenu() {
     }
   });
 
+  function darkTheme() {
+    localStorage.setItem('darkTheme', 'dark');
+    document.body.classList.add('dark');
+  }
+
+  function lightTheme() {
+    localStorage.setItem('darkTheme', '');
+    document.body.classList.remove('dark');
+  }
+
+  function toggleTheme() {
+    localStorage.getItem('darkTheme') != 'dark' ? darkTheme() : lightTheme();
+  }
+
+  useEffect(() => {
+    localStorage.getItem('darkTheme') == 'dark' && darkTheme();
+  }),
+    [localStorage.getItem('darkTheme')];
+
   return (
     <div className="flex items-center justify-center max-w-12 max-h-12 w-12 h-12">
       <Popup
@@ -67,7 +84,11 @@ function UserMenu() {
             <img
               className="rounded-full border-2 border-emerald-300 object-cover  size-10"
               // src={auth.currentUser?.photoURL != null ? auth.currentUser?.photoURL : ''}
-              src={user?.photoURL != null ? user?.photoURL : ''}
+              src={
+                user?.photoURL != null
+                  ? user?.photoURL
+                  : 'https://i.pinimg.com/564x/51/65/bb/5165bbc3564b4296c70371b75c9774b0.jpg'
+              }
               alt="Foto de Usuário"
             />
           )
@@ -82,33 +103,39 @@ function UserMenu() {
         }}
       >
         <ul className="flex flex-col gap-3 p-2">
-          <li
+          <button
             className="inline-flex gap-4 items-center cursor-pointer hover:text-emerald-500"
-            onClick={() => {}}
+            onClick={() => {
+              toggleTheme();
+            }}
           >
-            <Moon /> <span>Tema escuro</span>
-          </li>
+            <>
+              <CircleHalfTilt />
+              <span>Mudar tema</span>
+            </>
+          </button>
+
           {!Logado ? (
             <>
-              <li
+              <button
                 className="inline-flex gap-4 items-center cursor-pointer hover:text-emerald-500"
                 onClick={() => {
                   handleLogin();
                 }}
               >
                 <SignIn /> <span>Fazer Login</span>
-              </li>
+              </button>
             </>
           ) : (
             <>
-              <li
+              <button
                 className="inline-flex gap-4 items-center cursor-pointer hover:text-emerald-500"
                 //   onClick={() => setLogado(!Logado)}
               >
                 <User />
                 <span>Perfil</span>
-              </li>
-              <li
+              </button>
+              <button
                 className="inline-flex gap-4 items-center cursor-pointer hover:text-emerald-500"
                 onClick={() => {
                   handleSignout();
@@ -116,7 +143,7 @@ function UserMenu() {
               >
                 <SignOut />
                 <span>Sair</span>
-              </li>
+              </button>
             </>
           )}
         </ul>

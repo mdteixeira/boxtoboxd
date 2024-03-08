@@ -30,7 +30,7 @@ function Perfil() {
     curtir: true,
     presente: true,
     rating: 4,
-    comentario: 'Jogo muito bom, emoção do início ao fim!',
+    comentario: 'Comentário 1',
   };
 
   var jogo2: Jogo = {
@@ -62,11 +62,21 @@ function Perfil() {
     curtir: false,
     presente: false,
     rating: 5,
-    comentario: 'Futebol 2 oficialmente lançado.',
+    comentario: 'Comentário 2',
+  };
+
+  var avaliacao3: Avaliacao = {
+    id: jogo2.id,
+    usuario: [`usuario02`, ``],
+    jogo: jogo2,
+    curtir: true,
+    presente: false,
+    rating: 5,
+    comentario: 'Comentário 3',
   };
 
   useEffect(() => {
-    setAvaliacoes([avaliacao1, avaliacao2]);
+    setAvaliacoes([avaliacao1, avaliacao2, avaliacao3]);
   }, []);
 
   return (

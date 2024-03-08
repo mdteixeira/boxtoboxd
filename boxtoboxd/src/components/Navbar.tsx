@@ -17,7 +17,7 @@ function Navbar() {
             <h1 className="md:block text-2xl hidden font-semibold text-emerald-500">
               BoxToBoxD
             </h1>
-            <h1 className="md:hidden text-xs block font-semibold text-emerald-500">
+            <h1 className="md:hidden text-lg block font-semibold text-emerald-500">
               BoxToBoxD
             </h1>
           </div>

@@ -3,32 +3,83 @@ import {
   Clock,
   MapPin,
   Share,
-  SoccerBall,
   SpinnerGap,
   Star,
   X,
 } from '@phosphor-icons/react';
 import { Heart } from '@phosphor-icons/react/dist/ssr';
 import React, { useState } from 'react';
+import { TwitterIcon, TwitterShareButton } from 'react-share';
 
 import { Rating } from 'react-simple-star-rating';
 import Popup from 'reactjs-popup';
+
+import { collection, addDoc } from 'firebase/firestore';
+import { auth, db } from '../firebase';
+import { onAuthStateChanged } from 'firebase/auth';
 
 function MatchInfo(partida: boolean) {
   const [like, setLike] = useState(false);
   const [presente, setPresente] = useState(false);
   const [loading, setLoading] = useState(false);
+  const [comentario, setComentario] = useState('');
+  const [vazio, setVazio] = useState(false);
+  const [erro, setErro] = useState(false);
+  const [logado, setLogado] = useState(true);
+  const [enviado, setEnviado] = useState(false);
 
-  const [rating, setRating] = useState(0);
+  const handleChange = (event) => {
+    const value = event.target.value;
+    setComentario(value);
+    setVazio(false);
+  };
+
+  const [rating, setRating] = useState(2.5);
+
+  const user = auth.currentUser;
+
+  const addRating = async (e) => {
+    e.preventDefault();
+    setLoading(true);
+    if (user != null) {
+      if (comentario != '' && rating != 0) {
+        try {
+          const docRef = await addDoc(collection(db, 'ratings'), {
+            user: [user.displayName, user.photoURL],
+            rating: rating,
+            like: like,
+            presente: presente,
+            comentario: comentario,
+          });
+          console.log('Document written with ID: ', docRef.id);
+          setLoading(false);
+          setEnviado(true);
+          window.location.reload();
+        } catch (e) {
+          console.error('Error adding document: ', e);
+          setLoading(false);
+        }
+      } else {
+        setVazio(true);
+        setLoading(false);
+      }
+    } else {
+      console.log('Uepa, você não está logado!');
+      setLogado(false);
+      setLoading(false);
+    }
+  };
 
   // Catch Rating value
   const handleRating = (rate: number) => {
     setRating(rate);
+    setVazio(false);
   };
 
   return (
     <>
-      <form className="mt-3">
+      {erro && <p>Eita, rolou um erro. Tente novamente!</p>}
+      <form className="mt-3" onSubmit={addRating} method="post">
         <div className="grid grid-cols-3 p-3 dark:border-slate-600">
           <div className="left flex flex-col items-center gap-2">
             <img
@@ -93,12 +144,14 @@ function MatchInfo(partida: boolean) {
               name="curtir"
               id="curtir"
               className="peer/curtir hidden"
+              onChange={() => setLike(!like)}
             />
             <input
               type="checkbox"
               name="presente"
               id="presente"
               className="peer/presente hidden"
+              onChange={() => setPresente(!presente)}
             />
             <label
               htmlFor="curtir"
@@ -164,7 +217,7 @@ function MatchInfo(partida: boolean) {
                 '#f1d045',
                 '#f1d045',
               ]}
-              initialValue={2.5}
+              initialValue={rating}
 
               // showTooltip
               // tooltipArray={[
@@ -182,38 +235,51 @@ function MatchInfo(partida: boolean) {
             />
           </div>
         </div>
+        {vazio && <p className="text-xs text-red-500">Adicione um comentário!</p>}
         <textarea
           name="comentarios"
           id="comentarios"
           className="dark:bg-slate-800 bg-neutral-100 w-full rounded-xl py-2 px-3 focus-within:outline-none focus-within:ring-1 focus-within:ring-emerald-300"
           placeholder="Comentários"
+          onChange={handleChange}
+          value={comentario}
         ></textarea>
         <div className="grid place-content-center relative">
           <Popup
             trigger={
-              <div className="absolute right-0 bottom-0 bg-emerald-400 hover:bg-emerald-500 hover:ring-4 ring-emerald-200 dark:ring-emerald-700 active:bg-emerald-600 focus:ring-4 focus:bg-emerald-500 p-2 rounded-xl flex items-center gap-3 text-white">
+              <button
+                type="button"
+                className="absolute right-0 bottom-0 bg-emerald-400 hover:bg-emerald-500 hover:ring-4 ring-emerald-200 dark:ring-emerald-700 active:bg-emerald-600 focus:ring-4 focus:bg-emerald-500 p-2 rounded-xl flex items-center gap-3 text-white"
+              >
                 <Share size={20} />
-              </div>
+              </button>
             }
             position={'left center'}
             on={'click'}
             arrow={false}
-            contentStyle={{ border: 'none', boxShadow: 'none' }}
+            contentStyle={{
+              border: 'none',
+              boxShadow: 'none',
+              width: 'auto',
+              backgroundColor: 'transparent',
+              paddingRight: '10px',
+            }}
           >
             <div className="flex flex-row-reverse gap-2">
-              <img
-                src="https://cdn.worldvectorlogo.com/logos/x-2.svg"
-                alt=""
-                className="size-8 dark:invert p-1 rounded-md"
-              />
+              <TwitterShareButton
+                url={'https://www.example.com'}
+                title={'Minha avaliação no BoxToBoxD'}
+                hashtags={['BoxToBoxD']}
+              >
+                <TwitterIcon size={32} round />
+              </TwitterShareButton>
             </div>
           </Popup>
+          {!logado && <p className="text-red-500 text-xs">Você não está logado!</p>}
           <button
-            className="bg-emerald-400 hover:bg-emerald-500 hover:ring-4 ring-emerald-200 dark:ring-emerald-700 active:bg-emerald-600 focus:ring-4 focus:bg-emerald-500 py-2 px-5 rounded-2xl flex items-center gap-3 text-white w-full"
-            onClick={() => {
-              setLoading(!loading);
-            }}
+            className="bg-emerald-400 hover:bg-emerald-500 hover:ring-4 ring-emerald-200 dark:ring-emerald-700 active:bg-emerald-600 focus:ring-4 focus:bg-emerald-500 py-2 px-5 rounded-2xl gap-3 text-white w-full disabled:opacity-30 disabled:cursor-not-allowed"
             type="submit"
+            disabled={!logado || enviado}
           >
             {loading ? (
               <div className="animate-spin">

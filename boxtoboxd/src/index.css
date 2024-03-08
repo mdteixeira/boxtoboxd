@@ -19,7 +19,7 @@
   @apply w-full rounded-3xl px-4 max-w-[900px] mx-1 sm:mx-auto !important;
 }
 
-.sc-gswNZR {
+.sc-gsTEea {
   @apply w-full border dark:bg-slate-800 dark:border-slate-700 dark:text-white rounded-2xl py-2 pl-4 mt-2 focus:outline-none focus:border-emerald-400 focus:ring-1 focus:ring-emerald-200 !important;
 }
 
@@ -37,3 +37,9 @@
 .style-module_starRatingWrap__q-lJC * {
   display: inline-block !important;
 }
+
+/* [role=tooltip].popup-content {
+  background-color: green;
+  
+  width: auto;
+} */
