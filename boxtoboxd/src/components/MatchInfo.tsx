@@ -1,6 +1,5 @@
 import {
   Calendar,
-  Clock,
   MapPin,
   Share,
   SpinnerGap,
@@ -16,7 +15,6 @@ import Popup from 'reactjs-popup';
 
 import { collection, addDoc } from 'firebase/firestore';
 import { auth, db } from '../firebase';
-import { onAuthStateChanged } from 'firebase/auth';
 
 function MatchInfo(partida: boolean) {
   const [like, setLike] = useState(false);
@@ -45,7 +43,7 @@ function MatchInfo(partida: boolean) {
       if (comentario != '' && rating != 0) {
         try {
           const docRef = await addDoc(collection(db, 'ratings'), {
-            user: [user.displayName, user.photoURL],
+            user: [user.displayName, user.photoURL, user.uid],
             rating: rating,
             like: like,
             presente: presente,

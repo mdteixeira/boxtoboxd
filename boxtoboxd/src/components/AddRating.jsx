@@ -5,30 +5,17 @@ import 'reactjs-popup/dist/index.css';
 import AddButton from './AddButton';
 
 import { X } from '@phosphor-icons/react';
-import MatchSearch from './MatchSearch';
 import MatchInfo from './MatchInfo';
 
 import React from 'react';
 import ReactSearchBox from 'react-search-box';
 
-import { Rating } from 'react-simple-star-rating';
 import { auth } from '../firebase';
-import { SoccerBall } from '@phosphor-icons/react/dist/ssr';
 
 function AddRating() {
-  const [ratingValue, setRatingValue] = useState(0);
-
-  const handleRating = (rate) => {
-    setRatingValue(rate);
-  };
+  const [, setRatingValue] = useState(0);
 
   const [partida, setPartida] = useState(false);
-
-  const user = auth.currentUser;
-
-  useEffect;
-
-  useEffect;
 
   return (
     <>
@@ -125,7 +112,7 @@ function AddRating() {
                       onFocus={() => {
                         // console.log('This function is called when is focussed');
                       }}
-                      onChange={(value) => {
+                      onChange={() => {
                         // console.log(value)
                       }}
                       autoFocus

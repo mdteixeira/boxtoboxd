@@ -1,21 +1,23 @@
 import React from 'react';
-import Jogo from '../models/Jogo';
 import {
   X,
   MapPin,
   Calendar,
-  DotsThree,
   UserCircle,
   Star,
   Share,
+  Trash,
 } from '@phosphor-icons/react';
 import { Rating } from 'react-simple-star-rating';
 import Avaliacao from '../models/Avaliacao';
 import { Heart } from '@phosphor-icons/react/dist/ssr';
 import Popup from 'reactjs-popup';
 import { TwitterIcon, TwitterShareButton } from 'react-share';
+import { auth } from '../firebase';
 
 function CardAvaliacao(avaliacao: Avaliacao) {
+  const user = auth.currentUser;
+
   return (
     <div className="border dark:border-slate-700 rounded-3xl p-3 bg-white dark:bg-slate-900">
       <div className="flex items-center justify-between mb-3">
@@ -35,16 +37,18 @@ function CardAvaliacao(avaliacao: Avaliacao) {
           {avaliacao.curtir ? (
             <Heart className="text-3xl text-red-400" weight="fill" />
           ) : (
-            <Heart className="text-3xl" weight="bold" />
+            <Heart className="text-3xl text-neutral-400" weight="regular" />
           )}
-          {/* <button className="px-3 py-1 border dark:border-slate-700 rounded-2xl">
-            Seguindo
-          </button> */}
+          {avaliacao.usuario[2] == user?.uid ? (
+            <Trash className="text-3xl text-neutral-400" weight="bold" />
+          ) : (
+            ''
+          )}
           <Popup
             trigger={
               <button
                 type="button"
-                className=" bg-neutral-400 hover:bg-neutral-500 hover:ring-4 ring-neutral-200 dark:ring-neutral-700 active:bg-neutral-600 focus:ring-4 focus:bg-neutral-500 p-2 rounded-xl flex items-center gap-3 text-white"
+                className=" bg-neutral-400 dark:bg-neutral-700 hover:bg-neutral-500 hover:ring-4 ring-neutral-200 dark:ring-neutral-700 active:bg-neutral-600 focus:ring-4 focus:bg-neutral-500 p-2 rounded-xl flex items-center gap-3 text-white"
               >
                 <Share size={20} />
               </button>
@@ -87,13 +91,6 @@ function CardAvaliacao(avaliacao: Avaliacao) {
           <h2>{avaliacao.jogo.visitante[0]}</h2>
         </div>
       </div>
-      {/* {avaliacao.jogo.eventos.map(() => {})}
-      <ul className="text-slate-500 dark:text-slate-300 text-xs border dark:border-slate-700-e px-5">
-        <li className="flex justify-between">
-          <p>Giovani Augusto</p>
-          <p>45+7</p>
-        </li>
-      </ul> */}
 
       <div className="">
         <div className="grid grid-cols-3 w-full place-items-center p-3 text-xs bg-slate-100 dark:bg-slate-800 rounded-b-2xl dark:rounded-2xl">
