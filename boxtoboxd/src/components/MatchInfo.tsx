@@ -1,11 +1,4 @@
-import {
-  Calendar,
-  MapPin,
-  Share,
-  SpinnerGap,
-  Star,
-  X,
-} from '@phosphor-icons/react';
+import { Calendar, MapPin, Share, SpinnerGap, Star, X } from '@phosphor-icons/react';
 import { Heart } from '@phosphor-icons/react/dist/ssr';
 import React, { useState } from 'react';
 import { TwitterIcon, TwitterShareButton } from 'react-share';

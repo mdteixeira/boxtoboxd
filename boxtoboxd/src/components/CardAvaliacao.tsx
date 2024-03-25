@@ -13,10 +13,16 @@ import Avaliacao from '../models/Avaliacao';
 import { Heart } from '@phosphor-icons/react/dist/ssr';
 import Popup from 'reactjs-popup';
 import { TwitterIcon, TwitterShareButton } from 'react-share';
-import { auth } from '../firebase';
+import { auth, db } from '../firebase';
+import { deleteDoc, doc } from 'firebase/firestore';
 
 function CardAvaliacao(avaliacao: Avaliacao) {
   const user = auth.currentUser;
+
+  async function deletePost(rating) {
+    await deleteDoc(doc(db, 'ratings', rating));
+    window.location.reload();
+  }
 
   return (
     <div className="border dark:border-slate-700 rounded-3xl p-3 bg-white dark:bg-slate-900">
@@ -40,7 +46,13 @@ function CardAvaliacao(avaliacao: Avaliacao) {
             <Heart className="text-3xl text-neutral-400" weight="regular" />
           )}
           {avaliacao.usuario[2] == user?.uid ? (
-            <Trash className="text-3xl text-neutral-400" weight="bold" />
+            <button
+              type="button"
+              className=" bg-neutral-200 dark:bg-neutral-700 dark:hover:bg-neutral-500 hover:bg-neutral-300 hover:ring-4 ring-neutral-100 dark:ring-neutral-700 active:bg-neutral-400 dark:active:bg-neutral-600 focus:ring-4 dark:focus:bg-neutral-500 focus:bg-neutral-400 p-2 rounded-xl flex items-center gap-3 dark:text-white"
+              onClick={() => deletePost(avaliacao.id)}
+            >
+              <Trash size={20} />
+            </button>
           ) : (
             ''
           )}
@@ -48,7 +60,7 @@ function CardAvaliacao(avaliacao: Avaliacao) {
             trigger={
               <button
                 type="button"
-                className=" bg-neutral-400 dark:bg-neutral-700 hover:bg-neutral-500 hover:ring-4 ring-neutral-200 dark:ring-neutral-700 active:bg-neutral-600 focus:ring-4 focus:bg-neutral-500 p-2 rounded-xl flex items-center gap-3 text-white"
+                className=" bg-neutral-200 dark:bg-neutral-700 dark:hover:bg-neutral-500 hover:bg-neutral-300 hover:ring-4 ring-neutral-100 dark:ring-neutral-700 active:bg-neutral-400 dark:active:bg-neutral-600 focus:ring-4 dark:focus:bg-neutral-500 focus:bg-neutral-400 p-2 rounded-xl flex items-center gap-3 dark:text-white"
               >
                 <Share size={20} />
               </button>
@@ -168,13 +180,15 @@ function CardAvaliacao(avaliacao: Avaliacao) {
             )}
           </div>
         </div>
-        <textarea
-          name="comentario"
-          className="bg-slate-50 dark:bg-slate-800 rounded-2xl mt-2 resize-none px-3 py-2 hover:none active:none focus-within:outline-none"
-          id="comentario"
-          readOnly
-          value={avaliacao.comentario}
-        ></textarea>
+        <div className="w-full grid relative">
+          <textarea
+            name="comentario"
+            className="bg-slate-50 dark:bg-slate-800 rounded-2xl mt-2 resize-none px-3 py-2 hover:none active:none focus-within:outline-none text-justify text-pretty overflow-hidden"
+            id="comentario"
+            readOnly
+            value={avaliacao.comentario}
+          ></textarea>
+        </div>
       </div>
     </div>
   );
