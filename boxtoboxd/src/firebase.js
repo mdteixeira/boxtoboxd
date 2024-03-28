@@ -1,12 +1,8 @@
 import { initializeApp } from 'firebase/app';
 import { getFirestore } from 'firebase/firestore';
-import {
-  GoogleAuthProvider,
-  getAuth,
-  setPersistence,
-  signInWithPopup,
-  browserLocalPersistence,
-} from 'firebase/auth';
+import { GoogleAuthProvider, getAuth } from 'firebase/auth';
+
+import { getAnalytics } from 'firebase/analytics';
 
 // Web app's Firebase configuration
 const firebaseConfig = {
@@ -28,3 +24,5 @@ export const db = getFirestore(app);
 
 // Initialize Firebase Authentication and get a reference to the service
 export const auth = getAuth(app);
+
+const analytics = getAnalytics(app);

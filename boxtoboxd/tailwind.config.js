@@ -5,5 +5,7 @@ export default {
     extend: {},
   },
   darkMode: 'selector',
-  plugins: [],
+  plugins: [
+    require('@tailwindcss/line-clamp'),
+  ],
 };

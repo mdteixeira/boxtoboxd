@@ -1,4 +1,11 @@
-import { CircleHalfTilt, Moon, SignOut, Sun, User, UserCircle } from '@phosphor-icons/react';
+import {
+  CircleHalfTilt,
+  Moon,
+  SignOut,
+  Sun,
+  User,
+  UserCircle,
+} from '@phosphor-icons/react';
 import { SignIn } from '@phosphor-icons/react/dist/ssr';
 import {
   browserLocalPersistence,
@@ -10,6 +17,7 @@ import {
 import React, { useEffect, useState } from 'react';
 import Popup from 'reactjs-popup';
 import { auth, provider } from '../firebase';
+import { reload } from '../pages/ListRatings';
 
 function UserMenu() {
   const user = auth.currentUser;
@@ -50,6 +58,7 @@ function UserMenu() {
       // ...
     } else {
     }
+    reload();
   });
 
   function darkTheme() {

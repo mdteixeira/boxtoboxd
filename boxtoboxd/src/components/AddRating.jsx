@@ -28,58 +28,7 @@ function AddRating() {
             >
               <X size={20} weight="bold" />
             </button>
-            {/* {user ? (
-              <>
-                <div className="header text-2xl font-bold mt-2"> Adicionar Partida </div>
-                <div className="content py-3">
-                  {partida == true ? (
-                    <MatchInfo />
-                  ) : (
-                    <>
-                      <label htmlFor="partida" className="">
-                        Qual partida?
-                      </label>
-                      <ReactSearchBox
-                        placeholder="Time 1 x Time 2"
-                        data={[
-                          {
-                            key: 'portuguesa, guarani',
-                            value: 'Portuguesa x Guarani',
-                          },
-                          {
-                            key: 'corinthians, portuguesa',
-                            value: 'Corinthians x Portuguesa',
-                          },
-                          {
-                            key: 'corinthians, palmeiras',
-                            value: 'Corinthians x Palmeiras',
-                          },
-                        ]}
-                        onSelect={() => {
-                          setPartida(true);
-                        }}
-                        onFocus={() => {
-                          // console.log('This function is called when is focussed');
-                        }}
-                        onChange={(value) => {
-                          // console.log(value)
-                        }}
-                        autoFocus
-                        iconBoxSize="48px"
-                      />
-                    </>
-                  )}
-                </div>
-              </>
-            ) : (
-              <>
-                <div className="flex items-center text-emerald-500 gap-2 text-xl py-2 font-medium">
-                  <SoccerBall className="text-emerald-600" weight="duotone" />
-                  <h1>BoxToBoxD</h1>
-                </div>
-                <p>Você deve estar logado para adicionar uma avaliação!</p>
-              </>
-            )} */}
+
             <>
               <div className="header text-2xl font-bold mt-2"> Adicionar Partida </div>
               <div className="content py-3">
@@ -96,14 +45,6 @@ function AddRating() {
                         {
                           key: 'portuguesa, guarani',
                           value: 'Portuguesa x Guarani',
-                        },
-                        {
-                          key: 'corinthians, portuguesa',
-                          value: 'Corinthians x Portuguesa',
-                        },
-                        {
-                          key: 'corinthians, palmeiras',
-                          value: 'Corinthians x Palmeiras',
                         },
                       ]}
                       onSelect={() => {

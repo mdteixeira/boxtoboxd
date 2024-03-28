@@ -8,7 +8,7 @@ import Popup from 'reactjs-popup';
 
 import { collection, addDoc } from 'firebase/firestore';
 import { auth, db } from '../firebase';
-
+import { reload } from '../pages/ListRatings';
 function MatchInfo(partida: boolean) {
   const [like, setLike] = useState(false);
   const [presente, setPresente] = useState(false);
@@ -35,17 +35,18 @@ function MatchInfo(partida: boolean) {
     if (user != null) {
       if (comentario != '' && rating != 0) {
         try {
-          const docRef = await addDoc(collection(db, 'ratings'), {
+          // const docRef =
+          await addDoc(collection(db, 'ratings'), {
             user: [user.displayName, user.photoURL, user.uid],
             rating: rating,
             like: like,
             presente: presente,
             comentario: comentario,
           });
-          console.log('Document written with ID: ', docRef.id);
+          // console.log('Document written with ID: ', docRef.id);
           setLoading(false);
           setEnviado(true);
-          window.location.reload();
+          reload();
         } catch (e) {
           console.error('Error adding document: ', e);
           setLoading(false);
@@ -55,7 +56,7 @@ function MatchInfo(partida: boolean) {
         setLoading(false);
       }
     } else {
-      console.log('Uepa, você não está logado!');
+      console.log('Opa, parece que você não está logado!');
       setLogado(false);
       setLoading(false);
     }
@@ -94,7 +95,7 @@ function MatchInfo(partida: boolean) {
             <h2>Guarani</h2>
           </div>
         </div>
-        <div className="grid grid-cols-2 pb-2 text-slate-500 dark:text-slate-200">
+        {/* <div className="grid grid-cols-2 pb-2 text-slate-500 dark:text-slate-200">
           <ul className=" text-xs border-e px-5">
             <li className="flex justify-between">
               <p>Giovani Augusto</p>
@@ -103,11 +104,11 @@ function MatchInfo(partida: boolean) {
           </ul>
           <ul className=" text-xs border-s px-5">
             <li className="flex flex-row-reverse justify-between">
-              {/* <p>Giovani Augusto</p>
-              <p>45+7</p> */}
+              <p>Giovani Augusto</p>
+              <p>45+7</p>
             </li>
           </ul>
-        </div>
+        </div> */}
         <div className="grid sm:grid-cols-3 gap-1 w-full place-items-center p-1 bg-neutral-100 dark:bg-slate-800 py-2 rounded-2xl">
           <h2 className="text-sm  flex gap-2 items-center">
             <MapPin className="text-base" weight="bold" /> Estádio do Canindé
@@ -180,7 +181,6 @@ function MatchInfo(partida: boolean) {
               peer-checked/presente:hover:bg-emerald-200 dark:peer-checked/presente:hover:bg-emerald-700
               "
             >
-              {/* <Heart weight="fill" className="text-xl my-1 text-red-300" /> */}
               <img
                 src="https://www.svgrepo.com/show/220564/stadium.svg"
                 className="size-6 dark:invert"
@@ -236,36 +236,6 @@ function MatchInfo(partida: boolean) {
           value={comentario}
         ></textarea>
         <div className="grid place-content-center relative">
-          <Popup
-            trigger={
-              <button
-                type="button"
-                className="absolute right-0 bottom-0 bg-emerald-400 hover:bg-emerald-500 hover:ring-4 ring-emerald-200 dark:ring-emerald-700 active:bg-emerald-600 focus:ring-4 focus:bg-emerald-500 p-2 rounded-xl flex items-center gap-3 text-white"
-              >
-                <Share size={20} />
-              </button>
-            }
-            position={'left center'}
-            on={'click'}
-            arrow={false}
-            contentStyle={{
-              border: 'none',
-              boxShadow: 'none',
-              width: 'auto',
-              backgroundColor: 'transparent',
-              paddingRight: '10px',
-            }}
-          >
-            <div className="flex flex-row-reverse gap-2">
-              <TwitterShareButton
-                url={'https://www.example.com'}
-                title={'Minha avaliação no BoxToBoxD'}
-                hashtags={['BoxToBoxD']}
-              >
-                <TwitterIcon size={32} round />
-              </TwitterShareButton>
-            </div>
-          </Popup>
           {!logado && <p className="text-red-500 text-xs">Você não está logado!</p>}
           <button
             className="bg-emerald-400 hover:bg-emerald-500 hover:ring-4 ring-emerald-200 dark:ring-emerald-700 active:bg-emerald-600 focus:ring-4 focus:bg-emerald-500 py-2 px-5 rounded-2xl gap-3 text-white w-full disabled:opacity-30 disabled:cursor-not-allowed"

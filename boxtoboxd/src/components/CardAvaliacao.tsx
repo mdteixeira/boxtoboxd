@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import {
   X,
   MapPin,
@@ -15,37 +15,40 @@ import Popup from 'reactjs-popup';
 import { TwitterIcon, TwitterShareButton } from 'react-share';
 import { auth, db } from '../firebase';
 import { deleteDoc, doc } from 'firebase/firestore';
+import { reload } from '../pages/ListRatings';
 
 function CardAvaliacao(avaliacao: Avaliacao) {
   const user = auth.currentUser;
 
-  async function deletePost(rating) {
+  const [showAll, setShowAll] = useState(false);
+
+  async function deletePost(rating: string) {
     await deleteDoc(doc(db, 'ratings', rating));
-    window.location.reload();
+    reload();
   }
 
   return (
     <div className="border dark:border-slate-700 rounded-3xl p-3 bg-white dark:bg-slate-900">
       <div className="flex items-center justify-between mb-3">
         <div className="flex gap-2 items-center">
-          {avaliacao.usuario[1] == '' ? (
+          {avaliacao.user[1] == '' ? (
             <UserCircle className="size-10 text-emerald-500" weight="duotone" />
           ) : (
             <img
-              src={avaliacao.usuario[1]}
+              src={avaliacao.user[1]}
               alt=""
               className="size-10 rounded-full border-2 dark:border-slate-700"
             />
           )}
-          <h3>{avaliacao.usuario[0]}</h3>
+          <h3>{avaliacao.user[0]}</h3>
         </div>
-        <div className="inline-flex gap-2 items-center">
-          {avaliacao.curtir ? (
-            <Heart className="text-3xl text-red-400" weight="fill" />
-          ) : (
-            <Heart className="text-3xl text-neutral-400" weight="regular" />
-          )}
-          {avaliacao.usuario[2] == user?.uid ? (
+        {avaliacao.user[2] == user?.uid ? (
+          <div className="inline-flex gap-2 items-center">
+            {avaliacao.like ? (
+              <Heart className="text-3xl text-red-400" weight="fill" />
+            ) : (
+              <Heart className="text-3xl text-neutral-400" weight="regular" />
+            )}
             <button
               type="button"
               className=" bg-neutral-200 dark:bg-neutral-700 dark:hover:bg-neutral-500 hover:bg-neutral-300 hover:ring-4 ring-neutral-100 dark:ring-neutral-700 active:bg-neutral-400 dark:active:bg-neutral-600 focus:ring-4 dark:focus:bg-neutral-500 focus:bg-neutral-400 p-2 rounded-xl flex items-center gap-3 dark:text-white"
@@ -53,40 +56,39 @@ function CardAvaliacao(avaliacao: Avaliacao) {
             >
               <Trash size={20} />
             </button>
-          ) : (
-            ''
-          )}
-          <Popup
-            trigger={
-              <button
-                type="button"
-                className=" bg-neutral-200 dark:bg-neutral-700 dark:hover:bg-neutral-500 hover:bg-neutral-300 hover:ring-4 ring-neutral-100 dark:ring-neutral-700 active:bg-neutral-400 dark:active:bg-neutral-600 focus:ring-4 dark:focus:bg-neutral-500 focus:bg-neutral-400 p-2 rounded-xl flex items-center gap-3 dark:text-white"
-              >
-                <Share size={20} />
-              </button>
-            }
-            position={'left center'}
-            on={'click'}
-            arrow={false}
-            contentStyle={{
-              border: 'none',
-              boxShadow: 'none',
-              width: 'auto',
-              backgroundColor: 'transparent',
-              paddingRight: '10px',
-            }}
-          >
-            <div className="flex flex-row-reverse gap-2">
-              <TwitterShareButton
-                url={'http://localhost:5173/'}
-                title={`Minha nota para ${avaliacao.jogo.mandante[0]} ${avaliacao.jogo.gols[0]} x ${avaliacao.jogo.gols[1]} ${avaliacao.jogo.visitante[0]} no BoxToBoxD é de ${avaliacao.rating}⭐`}
-                hashtags={['BoxToBoxD']}
-              >
-                <TwitterIcon size={32} round />
-              </TwitterShareButton>
-            </div>
-          </Popup>
-        </div>
+            <Popup
+              trigger={
+                <button
+                  type="button"
+                  className=" bg-neutral-200 dark:bg-neutral-700 dark:hover:bg-neutral-500 hover:bg-neutral-300 hover:ring-4 ring-neutral-100 dark:ring-neutral-700 active:bg-neutral-400 dark:active:bg-neutral-600 focus:ring-4 dark:focus:bg-neutral-500 focus:bg-neutral-400 p-2 rounded-xl flex items-center gap-3 dark:text-white"
+                >
+                  <Share size={20} />
+                </button>
+              }
+              position={'bottom center'}
+              on={'click'}
+              arrow={false}
+              contentStyle={{
+                border: 'none',
+                boxShadow: 'none',
+                width: 'auto',
+                backgroundColor: 'transparent',
+              }}
+            >
+              <div className="flex flex-row-reverse gap-2">
+                <TwitterShareButton
+                  url={'http://localhost:5173/'}
+                  title={`Minha nota para ${avaliacao.jogo.mandante[0]} ${avaliacao.jogo.gols[0]} x ${avaliacao.jogo.gols[1]} ${avaliacao.jogo.visitante[0]} no BoxToBoxD é de ${avaliacao.rating}⭐`}
+                  hashtags={['BoxToBoxD']}
+                >
+                  <TwitterIcon size={32} round />
+                </TwitterShareButton>
+              </div>
+            </Popup>
+          </div>
+        ) : (
+          ''
+        )}
       </div>
       <div className="grid grid-cols-3 p-3 bg-slate-50 dark:bg-slate-900 rounded-t-2xl">
         <div className="left flex flex-col items-center gap-2">
@@ -113,9 +115,9 @@ function CardAvaliacao(avaliacao: Avaliacao) {
             <h2 className=" text-slate-500 dark:text-slate-300 flex gap-1 pr-2 items-center">
               <Calendar weight="bold" /> {avaliacao.jogo.data[0]}
             </h2>
-            {/* <h2 className=" text-slate-500 dark:text-slate-300 items-center">
+            <h2 className=" text-slate-500 dark:text-slate-300 items-center">
               {avaliacao.jogo.data[1]}
-            </h2> */}
+            </h2>
           </div>
           <h2 className=" text-slate-500 dark:text-slate-300 flex gap-2 items-center">
             {avaliacao.jogo.torneio}
@@ -149,19 +151,19 @@ function CardAvaliacao(avaliacao: Avaliacao) {
                   '#f1d045',
                 ]}
                 initialValue={avaliacao.rating}
-                // tooltipClassName="tooltip"
-                // tooltipArray={[
-                //   'Tenebroso',
-                //   'Terrível',
-                //   'Ruim demais',
-                //   'Ruim',
-                //   'Assistível',
-                //   'Legalzinho',
-                //   'Bom',
-                //   'Jogão',
-                //   'Jogaço',
-                //   'Absolute Cinema',
-                // ]}
+                tooltipClassName="tooltip"
+                tooltipArray={[
+                  'Tenebroso',
+                  'Terrível',
+                  'Ruim demais',
+                  'Ruim',
+                  'Assistível',
+                  'Legalzinho',
+                  'Bom',
+                  'Jogão',
+                  'Jogaço',
+                  'Absolute Cinema',
+                ]}
               />
             </div>
           </div>
@@ -180,15 +182,19 @@ function CardAvaliacao(avaliacao: Avaliacao) {
             )}
           </div>
         </div>
-        <div className="w-full grid relative">
-          <textarea
-            name="comentario"
-            className="bg-slate-50 dark:bg-slate-800 rounded-2xl mt-2 resize-none px-3 py-2 hover:none active:none focus-within:outline-none text-justify text-pretty overflow-hidden"
-            id="comentario"
-            readOnly
-            value={avaliacao.comentario}
-          ></textarea>
-        </div>
+        <p
+          className={
+            showAll
+              ? 'bg-slate-50 dark:bg-slate-800 rounded-2xl mt-2 resize-none pl-3 py-2 hover:none active:none focus-within:outline-none  cursor-pointer'
+              : 'bg-slate-50 dark:bg-slate-800 rounded-2xl mt-2 resize-none pl-3 py-2 hover:none active:none focus-within:outline-none  cursor-pointer line-clamp-3 h-[3.5lh]'
+          }
+          id="comentario"
+          onClick={() => {
+            setShowAll(!showAll);
+          }}
+        >
+          {avaliacao.comentario}
+        </p>
       </div>
     </div>
   );

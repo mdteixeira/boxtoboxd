@@ -11,10 +11,6 @@ export default function MatchSearch() {
           key: 'portuguesavsguarani',
           value: 'Portuguesa x Guarani',
         },
-        {
-          key: 'corinthiansvsportuguesa',
-          value: 'Corinthians x Portuguesa',
-        },
       ]}
       onSelect={() => {
         return true;
