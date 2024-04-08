@@ -4,7 +4,7 @@
 @tailwind components;
 @tailwind utilities;
 
-* {
+body {
   font-family: 'Rubik';
 }
 
@@ -35,11 +35,5 @@
 }
 
 .style-module_starRatingWrap__q-lJC * {
-  display: inline-block !important;
+  display: inline-block;
 }
-
-/* [role=tooltip].popup-content {
-  background-color: green;
-  
-  width: auto;
-} */

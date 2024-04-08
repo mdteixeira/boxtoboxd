@@ -8,7 +8,6 @@ import Popup from 'reactjs-popup';
 
 import { collection, addDoc } from 'firebase/firestore';
 import { auth, db } from '../firebase';
-import { reload } from '../pages/ListRatings';
 function MatchInfo(partida: boolean) {
   const [like, setLike] = useState(false);
   const [presente, setPresente] = useState(false);
@@ -35,8 +34,7 @@ function MatchInfo(partida: boolean) {
     if (user != null) {
       if (comentario != '' && rating != 0) {
         try {
-          // const docRef =
-          await addDoc(collection(db, 'ratings'), {
+          const docRef = await addDoc(collection(db, 'ratings'), {
             user: [user.displayName, user.photoURL, user.uid],
             rating: rating,
             like: like,
@@ -46,7 +44,7 @@ function MatchInfo(partida: boolean) {
           // console.log('Document written with ID: ', docRef.id);
           setLoading(false);
           setEnviado(true);
-          reload();
+          // reload();
         } catch (e) {
           console.error('Error adding document: ', e);
           setLoading(false);
@@ -56,7 +54,7 @@ function MatchInfo(partida: boolean) {
         setLoading(false);
       }
     } else {
-      console.log('Opa, parece que você não está logado!');
+      // console.log('Opa, parece que você não está logado!');
       setLogado(false);
       setLoading(false);
     }
@@ -189,8 +187,9 @@ function MatchInfo(partida: boolean) {
               No estádio
             </label>
           </div>
-          <div className="grid place-content-center w-full sm:w-1/3 pt-2">
+          <div className="grid place-content-center items-center sm:w-1/3 w-full pt-4 pb-2 sm:py-0">
             <Rating
+              className="h-full scale-150"
               fillIcon={<Star className="text-2xl" weight="fill" />}
               emptyIcon={<Star className="text-2xl dark:text-slate-600" />}
               allowFraction
@@ -209,7 +208,6 @@ function MatchInfo(partida: boolean) {
                 '#f1d045',
               ]}
               initialValue={rating}
-
               // showTooltip
               // tooltipArray={[
               //   'Tenebroso',
@@ -223,6 +221,7 @@ function MatchInfo(partida: boolean) {
               //   'Jogaço',
               //   'Absolute Cinema',
               // ]}
+              // tooltipStyle={{position: 'absolute', fontSize: '12px' }}
             />
           </div>
         </div>

@@ -15,7 +15,6 @@ import Popup from 'reactjs-popup';
 import { TwitterIcon, TwitterShareButton } from 'react-share';
 import { auth, db } from '../firebase';
 import { deleteDoc, doc } from 'firebase/firestore';
-import { reload } from '../pages/ListRatings';
 
 function CardAvaliacao(avaliacao: Avaliacao) {
   const user = auth.currentUser;
@@ -24,7 +23,7 @@ function CardAvaliacao(avaliacao: Avaliacao) {
 
   async function deletePost(rating: string) {
     await deleteDoc(doc(db, 'ratings', rating));
-    reload();
+    // reload();
   }
 
   return (
@@ -51,7 +50,7 @@ function CardAvaliacao(avaliacao: Avaliacao) {
             )}
             <button
               type="button"
-              className=" bg-neutral-200 dark:bg-neutral-700 dark:hover:bg-neutral-500 hover:bg-neutral-300 hover:ring-4 ring-neutral-100 dark:ring-neutral-700 active:bg-neutral-400 dark:active:bg-neutral-600 focus:ring-4 dark:focus:bg-neutral-500 focus:bg-neutral-400 p-2 rounded-xl flex items-center gap-3 dark:text-white"
+              className=" bg-neutral-100 dark:bg-neutral-700 dark:hover:bg-neutral-500 hover:bg-neutral-200 hover:ring-4 ring-neutral-100 dark:ring-neutral-700 active:bg-neutral-300 dark:active:bg-neutral-600 focus:ring-4 dark:focus:bg-neutral-500 focus:bg-neutral-400 p-2 rounded-xl flex items-center gap-3 dark:text-white"
               onClick={() => deletePost(avaliacao.id)}
             >
               <Trash size={20} />
@@ -60,7 +59,7 @@ function CardAvaliacao(avaliacao: Avaliacao) {
               trigger={
                 <button
                   type="button"
-                  className=" bg-neutral-200 dark:bg-neutral-700 dark:hover:bg-neutral-500 hover:bg-neutral-300 hover:ring-4 ring-neutral-100 dark:ring-neutral-700 active:bg-neutral-400 dark:active:bg-neutral-600 focus:ring-4 dark:focus:bg-neutral-500 focus:bg-neutral-400 p-2 rounded-xl flex items-center gap-3 dark:text-white"
+                  className=" bg-neutral-100 dark:bg-neutral-700 dark:hover:bg-neutral-500 hover:bg-neutral-200 hover:ring-4 ring-neutral-100 dark:ring-neutral-700 active:bg-neutral-300 dark:active:bg-neutral-600 focus:ring-4 dark:focus:bg-neutral-500 focus:bg-neutral-400 p-2 rounded-xl flex items-center gap-3 dark:text-white"
                 >
                   <Share size={20} />
                 </button>
@@ -77,7 +76,7 @@ function CardAvaliacao(avaliacao: Avaliacao) {
             >
               <div className="flex flex-row-reverse gap-2">
                 <TwitterShareButton
-                  url={'http://localhost:5173/'}
+                  url={'http://mdteixeira.github.io/boxtoboxd'}
                   title={`Minha nota para ${avaliacao.jogo.mandante[0]} ${avaliacao.jogo.gols[0]} x ${avaliacao.jogo.gols[1]} ${avaliacao.jogo.visitante[0]} no BoxToBoxD é de ${avaliacao.rating}⭐`}
                   hashtags={['BoxToBoxD']}
                 >
@@ -127,45 +126,43 @@ function CardAvaliacao(avaliacao: Avaliacao) {
 
       <div className="mt-3 flex flex-col">
         <div className="grid grid-cols-2 items-center w-full">
-          <div className="grid">
-            <div className="">
-              <Rating
-                fillIcon={<Star className="text-2xl" weight="fill" />}
-                emptyIcon={<Star className="text-2xl dark:text-slate-600" />}
-                className="float-start"
-                style={{ display: 'flex' }}
-                size={32}
-                allowFraction
-                transition
-                readonly
-                fillColorArray={[
-                  '#f14f45',
-                  '#f14f45',
-                  '#f16c45',
-                  '#f16c45',
-                  '#f18845',
-                  '#f18845',
-                  '#f1b345',
-                  '#f1b345',
-                  '#f1d045',
-                  '#f1d045',
-                ]}
-                initialValue={avaliacao.rating}
-                tooltipClassName="tooltip"
-                tooltipArray={[
-                  'Tenebroso',
-                  'Terrível',
-                  'Ruim demais',
-                  'Ruim',
-                  'Assistível',
-                  'Legalzinho',
-                  'Bom',
-                  'Jogão',
-                  'Jogaço',
-                  'Absolute Cinema',
-                ]}
-              />
-            </div>
+          <div className="">
+            <Rating
+              fillIcon={<Star className="text-2xl" weight="fill" />}
+              emptyIcon={<Star className="text-2xl dark:text-slate-600" />}
+              className="float-start"
+              style={{ display: 'flex' }}
+              size={36}
+              allowFraction
+              transition
+              readonly
+              fillColorArray={[
+                '#f14f45',
+                '#f14f45',
+                '#f16c45',
+                '#f16c45',
+                '#f18845',
+                '#f18845',
+                '#f1b345',
+                '#f1b345',
+                '#f1d045',
+                '#f1d045',
+              ]}
+              initialValue={avaliacao.rating}
+              tooltipClassName="tooltip"
+              tooltipArray={[
+                'Tenebroso',
+                'Terrível',
+                'Ruim demais',
+                'Ruim',
+                'Assistível',
+                'Legalzinho',
+                'Bom',
+                'Jogão',
+                'Jogaço',
+                'Absolute Cinema',
+              ]}
+            />
           </div>
           <div className="flex gap-3 items-center justify-end">
             {avaliacao.presente == true ? (

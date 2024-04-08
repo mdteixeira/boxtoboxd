@@ -7,8 +7,8 @@ import UserMenu from './UserMenu';
 function Navbar() {
   return (
     <>
-      <header className="w-full flex justify-between items-center gap-1 sticky top-0 pt-2 container mx-auto bg-gradient-to-b from-slate-200 dark:from-slate-800 to-transparent z-50">
-        <div className="flex justify-between w-full items-center md:p-2 p-1 sm:rounded-2xl rounded-e-2xl bg-neutral-50 dark:bg-slate-900 border dark:border-slate-800 z-10">
+      <header className="w-full flex justify-between items-center gap-1 sticky top-0 md:pt-2 container mx-auto bg-gradient-to-b from-slate-200 dark:from-slate-800 to-transparent z-50">
+        <div className="flex justify-between w-full items-center md:p-2 p-2 md:rounded-2xl md:rounded-e-2xl rounded-ee-2xl bg-neutral-50 dark:bg-slate-900 border dark:border-slate-800 z-10">
           <div className="inline-flex gap-1 items-center">
             <SoccerBall
               className="text-3xl text-emerald-700 dark:text-emerald-500"
@@ -32,7 +32,7 @@ function Navbar() {
               Amigos
             </a>
           </nav>
-          <div className="hidden sm:block">
+          <div className="hidden md:block">
             <AddRating />
           </div>
         </div>

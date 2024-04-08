@@ -9,7 +9,6 @@ import {
 import { SignIn } from '@phosphor-icons/react/dist/ssr';
 import {
   browserLocalPersistence,
-  onAuthStateChanged,
   setPersistence,
   signInWithPopup,
   signOut,
@@ -17,7 +16,7 @@ import {
 import React, { useEffect, useState } from 'react';
 import Popup from 'reactjs-popup';
 import { auth, provider } from '../firebase';
-import { reload } from '../pages/ListRatings';
+import { checkAuth } from '../service/FirebaseServices';
 
 function UserMenu() {
   const user = auth.currentUser;
@@ -49,16 +48,8 @@ function UserMenu() {
       });
   }
 
-  onAuthStateChanged(auth, (user) => {
-    if (user) {
-      // User is signed in, see docs for a list of available properties
-      // https://firebase.google.com/docs/reference/js/auth.user
-      const uid = user.uid;
-      setLogado(true);
-      // ...
-    } else {
-    }
-    reload();
+  useEffect(() => {
+    checkAuth(setLogado);
   });
 
   function darkTheme() {
@@ -92,7 +83,6 @@ function UserMenu() {
           ) : (
             <img
               className="rounded-full border-2 border-emerald-300 object-cover  size-10"
-              // src={auth.currentUser?.photoURL != null ? auth.currentUser?.photoURL : ''}
               src={
                 user?.photoURL != null
                   ? user?.photoURL

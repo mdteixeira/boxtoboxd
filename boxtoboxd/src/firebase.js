@@ -6,12 +6,12 @@ import { getAnalytics } from 'firebase/analytics';
 
 // Web app's Firebase configuration
 const firebaseConfig = {
-  apiKey: 'AIzaSyBtwWS8-luHenoqfrUIQpirCqslRHcxbLU',
-  authDomain: 'boxtobox-d.firebaseapp.com',
-  projectId: 'boxtobox-d',
-  storageBucket: 'boxtobox-d.appspot.com',
-  messagingSenderId: '449872212586',
-  appId: '1:449872212586:web:7b7b8b20ef622a4466d013',
+  apiKey: "AIzaSyASHFIeKy4X3G2upMMOhvwmzMLp4zQKlYE",
+  authDomain: "boxtobox-test.firebaseapp.com",
+  projectId: "boxtobox-test",
+  storageBucket: "boxtobox-test.appspot.com",
+  messagingSenderId: "677706304606",
+  appId: "1:677706304606:web:4d1578b337659a3bf678cf"
 };
 
 export const provider = new GoogleAuthProvider();
