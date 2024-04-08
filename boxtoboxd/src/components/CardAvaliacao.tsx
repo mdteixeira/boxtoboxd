@@ -185,7 +185,7 @@ function CardAvaliacao(avaliacao: Avaliacao) {
         <p
           className={
             showAll
-              ? 'bg-slate-50 dark:bg-slate-800 rounded-2xl mt-2 resize-none pl-3 py-2 hover:none active:none focus-within:outline-none  cursor-pointer'
+              ? 'bg-slate-50 dark:bg-slate-800 rounded-2xl mt-2 resize-none pl-3 py-2 hover:none active:none focus-within:outline-none  cursor-pointer min-h-[3.5lh]'
               : 'bg-slate-50 dark:bg-slate-800 rounded-2xl mt-2 resize-none pl-3 py-2 hover:none active:none focus-within:outline-none  cursor-pointer line-clamp-3 h-[3.5lh]'
           }
           id="comentario"
