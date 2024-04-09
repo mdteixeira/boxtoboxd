@@ -1,7 +1,7 @@
 import { SoccerBall } from '@phosphor-icons/react/dist/ssr';
 import React from 'react';
 import AddRating from './AddRating';
-import { UserCircle } from '@phosphor-icons/react';
+import { ProhibitInset, UserCircle } from '@phosphor-icons/react';
 import UserMenu from './UserMenu';
 
 function Navbar() {
@@ -20,17 +20,38 @@ function Navbar() {
             <h1 className="md:hidden text-lg block font-semibold text-emerald-500">
               BoxToBoxD
             </h1>
+            <h3 className="text-xs bg-amber-300 px-2 py-0.5 rounded-md text-black">
+              Beta v0.3
+            </h3>
           </div>
           <nav className="md:flex w-full justify-evenly hidden">
-            <a href="#" className="hover:text-emerald-500 font-medium">
-              Jogos ao vivo
-            </a>
-            <a href="#" className="hover:text-emerald-500 font-medium">
-              Top partidas
-            </a>
-            <a href="#" className="hover:text-emerald-500 font-medium">
-              Amigos
-            </a>
+            <div className="relative">
+              <a href="#" className="hover:text-emerald-500 font-medium">
+                Jogos ao vivo
+              </a>
+              <ProhibitInset
+                className="absolute z-20 top-[-5px] right-[-13px] text-red-500 text-lg"
+                weight="duotone"
+              />
+            </div>
+            <div className="relative">
+              <a href="#" className="hover:text-emerald-500 font-medium">
+                Top Partidas
+              </a>
+              <ProhibitInset
+                className="absolute z-20 top-[-5px] right-[-13px] text-red-500 text-lg"
+                weight="duotone"
+              />
+            </div>
+            <div className="relative">
+              <a href="#" className="hover:text-emerald-500 font-medium">
+                Amigos
+              </a>
+              <ProhibitInset
+                className="absolute z-20 top-[-5px] right-[-13px] text-red-500 text-lg"
+                weight="duotone"
+              />
+            </div>
           </nav>
           <div className="hidden md:block">
             <AddRating />
