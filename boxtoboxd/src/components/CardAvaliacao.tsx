@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import {
   X,
   MapPin,
@@ -15,9 +15,12 @@ import Popup from 'reactjs-popup';
 import { TwitterIcon, TwitterShareButton } from 'react-share';
 import { auth, db } from '../firebase';
 import { deleteDoc, doc } from 'firebase/firestore';
+import { getAuth, onAuthStateChanged } from 'firebase/auth';
 
 function CardAvaliacao(avaliacao: Avaliacao) {
   const user = auth.currentUser;
+
+  const [logado, setLogado] = useState(user != null);
 
   const [showAll, setShowAll] = useState(false);
 
@@ -25,6 +28,13 @@ function CardAvaliacao(avaliacao: Avaliacao) {
     await deleteDoc(doc(db, 'ratings', rating));
     // reload();
   }
+
+  useEffect(() => {
+    const auth = getAuth();
+    onAuthStateChanged(auth, (user) => {
+      setLogado(!!user);
+    });
+  }, []);
 
   return (
     <div className="border dark:border-slate-700 rounded-3xl p-3 bg-white dark:bg-slate-900">
@@ -114,9 +124,9 @@ function CardAvaliacao(avaliacao: Avaliacao) {
             <h2 className=" text-slate-500 dark:text-slate-300 flex gap-1 pr-2 items-center">
               <Calendar weight="bold" /> {avaliacao.jogo.data[0]}
             </h2>
-            <h2 className=" text-slate-500 dark:text-slate-300 items-center">
+            {/* <h2 className=" text-slate-500 dark:text-slate-300 items-center">
               {avaliacao.jogo.data[1]}
-            </h2>
+            </h2> */}
           </div>
           <h2 className=" text-slate-500 dark:text-slate-300 flex gap-2 items-center">
             {avaliacao.jogo.torneio}

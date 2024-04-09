@@ -11,7 +11,7 @@ import {
 } from '@phosphor-icons/react';
 import Jogo from '../models/Jogo';
 import Avaliacao from '../models/Avaliacao';
-import { fetchPosts } from '../service/FirebaseServices';
+import { checkAuth, fetchPosts } from '../service/FirebaseServices';
 
 function ListRatings() {
   const [ratings, setRatings] = useState<any>([]);
