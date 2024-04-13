@@ -1,14 +1,22 @@
-import { Calendar, MapPin, Share, SpinnerGap, Star, X } from '@phosphor-icons/react';
+import {
+  Calendar,
+  Clock,
+  MapPin,
+  Share,
+  SpinnerGap,
+  Star,
+  X,
+} from '@phosphor-icons/react';
 import { Heart } from '@phosphor-icons/react/dist/ssr';
 import React, { useState } from 'react';
-import { TwitterIcon, TwitterShareButton } from 'react-share';
 
 import { Rating } from 'react-simple-star-rating';
-import Popup from 'reactjs-popup';
 
 import { collection, addDoc } from 'firebase/firestore';
 import { auth, db } from '../firebase';
-function MatchInfo(partida: boolean) {
+import { Match } from '../models/Match';
+
+function MatchInfo(partida: Match) {
   const [like, setLike] = useState(false);
   const [presente, setPresente] = useState(false);
   const [loading, setLoading] = useState(false);
@@ -40,8 +48,9 @@ function MatchInfo(partida: boolean) {
             like: like,
             presente: presente,
             comentario: comentario,
+            partida: partida.id,
           });
-          // console.log('Document written with ID: ', docRef.id);
+          console.log('Document written with ID: ', docRef.id);
           setLoading(false);
           setEnviado(true);
           // reload();
@@ -71,53 +80,50 @@ function MatchInfo(partida: boolean) {
       {erro && <p>Eita, rolou um erro. Tente novamente!</p>}
       <form className="mt-3" onSubmit={addRating} method="post">
         <div className="grid grid-cols-3 p-3 dark:border-slate-600">
-          <div className="left flex flex-col items-center gap-2">
+          <div className="left home flex flex-col items-center gap-2">
             <img
-              src="https://ssl.gstatic.com/onebox/media/sports/logos/a9BSJk9BywwXNj4LJPq5jg_96x96.png"
+              src={partida.homeTeam.crest}
               className="size-12"
-              alt=""
+              alt={partida.homeTeam.name}
             />
 
-            <h2 className="">Portuguesa</h2>
+            <h2 className="">{partida.homeTeam.shortName}</h2>
           </div>
           <div className="placar tabular-nums flex items-center justify-around text-2xl font-bold">
-            1 {<X size={16} />} 0
+            {partida.score.fullTime.home} {<X size={16} />} {partida.score.fullTime.away}
           </div>
-          <div className="right flex flex-col items-center gap-2">
-            <img
-              src="https://ssl.gstatic.com/onebox/media/sports/logos/fxJElzuqyxKVwsUcfsC49Q_96x96.png"
-              className="size-12"
-              alt=""
-            />
+          <div className="right away flex flex-col items-center gap-2">
+            <img src={partida.awayTeam.crest} className="size-12" alt="" />
 
-            <h2>Guarani</h2>
+            <h2>{partida.awayTeam.shortName}</h2>
           </div>
         </div>
-        {/* <div className="grid grid-cols-2 pb-2 text-slate-500 dark:text-slate-200">
-          <ul className=" text-xs border-e px-5">
-            <li className="flex justify-between">
-              <p>Giovani Augusto</p>
-              <p>45+7</p>
-            </li>
-          </ul>
-          <ul className=" text-xs border-s px-5">
-            <li className="flex flex-row-reverse justify-between">
-              <p>Giovani Augusto</p>
-              <p>45+7</p>
-            </li>
-          </ul>
-        </div> */}
-        <div className="grid sm:grid-cols-3 gap-1 w-full place-items-center p-1 bg-neutral-100 dark:bg-slate-800 py-2 rounded-2xl">
+        <div className="grid sm:grid-cols-3 gap-1 w-full place-items-center p-1 bg-slate-100 dark:bg-slate-800 py-2 rounded-2xl">
           <h2 className="text-sm  flex gap-2 items-center">
-            <MapPin className="text-base" weight="bold" /> Estádio do Canindé
+            <MapPin className="text-base" weight="bold" /> {partida.area.name}
           </h2>
           <div className="flex gap-2">
-            <h2 className="text-sm  flex gap-2 pr-2 items-center border-e">
-              <Calendar className="text-base" weight="bold" /> 18/02/2024
+            <h2 className="text-sm  flex gap-2 pr-2 items-center">
+              <Calendar className="text-base" weight="bold" />
+              {new Date(partida.utcDate).toLocaleDateString()}
             </h2>
-            <h2 className="text-sm  items-center">18:00</h2>
+            <h2 className="text-sm  flex gap-2 pr-2 items-center">
+              <Clock className="text-base" weight="bold" />
+              {new Date(partida.utcDate).toLocaleTimeString().slice(0, 5)}
+            </h2>
           </div>
-          <h2 className="text-sm  flex gap-2 items-center">Paulistão</h2>
+          <div className="flex gap-2">
+            <img
+              className="text-sm  flex gap-2 items-center size-7"
+              src={partida.competition.emblem}
+            ></img>
+            <h2 className="text-sm  flex gap-2 items-center">
+              {partida.competition.name}
+            </h2>
+          </div>
+        </div>
+        <div className="flex flex-wrap py-3">
+          <div className="grid place-content-center items-center sm:w-1/3 w-full pt-4 pb-2 sm:py-0"></div>
         </div>
         <div className="flex flex-wrap py-3">
           <div className="grid grid-cols-2 gap-2 w-full sm:w-2/3">
@@ -147,9 +153,9 @@ function MatchInfo(partida: boolean) {
               htmlFor="curtir"
               className="flex items-center gap-2 rounded-2xl px-4 py-2 cursor-pointer justify-center border-2 dark:border-slate-700 transition-colors
               
-              bg-neutral-50 dark:bg-slate-800
-              active:bg-neutral-300 dark:active:bg-slate-950
-              hover:bg-neutral-200  dark:hover:bg-slate-900
+              bg-slate-50 dark:bg-slate-800
+              active:bg-slate-300 dark:active:bg-slate-950
+              hover:bg-slate-200  dark:hover:bg-slate-900
               
               peer-checked/curtir:active:bg-emerald-300 dark:peer-checked/curtir:active:bg-emerald-800
               peer-checked/curtir:bg-emerald-100 dark:peer-checked/curtir:bg-emerald-500
@@ -168,9 +174,9 @@ function MatchInfo(partida: boolean) {
               htmlFor="presente"
               className="flex items-center gap-2 rounded-2xl px-4 py-2 cursor-pointer justify-center border-2 dark:border-slate-700 transition-colors
               
-              bg-neutral-50 dark:bg-slate-800
-              active:bg-neutral-300 dark:active:bg-slate-950
-              hover:bg-neutral-200  dark:hover:bg-slate-900
+              bg-slate-50 dark:bg-slate-800
+              active:bg-slate-300 dark:active:bg-slate-950
+              hover:bg-slate-200  dark:hover:bg-slate-900
               
               peer-checked/presente:active:bg-emerald-300 dark:peer-checked/presente:active:bg-emerald-800
               peer-checked/presente:bg-emerald-100 dark:peer-checked/presente:bg-emerald-500
@@ -184,7 +190,7 @@ function MatchInfo(partida: boolean) {
                 className="size-6 dark:invert"
                 alt=""
               />
-              No estádio
+              Do estádio
             </label>
           </div>
           <div className="grid place-content-center items-center sm:w-1/3 w-full pt-4 pb-2 sm:py-0">
@@ -229,7 +235,7 @@ function MatchInfo(partida: boolean) {
         <textarea
           name="comentarios"
           id="comentarios"
-          className="dark:bg-slate-800 bg-neutral-100 w-full rounded-xl py-2 px-3 focus-within:outline-none focus-within:ring-1 focus-within:ring-emerald-300"
+          className="dark:bg-slate-800 bg-slate-100 w-full rounded-xl py-2 px-3 focus-within:outline-none focus-within:ring-1 focus-within:ring-emerald-300"
           placeholder="Comentários"
           onChange={handleChange}
           value={comentario}

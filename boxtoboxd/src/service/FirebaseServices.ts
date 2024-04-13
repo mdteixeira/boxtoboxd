@@ -11,7 +11,7 @@ export const fetchPosts = async (setRatings: Function) => {
 
 export const checkAuth = (setLogado: Function) => {
   onAuthStateChanged(auth, (user) => {
-    console.log('authState changed (service) : ', user != null);
+    // console.log('authState changed (service) : ', user != null);
     if (user) {
       setLogado(true);
     } else setLogado(false);

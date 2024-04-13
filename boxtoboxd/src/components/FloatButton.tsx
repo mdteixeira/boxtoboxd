@@ -1,6 +1,6 @@
 import React from 'react';
-import AddRating from './AddRating';
 import { Broadcast, Gear, ProhibitInset, SoccerBall, Users } from '@phosphor-icons/react';
+import AddRating from './AddRating';
 
 function FloatButton() {
   return (
@@ -30,7 +30,7 @@ function FloatButton() {
           <p>Partidas</p>
         </div>
         <div className="">
-          <AddRating />
+          <AddRating props={null} />
         </div>
         <div className="">
           <div className="relative">

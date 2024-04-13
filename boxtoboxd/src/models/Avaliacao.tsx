@@ -1,9 +1,9 @@
-import Jogo from './Jogo';
+import { Match } from "./Match";
 
 export default interface Avaliacao {
   id: string;
   user: [nome: string, foto: string, uid: string];
-  jogo: Jogo;
+  partida: Match["id"];
   like: boolean;
   presente: boolean;
   rating: number;

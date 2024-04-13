@@ -7,6 +7,7 @@ import {
   Star,
   Share,
   Trash,
+  Clock,
 } from '@phosphor-icons/react';
 import { Rating } from 'react-simple-star-rating';
 import Avaliacao from '../models/Avaliacao';
@@ -16,6 +17,7 @@ import { TwitterIcon, TwitterShareButton } from 'react-share';
 import { auth, db } from '../firebase';
 import { deleteDoc, doc } from 'firebase/firestore';
 import { getAuth, onAuthStateChanged } from 'firebase/auth';
+import { jogos } from '../../jogos';
 
 function CardAvaliacao(avaliacao: Avaliacao) {
   const user = auth.currentUser;
@@ -28,12 +30,18 @@ function CardAvaliacao(avaliacao: Avaliacao) {
     await deleteDoc(doc(db, 'ratings', rating));
     // reload();
   }
+  let match = jogos.matches.find((partida) => partida.id == avaliacao.partida);
+
+  console.log(match);
+
+  console.log(avaliacao);
 
   useEffect(() => {
     const auth = getAuth();
     onAuthStateChanged(auth, (user) => {
       setLogado(!!user);
     });
+    match = jogos.matches.find((match) => match.id == avaliacao.partida);
   }, []);
 
   return (
@@ -56,11 +64,11 @@ function CardAvaliacao(avaliacao: Avaliacao) {
             {avaliacao.like ? (
               <Heart className="text-3xl text-red-400" weight="fill" />
             ) : (
-              <Heart className="text-3xl text-neutral-400" weight="regular" />
+              <Heart className="text-3xl text-slate-400" weight="regular" />
             )}
             <button
               type="button"
-              className=" bg-neutral-100 dark:bg-neutral-700 dark:hover:bg-neutral-500 hover:bg-neutral-200 hover:ring-4 ring-neutral-100 dark:ring-neutral-700 active:bg-neutral-300 dark:active:bg-neutral-600 focus:ring-4 dark:focus:bg-neutral-500 focus:bg-neutral-400 p-2 rounded-xl flex items-center gap-3 dark:text-white"
+              className=" bg-slate-100 dark:bg-slate-700 dark:hover:bg-slate-500 hover:bg-slate-200 hover:ring-4 ring-slate-100 dark:ring-slate-700 active:bg-slate-300 dark:active:bg-slate-600 focus:ring-4 dark:focus:bg-slate-500 focus:bg-slate-400 p-2 rounded-xl flex items-center gap-3 dark:text-white"
               onClick={() => deletePost(avaliacao.id)}
             >
               <Trash size={20} />
@@ -69,7 +77,7 @@ function CardAvaliacao(avaliacao: Avaliacao) {
               trigger={
                 <button
                   type="button"
-                  className=" bg-neutral-100 dark:bg-neutral-700 dark:hover:bg-neutral-500 hover:bg-neutral-200 hover:ring-4 ring-neutral-100 dark:ring-neutral-700 active:bg-neutral-300 dark:active:bg-neutral-600 focus:ring-4 dark:focus:bg-neutral-500 focus:bg-neutral-400 p-2 rounded-xl flex items-center gap-3 dark:text-white"
+                  className=" bg-slate-100 dark:bg-slate-700 dark:hover:bg-slate-500 hover:bg-slate-200 hover:ring-4 ring-slate-100 dark:ring-slate-700 active:bg-slate-300 dark:active:bg-slate-600 focus:ring-4 dark:focus:bg-slate-500 focus:bg-slate-400 p-2 rounded-xl flex items-center gap-3 dark:text-white"
                 >
                   <Share size={20} />
                 </button>
@@ -87,7 +95,7 @@ function CardAvaliacao(avaliacao: Avaliacao) {
               <div className="flex flex-row-reverse gap-2">
                 <TwitterShareButton
                   url={'http://mdteixeira.github.io/boxtoboxd'}
-                  title={`Minha nota para ${avaliacao.jogo.mandante[0]} ${avaliacao.jogo.gols[0]} x ${avaliacao.jogo.gols[1]} ${avaliacao.jogo.visitante[0]} no BoxToBoxD é de ${avaliacao.rating}⭐`}
+                  title={`Minha nota para ${match.homeTeam.shortName} ${match.score.fullTime.home} x ${match.score.fullTime.away} ${match.awayTeam.shortName} no BoxToBoxD é de ${avaliacao.rating}⭐`}
                   hashtags={['BoxToBoxD']}
                 >
                   <TwitterIcon size={32} round />
@@ -101,35 +109,40 @@ function CardAvaliacao(avaliacao: Avaliacao) {
       </div>
       <div className="grid grid-cols-3 p-3 bg-slate-50 dark:bg-slate-900 rounded-t-2xl">
         <div className="left flex flex-col items-center gap-2">
-          <img src={avaliacao.jogo.mandante[1]} className="md:size-12 size-10" alt="" />
+          <img src={match.homeTeam.crest} className="md:size-12 size-10" alt="" />
 
-          <h2 className="">{avaliacao.jogo.mandante[0]}</h2>
+          <h2 className="">{match.homeTeam.shortName}</h2>
         </div>
         <div className="placar tabular-nums flex items-center justify-around text-2xl font-bold">
-          {avaliacao.jogo.gols[0]} {<X size={16} />} {avaliacao.jogo.gols[1]}
+          {match.score.fullTime.home} {<X size={16} />} {match.score.fullTime.away}
         </div>
         <div className="right flex flex-col items-center gap-2">
-          <img src={avaliacao.jogo.visitante[1]} className="md:size-12 size-10" alt="" />
+          <img src={match.awayTeam.crest} className="md:size-12 size-10" alt="" />
 
-          <h2>{avaliacao.jogo.visitante[0]}</h2>
+          <h2>{match.awayTeam.shortName}</h2>
         </div>
       </div>
 
       <div className="">
-        <div className="grid grid-cols-3 w-full place-items-center p-3 text-xs bg-slate-100 dark:bg-slate-800 rounded-b-2xl dark:rounded-2xl">
-          <h2 className=" text-slate-500 dark:text-slate-300 flex gap-1 items-center">
-            <MapPin weight="bold" /> {avaliacao.jogo.local}
-          </h2>
+        <div className="grid grid-cols-2 w-full place-items-center p-3 text-xs bg-slate-100 dark:bg-slate-800 rounded-b-2xl dark:rounded-2xl *:text-center">
+          {/* <h2 className=" text-slate-500 dark:text-slate-300 flex gap-1 items-center">
+            <MapPin weight="bold" /> {match.area.name}
+          </h2> */}
           <div className="flex gap-2">
             <h2 className=" text-slate-500 dark:text-slate-300 flex gap-1 pr-2 items-center">
-              <Calendar weight="bold" /> {avaliacao.jogo.data[0]}
+              <Calendar className="text-base" weight="bold" />{' '}
+              {new Date(match.utcDate).toLocaleDateString()}
             </h2>
             {/* <h2 className=" text-slate-500 dark:text-slate-300 items-center">
-              {avaliacao.jogo.data[1]}
+              {match.data[1]}
             </h2> */}
+            <h2 className="flex gap-2 pr-2 items-center">
+              <Clock className="text-base" weight="bold" />
+              {new Date(match.utcDate).toLocaleTimeString().slice(0, 5)}
+            </h2>
           </div>
           <h2 className=" text-slate-500 dark:text-slate-300 flex gap-2 items-center">
-            {avaliacao.jogo.torneio}
+            {match.competition.name}
           </h2>
         </div>
       </div>
@@ -182,7 +195,7 @@ function CardAvaliacao(avaliacao: Avaliacao) {
                   className="size-6 dark:invert"
                   alt=""
                 />
-                <p>No estádio</p>
+                <p>Do estádio</p>
               </div>
             ) : (
               ''

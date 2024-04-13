@@ -9,9 +9,8 @@ import {
   Rows,
   SoccerBall,
 } from '@phosphor-icons/react';
-import Jogo from '../models/Jogo';
 import Avaliacao from '../models/Avaliacao';
-import { checkAuth, fetchPosts } from '../service/FirebaseServices';
+import { fetchPosts } from '../service/FirebaseServices';
 
 function ListRatings() {
   const [ratings, setRatings] = useState<any>([]);
@@ -27,23 +26,6 @@ function ListRatings() {
   useEffect(() => {
     fetchPosts(setRatings);
   }, []);
-
-  var jogo2: Jogo = {
-    id: 0,
-    mandante: [
-      'Portuguesa',
-      'https://ssl.gstatic.com/onebox/media/sports/logos/a9BSJk9BywwXNj4LJPq5jg_96x96.png',
-    ],
-    visitante: [
-      'Guarani',
-      'https://ssl.gstatic.com/onebox/media/sports/logos/fxJElzuqyxKVwsUcfsC49Q_96x96.png',
-    ],
-    local: 'Canindé',
-    gols: [1, 0],
-    eventos: [['Giovani Augusto', 'gol', 0]],
-    data: ['11/02/2024', '18:00'],
-    torneio: 'Paulistão',
-  };
 
   return (
     <>
@@ -119,7 +101,7 @@ function ListRatings() {
               key={rating.id}
               id={rating.id}
               user={rating.user}
-              jogo={jogo2}
+              partida={rating.partida}
               like={rating.like}
               presente={rating.presente}
               rating={rating.rating}
