@@ -27,7 +27,51 @@ function MatchInfo(partida: Match) {
           <h2 className="">{partida.homeTeam.shortName}</h2>
         </div>
         <div className="placar tabular-nums flex items-center justify-around text-2xl font-bold">
-          {partida.score.fullTime.home} {<X size={16} />} {partida.score.fullTime.away}
+          {partida.score.penalties != null ? (
+            <div className="flex gap-2 items-center">
+              {partida.score.regularTime!.home}
+              <span
+                className={
+                  partida.score.winner == 'HOME_TEAM'
+                    ? 'text-green-500 text-base font-medium'
+                    : 'text-red-500 text-base font-medium'
+                }
+              >
+                ({partida.score.penalties?.home})
+              </span>
+            </div>
+          ) : (
+            <h3
+              className={
+                partida.score.winner == 'HOME_TEAM' ? 'text-green-500' : 'text-red-500'
+              }
+            >
+              {partida.score.fullTime.home}
+            </h3>
+          )}
+          {<X size={16} />}
+          {partida.score.penalties != null ? (
+            <div className="flex gap-2 items-center">
+              <span
+                className={
+                  partida.score.winner == 'AWAY_TEAM'
+                    ? 'text-green-500 text-base font-medium'
+                    : 'text-red-500 text-base font-medium'
+                }
+              >
+                ({partida.score.penalties?.away})
+              </span>
+              {partida.score.regularTime!.away}
+            </div>
+          ) : (
+            <h3
+              className={
+                partida.score.winner == 'AWAY_TEAM' ? 'text-green-500' : 'text-red-500'
+              }
+            >
+              {partida.score.fullTime.away}
+            </h3>
+          )}
         </div>
         <div className="right away flex flex-col items-center gap-2">
           <img src={partida.awayTeam.crest} className="size-12" alt="" />
@@ -35,6 +79,7 @@ function MatchInfo(partida: Match) {
           <h2>{partida.awayTeam.shortName}</h2>
         </div>
       </div>
+
       <div className="grid sm:grid-cols-3 gap-1 w-full place-items-center p-1 bg-slate-200 dark:bg-slate-800 py-2 rounded-2xl">
         <h2 className="text-sm  flex gap-2 items-center">
           <MapPin className="text-base" weight="bold" /> {partida.area.name}
@@ -54,7 +99,14 @@ function MatchInfo(partida: Match) {
             className="text-sm  flex gap-2 items-center size-7"
             src={partida.competition.emblem}
           ></img>
-          <h2 className="text-sm  flex gap-2 items-center">{partida.competition.name}</h2>
+          <h2 className="text-sm  flex gap-2 items-center">
+            {partida.competition.name}
+            {partida.stage != 'REGULAR_SEASON'
+              ? ' - ' +
+                partida.stage.charAt(0).toUpperCase() +
+                partida.stage.toLowerCase().slice(1).replace('_', ' ')
+              : ''}
+          </h2>
         </div>
       </div>
     </div>

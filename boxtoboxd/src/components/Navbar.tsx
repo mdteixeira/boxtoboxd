@@ -21,7 +21,7 @@ function Navbar() {
               BoxToBoxD
             </h1>
             <h3 className="text-xs bg-amber-300 px-2 py-0.5 rounded-md text-black text-center text-nowrap">
-              Beta v0.4
+              Beta v0.4.2
             </h3>
           </div>
           <nav className="md:flex w-full justify-evenly hidden">

@@ -8,6 +8,9 @@ import {
   Share,
   Trash,
   Clock,
+  DotsThree,
+  Pencil,
+  PencilSimple,
 } from '@phosphor-icons/react';
 import { Rating } from 'react-simple-star-rating';
 import Avaliacao from '../models/Avaliacao';
@@ -19,29 +22,29 @@ import { deleteDoc, doc } from 'firebase/firestore';
 import { getAuth, onAuthStateChanged } from 'firebase/auth';
 import { jogos } from '../../jogos';
 
-function CardAvaliacao(avaliacao: Avaliacao) {
+function CardAvaliacao(avaliacao) {
   const user = auth.currentUser;
 
   const [logado, setLogado] = useState(user != null);
 
   const [showAll, setShowAll] = useState(false);
 
-  async function deletePost(rating: string) {
+  async function deletePost(rating) {
     await deleteDoc(doc(db, 'ratings', rating));
     // reload();
   }
   let match = jogos.matches.find((partida) => partida.id == avaliacao.partida);
 
-  console.log(match);
+  // console.log(match);
 
-  console.log(avaliacao);
+  // console.log(avaliacao);
 
   useEffect(() => {
     const auth = getAuth();
     onAuthStateChanged(auth, (user) => {
       setLogado(!!user);
     });
-    match = jogos.matches.find((match) => match.id == avaliacao.partida);
+    match = jogos.matches.find((match) => match!.id == avaliacao.partida);
   }, []);
 
   return (
@@ -59,91 +62,216 @@ function CardAvaliacao(avaliacao: Avaliacao) {
           )}
           <h3>{avaliacao.user[0]}</h3>
         </div>
-        {avaliacao.user[2] == user?.uid ? (
-          <div className="inline-flex gap-2 items-center">
-            {avaliacao.like ? (
-              <Heart className="text-3xl text-red-400" weight="fill" />
-            ) : (
-              <Heart className="text-3xl text-slate-400" weight="regular" />
-            )}
-            <button
-              type="button"
-              className=" bg-slate-100 dark:bg-slate-700 dark:hover:bg-slate-500 hover:bg-slate-200 hover:ring-4 ring-slate-100 dark:ring-slate-700 active:bg-slate-300 dark:active:bg-slate-600 focus:ring-4 dark:focus:bg-slate-500 focus:bg-slate-400 p-2 rounded-xl flex items-center gap-3 dark:text-white"
-              onClick={() => deletePost(avaliacao.id)}
-            >
-              <Trash size={20} />
-            </button>
-            <Popup
-              trigger={
-                <button
-                  type="button"
-                  className=" bg-slate-100 dark:bg-slate-700 dark:hover:bg-slate-500 hover:bg-slate-200 hover:ring-4 ring-slate-100 dark:ring-slate-700 active:bg-slate-300 dark:active:bg-slate-600 focus:ring-4 dark:focus:bg-slate-500 focus:bg-slate-400 p-2 rounded-xl flex items-center gap-3 dark:text-white"
-                >
-                  <Share size={20} />
-                </button>
-              }
-              position={'bottom center'}
-              on={'click'}
-              arrow={false}
-              contentStyle={{
-                border: 'none',
-                boxShadow: 'none',
-                width: 'auto',
-                backgroundColor: 'transparent',
-              }}
-            >
-              <div className="flex flex-row-reverse gap-2">
-                <TwitterShareButton
-                  url={'http://mdteixeira.github.io/boxtoboxd'}
-                  title={`Minha nota para ${match.homeTeam.shortName} ${match.score.fullTime.home} x ${match.score.fullTime.away} ${match.awayTeam.shortName} no BoxToBoxD é de ${avaliacao.rating}⭐`}
-                  hashtags={['BoxToBoxD']}
-                >
-                  <TwitterIcon size={32} round />
-                </TwitterShareButton>
-              </div>
-            </Popup>
-          </div>
-        ) : (
-          ''
-        )}
+        <div className="flex gap-2 items-center">
+          {avaliacao.user[2] == user?.uid ? (
+            <>
+              {avaliacao.like ? (
+                <Heart className="text-3xl text-red-400" weight="fill" />
+              ) : (
+                <Heart className="text-3xl text-slate-400" weight="regular" />
+              )}
+              <Popup
+                trigger={
+                  <DotsThree
+                    className="rounded-full text-2xl hover:bg-opacity-15 bg-opacity-0 size-10 p-2 bg-slate-500"
+                    weight="bold"
+                  />
+                }
+                nested
+                position={'bottom center'}
+                on={'click'}
+                arrow={false}
+                contentStyle={{
+                  border: 'none',
+                  boxShadow: 'none',
+                  width: 'auto',
+                  backgroundColor: 'transparent',
+                }}
+              >
+                <div className="flex flex-col gap-2 items-center mt-3">
+                  <button
+                    type="button"
+                    className=" bg-slate-100 dark:bg-slate-700 dark:hover:bg-slate-500 hover:bg-slate-200 hover:ring-4 ring-slate-100 dark:ring-slate-700 active:bg-slate-300 dark:active:bg-slate-600 focus:ring-4 dark:focus:bg-slate-500 focus:bg-slate-400 p-2 rounded-xl flex items-center gap-3 dark:text-white"
+                    onClick={() => {
+                      alert('Não implementado.');
+                    }}
+                  >
+                    <PencilSimple size={20} />
+                  </button>
+                  <Popup
+                    trigger={
+                      <button
+                        type="button"
+                        className=" bg-slate-100 dark:bg-slate-700 dark:hover:bg-slate-500 hover:bg-slate-200 hover:ring-4 ring-slate-100 dark:ring-slate-700 active:bg-slate-300 dark:active:bg-slate-600 focus:ring-4 dark:focus:bg-slate-500 focus:bg-slate-400 p-2 rounded-xl flex items-center gap-3 dark:text-white"
+                      >
+                        <Trash size={20} />
+                      </button>
+                    }
+                    modal
+                  >
+                    {(close) => (
+                      <>
+                        <div className="p-2">
+                          <h3 className="text-xl font-medium text-emerald-600 mb-6">
+                            Deletar postagem
+                          </h3>
+                          <p>Tem certeza que deseja deletar essa postagem?</p>
+                          <div className="flex w-full justify-around mt-6 font-medium">
+                            <button
+                              className="rounded-2xl py-2 px-5 hover:underline"
+                              onClick={close}
+                            >
+                              Cancelar
+                            </button>
+                            <button
+                              className="inline-flex items-center gap-2 border rounded-2xl py-2 px-5 text-red-500 border-red-500 hover:bg-red-600 hover:text-white"
+                              onClick={() => {
+                                deletePost(avaliacao.id);
+                                close();
+                              }}
+                            >
+                              <Trash weight="bold" />
+                              Deletar
+                            </button>
+                          </div>
+                        </div>
+                      </>
+                    )}
+                  </Popup>
+                  <Popup
+                    trigger={
+                      <button
+                        type="button"
+                        className=" bg-slate-100 dark:bg-slate-700 dark:hover:bg-slate-500 hover:bg-slate-200 hover:ring-4 ring-slate-100 dark:ring-slate-700 active:bg-slate-300 dark:active:bg-slate-600 focus:ring-4 dark:focus:bg-slate-500 focus:bg-slate-400 p-2 rounded-xl flex items-center gap-3 dark:text-white"
+                      >
+                        <Share size={20} />
+                      </button>
+                    }
+                    position={'bottom center'}
+                    on={'click'}
+                    arrow={false}
+                    contentStyle={{
+                      border: 'none',
+                      boxShadow: 'none',
+                      width: 'auto',
+                      backgroundColor: 'transparent',
+                    }}
+                  >
+                    <div className="flex flex-row-reverse gap-2 mt-2">
+                      <TwitterShareButton
+                        url={'http://mdteixeira.github.io/boxtoboxd'}
+                        title={`Minha nota para ${match!.homeTeam.shortName} ${
+                          match!.score.fullTime.home
+                        } x ${match!.score.fullTime.away} ${
+                          match!.awayTeam.shortName
+                        } no BoxToBoxD é de ${avaliacao.rating}⭐`}
+                        hashtags={['BoxToBoxD']}
+                      >
+                        <TwitterIcon size={32} round />
+                      </TwitterShareButton>
+                    </div>
+                  </Popup>
+                </div>
+              </Popup>
+            </>
+          ) : (
+            ''
+          )}
+        </div>
       </div>
-      <div className="grid grid-cols-3 p-3 bg-slate-50 dark:bg-slate-900 rounded-t-2xl">
-        <div className="left flex flex-col items-center gap-2">
-          <img src={match.homeTeam.crest} className="md:size-12 size-10" alt="" />
+      <div className="grid grid-cols-3 p-3 dark:border-slate-600">
+        <div className="left home flex flex-col items-center gap-2">
+          <img
+            src={match!.homeTeam.crest}
+            className="size-12"
+            alt={match!.homeTeam.name}
+          />
 
-          <h2 className="">{match.homeTeam.shortName}</h2>
+          <h2 className="">{match!.homeTeam.shortName}</h2>
         </div>
         <div className="placar tabular-nums flex items-center justify-around text-2xl font-bold">
-          {match.score.fullTime.home} {<X size={16} />} {match.score.fullTime.away}
+          {match!.score.penalties != null ? (
+            <div className="flex gap-2 items-center">
+              {match!.score.regularTime!.home}
+              <span
+                className={
+                  match!.score.winner == 'HOME_TEAM'
+                    ? 'text-green-500 text-base font-medium'
+                    : 'text-red-500 text-base font-medium'
+                }
+              >
+                ({match!.score.penalties?.home})
+              </span>
+            </div>
+          ) : (
+            <h3
+              className={
+                match!.score.winner == 'HOME_TEAM' ? 'text-green-500' : 'text-red-500'
+              }
+            >
+              {match!.score.fullTime.home}
+            </h3>
+          )}
+          {<X size={16} />}
+          {match!.score.penalties != null ? (
+            <div className="flex gap-2 items-center">
+              <span
+                className={
+                  match!.score.winner == 'AWAY_TEAM'
+                    ? 'text-green-500 text-base font-medium'
+                    : 'text-red-500 text-base font-medium'
+                }
+              >
+                ({match!.score.penalties?.away})
+              </span>
+              {match!.score.regularTime!.away}
+            </div>
+          ) : (
+            <h3
+              className={
+                match!.score.winner == 'AWAY_TEAM' ? 'text-green-500' : 'text-red-500'
+              }
+            >
+              {match!.score.fullTime.away}
+            </h3>
+          )}
         </div>
-        <div className="right flex flex-col items-center gap-2">
-          <img src={match.awayTeam.crest} className="md:size-12 size-10" alt="" />
+        <div className="right away flex flex-col items-center gap-2">
+          <img src={match!.awayTeam.crest} className="size-12" alt="" />
 
-          <h2>{match.awayTeam.shortName}</h2>
+          <h2>{match!.awayTeam.shortName}</h2>
         </div>
       </div>
 
       <div className="">
-        <div className="grid grid-cols-2 w-full place-items-center p-3 text-xs bg-slate-100 dark:bg-slate-800 rounded-b-2xl dark:rounded-2xl *:text-center">
+        <div className="grid grid-cols-2 w-full place-items-center p-3 py-2 text-xs bg-slate-100 dark:bg-slate-800 dark:bg-opacity-50 rounded-b-2xl dark:rounded-2xl *:text-center">
           {/* <h2 className=" text-slate-500 dark:text-slate-300 flex gap-1 items-center">
-            <MapPin weight="bold" /> {match.area.name}
+            <MapPin weight="bold" /> {match!.area.name}
           </h2> */}
-          <div className="flex gap-2">
-            <h2 className=" text-slate-500 dark:text-slate-300 flex gap-1 pr-2 items-center">
+          <div className="grid w-full place-content-center border-e">
+            <h2 className=" text-slate-500 dark:text-slate-300 flex gap-2 pr-2 items-center">
               <Calendar className="text-base" weight="bold" />{' '}
-              {new Date(match.utcDate).toLocaleDateString()}
+              {new Date(match!.utcDate).toLocaleDateString()}
             </h2>
             {/* <h2 className=" text-slate-500 dark:text-slate-300 items-center">
-              {match.data[1]}
+              {match!.data[1]}
             </h2> */}
             <h2 className="flex gap-2 pr-2 items-center">
               <Clock className="text-base" weight="bold" />
-              {new Date(match.utcDate).toLocaleTimeString().slice(0, 5)}
+              {new Date(match!.utcDate).toLocaleTimeString().slice(0, 5)}
             </h2>
           </div>
-          <h2 className=" text-slate-500 dark:text-slate-300 flex gap-2 items-center">
-            {match.competition.name}
-          </h2>
+          <div className="grid w-full place-content-center">
+            <h2 className=" text-slate-500 dark:text-slate-300 flex gap-2 items-center">
+              {match!.competition.name}
+            </h2>
+            <h2 className=" text-slate-500 dark:text-slate-300 flex gap-2 items-center">
+              {match!.stage != 'REGULAR_SEASON'
+                ? match!.stage.charAt(0).toUpperCase() +
+                  match!.stage.toLowerCase().slice(1).replace('_', ' ')
+                : ''}
+            </h2>
+          </div>
         </div>
       </div>
 

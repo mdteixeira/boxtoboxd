@@ -40,7 +40,7 @@ export interface Area {
   id: number;
   name: string;
   code: string;
-  flag: string;
+  flag: string | null;
 }
 
 export interface Competition {
@@ -78,8 +78,26 @@ export interface AwayTeam {
 export interface Score {
   winner: string | null;
   duration: string;
+  regularTime: RegularTime | null;
   fullTime: FullTime;
   halfTime: HalfTime;
+  extraTime: ExtraTime | null;
+  penalties: Penalties | null;
+}
+
+export interface Penalties {
+  home: number;
+  away: number;
+}
+
+export interface RegularTime {
+  home: number;
+  away: number;
+}
+
+export interface ExtraTime {
+  home: number;
+  away: number;
 }
 
 export interface FullTime {
@@ -100,5 +118,5 @@ export interface Referee {
   id: number;
   name: string;
   type: string;
-  nationality: string;
+  nationality: string | null;
 }

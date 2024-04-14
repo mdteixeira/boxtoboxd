@@ -90,7 +90,51 @@ function MatchInfo(partida: Match) {
             <h2 className="">{partida.homeTeam.shortName}</h2>
           </div>
           <div className="placar tabular-nums flex items-center justify-around text-2xl font-bold">
-            {partida.score.fullTime.home} {<X size={16} />} {partida.score.fullTime.away}
+            {partida.score.penalties != null ? (
+              <div className="flex gap-2 items-center">
+                {partida.score.regularTime!.home}
+                <span
+                  className={
+                    partida.score.winner == 'HOME_TEAM'
+                      ? 'text-green-500 text-base font-medium'
+                      : 'text-red-500 text-base font-medium'
+                  }
+                >
+                  ({partida.score.penalties?.home})
+                </span>
+              </div>
+            ) : (
+              <h3
+                className={
+                  partida.score.winner == 'HOME_TEAM' ? 'text-green-500' : 'text-red-500'
+                }
+              >
+                {partida.score.fullTime.home}
+              </h3>
+            )}
+            {<X size={16} />}
+            {partida.score.penalties != null ? (
+              <div className="flex gap-2 items-center">
+                <span
+                  className={
+                    partida.score.winner == 'AWAY_TEAM'
+                      ? 'text-green-500 text-base font-medium'
+                      : 'text-red-500 text-base font-medium'
+                  }
+                >
+                  ({partida.score.penalties?.away})
+                </span>
+                {partida.score.regularTime!.away}
+              </div>
+            ) : (
+              <h3
+                className={
+                  partida.score.winner == 'AWAY_TEAM' ? 'text-green-500' : 'text-red-500'
+                }
+              >
+                {partida.score.fullTime.away}
+              </h3>
+            )}
           </div>
           <div className="right away flex flex-col items-center gap-2">
             <img src={partida.awayTeam.crest} className="size-12" alt="" />

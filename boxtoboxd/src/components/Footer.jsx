@@ -7,7 +7,7 @@ function Footer() {
       <div className="flex gap-3 items-center text-emerald-400 text-3xl">
         <SoccerBall className="" weight="duotone" /> <h1>BoxtoBoxD</h1>
         <h3 className="text-xs bg-amber-300 px-2 py-0.5 rounded-md text-black text-center text-nowrap">
-          Beta v0.4
+          Beta v0.4.2
         </h3>
       </div>
       <h2 className="font-normal">

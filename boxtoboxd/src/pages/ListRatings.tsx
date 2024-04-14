@@ -1,5 +1,4 @@
 import { useEffect, useState } from 'react';
-import CardAvaliacao from '../components/CardAvaliacao';
 
 import React from 'react';
 import {
@@ -11,6 +10,8 @@ import {
 } from '@phosphor-icons/react';
 import Avaliacao from '../models/Avaliacao';
 import { fetchPosts } from '../service/FirebaseServices';
+import AddRating from '../components/AddRating';
+import CardAvaliacao from '../components/CardAvaliacao';
 
 function ListRatings() {
   const [ratings, setRatings] = useState<any>([]);
@@ -115,6 +116,9 @@ function ListRatings() {
           <h2 className="text-2xl mx-3 text-center">
             Hmm, não tem nenhuma avaliação por aqui (ainda!)
           </h2>
+          <div className="grid place-content-center mt-2">
+            <AddRating />
+          </div>
         </div>
       )}
     </>

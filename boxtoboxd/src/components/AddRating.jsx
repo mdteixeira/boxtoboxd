@@ -4,7 +4,7 @@ import Popup from 'reactjs-popup';
 import 'reactjs-popup/dist/index.css';
 import AddButton from './AddButton';
 
-import { X } from '@phosphor-icons/react';
+import { ArrowLeft, CaretLeft, X } from '@phosphor-icons/react';
 
 import React from 'react';
 import ReactSearchBox from 'react-search-box';
@@ -18,7 +18,9 @@ function AddRating() {
   const data = jogos.matches.map((jogo) => {
     if (jogo.score.winner != null) {
       let key = jogo.id;
-      let value = `${jogo.homeTeam.shortName}  x  ${jogo.awayTeam.shortName}`;
+      let value = `${jogo.homeTeam.shortName}  x ${jogo.awayTeam.shortName}
+      `;
+      // - ${new Date(jogo.utcDate).toLocaleDateString()}
       let match = jogo;
       return { key, value, match };
     }
@@ -47,22 +49,30 @@ function AddRating() {
                 <div className="header text-2xl font-bold mt-2"> Adicionar Partida </div>
                 <div className="content py-3">
                   {partida != null ? (
-                    <MatchInfo
-                      area={partida.area}
-                      competition={partida.competition}
-                      season={partida.season}
-                      id={partida.id}
-                      utcDate={partida.utcDate}
-                      status={partida.status}
-                      matchday={partida.matchday}
-                      stage={partida.stage}
-                      lastUpdated={partida.lastUpdated}
-                      homeTeam={partida.homeTeam}
-                      awayTeam={partida.awayTeam}
-                      score={partida.score}
-                      odds={partida.odds}
-                      referees={partida.referees}
-                    />
+                    <>
+                      <button
+                        onClick={() => setPartida(null)}
+                        className="text-emerald-500 border-emerald-500 rounded-2xl border ps-2 pe-3 py-1 inline-flex gap-2 items-center hover:bg-emerald-600 hover:text-white font-medium text-sm"
+                      >
+                        <CaretLeft weight="bold" /> Voltar
+                      </button>
+                      <MatchInfo
+                        area={partida.area}
+                        competition={partida.competition}
+                        season={partida.season}
+                        id={partida.id}
+                        utcDate={partida.utcDate}
+                        status={partida.status}
+                        matchday={partida.matchday}
+                        stage={partida.stage}
+                        lastUpdated={partida.lastUpdated}
+                        homeTeam={partida.homeTeam}
+                        awayTeam={partida.awayTeam}
+                        score={partida.score}
+                        odds={partida.odds}
+                        referees={partida.referees}
+                      />
+                    </>
                   ) : (
                     <>
                       <label htmlFor="partida" className="">

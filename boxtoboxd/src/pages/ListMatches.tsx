@@ -5,6 +5,7 @@ import { CaretDown, MagnifyingGlass } from '@phosphor-icons/react';
 import { Match } from '../models/Match';
 import MatchInfo from '../components/MatchInfoCard';
 import { jogos } from '../../jogos';
+import { competitions } from '../../competitions';
 
 function ListMatches() {
   const [matches, setMatches] = useState<Match[]>([]);
@@ -24,7 +25,7 @@ function ListMatches() {
 
   return (
     <>
-      <div className="container mx-auto mt-10 mb-32">
+      <div className="sm:container sm:mx-auto mt-10 mb-32 mx-2">
         <div className="mb-5 bg-white  dark:bg-opacity-5 rounded-2xl p-2 ps-5 flex justify-between items-center">
           <h3 className="text-2xl text-emerald-500 font-medium">Todas as partidas</h3>
           <div className="flex gap-2">
@@ -62,6 +63,19 @@ function ListMatches() {
                 }
               />
             </button>
+          </div>
+        </div>
+        <div className="mb-5 bg-white dark:bg-opacity-5 rounded-2xl p-2 ps-5 flex gap-3 items-center flex-wrap gap-y-5 justify-around">
+          <h3 className="text-2xl text-emerald-500 font-medium">Competições</h3>
+          <div className="grid sm:grid-cols-7 grid-cols-4 gap-5 justify-around flex-wrap sm:w-9/12">
+            {competitions.map((competicao) => {
+              return (
+                <div className="place-content-center h-24 justify-around w-1/10">
+                  <img className="size-12 mx-auto" src={competicao.emblem}></img>
+                  <p className="text-xs text-center">{competicao.name}</p>
+                </div>
+              );
+            })}
           </div>
         </div>
         {show ? (
