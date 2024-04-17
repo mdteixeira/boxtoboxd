@@ -5,7 +5,7 @@ import AddRating from './AddRating';
 function FloatButton() {
   return (
     <>
-      <div className="hidden md:block fixed bottom-0 right-0 m-2">
+      <div className="hidden md:block fixed bottom-0 right-0 m-2 z-50">
         <AddRating />
       </div>
       <div className="md:hidden fixed bottom-0 w-full m-0 left-0 dark:bg-slate-900 bg-slate-100 py-2 z-50 grid grid-cols-5 place-content-center *:grid *:place-content-center *:grid-cols-1 *:text-center *:justify-items-center *:text-xs *:gap-1">
@@ -30,7 +30,7 @@ function FloatButton() {
           <p>Partidas</p>
         </div>
         <div className="">
-          <AddRating props={null} />
+          <AddRating />
         </div>
         <div className="">
           <div className="relative">
