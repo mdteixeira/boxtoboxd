@@ -1,21 +1,42 @@
-import { Calendar, Circle, Clock, Dot, MapPin, X } from '@phosphor-icons/react';
+import {
+  Broadcast,
+  Calendar,
+  Circle,
+  Clock,
+  Dot,
+  MapPin,
+  X,
+} from '@phosphor-icons/react';
 import React from 'react';
 import { Match } from '../models/Match';
 
 function MatchInfo(partida: Match) {
   return (
     <div className="bg-white dark:bg-slate-900 bg-opacity-50 dark:bg-opacity-50 rounded-2xl p-2 pt-8 relative">
-      {partida.score.winner == null ? (
-        <div className="absolute top-2 p-1 gap-2 border-2 border-amber-500 text-amber-500 pe-2 flex text-xs rounded-full items-center">
+      {partida.status == 'TIMED' ? (
+        <div className="absolute top-2 p-1 gap-2 border-2 font-medium border-amber-500 text-amber-500 pe-2 flex text-xs rounded-full items-center">
           <Circle size={16} color="#ee8909" weight="duotone" />
           Em breve
         </div>
-      ) : (
-        <div className="absolute top-2 p-1 gap-2 border-2 border-green-700 text-green-700 pe-2 flex text-xs rounded-full items-center">
-          <Circle size={16} color="green" weight="duotone" />
+      ) : partida.status === 'FINISHED' ? (
+        <div className="absolute top-2 p-1 gap-2 border-2 font-medium border-green-700 text-green-700 pe-2 flex text-xs rounded-full items-center">
+          <Circle size={16} weight="duotone" />
           Fim
         </div>
+      ) : partida.status === 'IN_PLAY' ? (
+        <div className="absolute top-2 p-1 gap-2 border-2 font-medium border-red-500 text-red-500 pe-2 flex text-xs rounded-full items-center animate-pulse">
+          <Broadcast size={16} weight="duotone" />
+          Ao vivo!
+        </div>
+      ) : partida.status === 'POSTPONED' ? (
+        <div className="absolute top-2 p-1 gap-2 border-2 font-medium border-amber-400 text-amber-400 pe-2 flex text-xs rounded-full items-center">
+          <Clock size={16} weight="duotone" />
+          Adiada
+        </div>
+      ) : (
+        ''
       )}
+
       <div className="grid grid-cols-3 p-3 dark:border-slate-600">
         <div className="left home flex flex-col items-center gap-2">
           <img

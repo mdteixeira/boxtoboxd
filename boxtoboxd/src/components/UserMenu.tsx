@@ -48,10 +48,6 @@ function UserMenu() {
       });
   }
 
-  useEffect(() => {
-    checkAuth(setLogado);
-  });
-
   function darkTheme() {
     localStorage.setItem('darkTheme', 'dark');
     document.body.classList.add('dark');
@@ -69,7 +65,8 @@ function UserMenu() {
   useEffect(() => {
     localStorage.getItem('darkTheme') == 'dark' && darkTheme();
   }),
-    [localStorage.getItem('darkTheme')];
+    checkAuth(setLogado);
+  [localStorage.getItem('darkTheme')];
 
   return (
     <div className="flex items-center justify-center max-w-12 max-h-12 w-12 h-12">

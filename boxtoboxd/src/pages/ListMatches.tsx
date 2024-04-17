@@ -9,6 +9,7 @@ import { competitions } from '../../competitions';
 
 function ListMatches() {
   const [matches, setMatches] = useState<Match[]>([]);
+  const [filtered, setFiltered] = useState<Match[]>([]);
 
   const [show, setShow] = useState(true);
 
@@ -21,13 +22,15 @@ function ListMatches() {
 
   useEffect(() => {
     setMatches(jogos.matches);
+    setFiltered(matches);
+    console.log('useEffect called');
   }, []);
 
   return (
     <>
       <div className="sm:container sm:mx-auto mt-10 mb-32 mx-2">
         <div className="mb-5 bg-white  dark:bg-opacity-5 rounded-2xl p-2 ps-5 flex justify-between items-center">
-          <h3 className="text-2xl text-emerald-500 font-medium">Todas as partidas</h3>
+          <h3 className="text-2xl text-emerald-500 font-medium">Pesquisar partidas</h3>
           <div className="flex gap-2">
             <div className="sm:inline-flex items-center gap-3 relative hidden w-1/2">
               <input
@@ -45,6 +48,16 @@ function ListMatches() {
                 name="Partida"
                 placeholder="Partida"
                 className="dark:bg-slate-800  rounded-2xl border dark:border-slate-700 py-2 px-4 focus-within:outline-none"
+                onChange={(e) => {
+                  setFiltered(
+                    matches.filter((m) => {
+                      return (
+                        m.homeTeam.shortName.toLowerCase().includes(e.target.value) ||
+                        m.awayTeam.shortName.toLowerCase().includes(e.target.value)
+                      );
+                    })
+                  );
+                }}
               />
               <button className="absolute end-3">
                 <MagnifyingGlass />
@@ -80,7 +93,7 @@ function ListMatches() {
         </div>
         {show ? (
           <div className="gap-3 grid">
-            {matches.map((match: Match) => {
+            {filtered.map((match: Match) => {
               return (
                 <MatchInfo
                   key={match.id}
@@ -96,7 +109,6 @@ function ListMatches() {
                   homeTeam={match.homeTeam}
                   awayTeam={match.awayTeam}
                   score={match.score}
-                  odds={match.odds}
                   referees={match.referees}
                 ></MatchInfo>
               );

@@ -1,10 +1,10 @@
-import { useEffect, useState } from 'react';
+import { useState } from 'react';
 
 import Popup from 'reactjs-popup';
 import 'reactjs-popup/dist/index.css';
 import AddButton from './AddButton';
 
-import { ArrowLeft, CaretLeft, X } from '@phosphor-icons/react';
+import { CaretLeft, X } from '@phosphor-icons/react';
 
 import React from 'react';
 import ReactSearchBox from 'react-search-box';

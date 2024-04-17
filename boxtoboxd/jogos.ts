@@ -67,9 +67,7 @@ export let jogos: Root = {
           home: null,
           away: null,
         },
-      },
-      odds: {
-        msg: 'Activate Odds-Package in User-Panel to retrieve odds.',
+        regularTime: null,
       },
       referees: [],
     },
@@ -126,9 +124,7 @@ export let jogos: Root = {
           home: 1,
           away: 1,
         },
-      },
-      odds: {
-        msg: 'Activate Odds-Package in User-Panel to retrieve odds.',
+        regularTime: null,
       },
       referees: [],
     },
@@ -185,9 +181,7 @@ export let jogos: Root = {
           home: 0,
           away: 1,
         },
-      },
-      odds: {
-        msg: 'Activate Odds-Package in User-Panel to retrieve odds.',
+        regularTime: null,
       },
       referees: [
         {
@@ -251,9 +245,7 @@ export let jogos: Root = {
           home: 0,
           away: 0,
         },
-      },
-      odds: {
-        msg: 'Activate Odds-Package in User-Panel to retrieve odds.',
+        regularTime: null,
       },
       referees: [
         {
@@ -317,9 +309,7 @@ export let jogos: Root = {
           home: null,
           away: null,
         },
-      },
-      odds: {
-        msg: 'Activate Odds-Package in User-Panel to retrieve odds.',
+        regularTime: null,
       },
       referees: [],
     },
@@ -376,9 +366,7 @@ export let jogos: Root = {
           home: null,
           away: null,
         },
-      },
-      odds: {
-        msg: 'Activate Odds-Package in User-Panel to retrieve odds.',
+        regularTime: null,
       },
       referees: [],
     },
@@ -435,9 +423,7 @@ export let jogos: Root = {
           home: null,
           away: null,
         },
-      },
-      odds: {
-        msg: 'Activate Odds-Package in User-Panel to retrieve odds.',
+        regularTime: null,
       },
       referees: [],
     },
@@ -494,9 +480,7 @@ export let jogos: Root = {
           home: null,
           away: null,
         },
-      },
-      odds: {
-        msg: 'Activate Odds-Package in User-Panel to retrieve odds.',
+        regularTime: null,
       },
       referees: [],
     },
@@ -553,9 +537,7 @@ export let jogos: Root = {
           home: null,
           away: null,
         },
-      },
-      odds: {
-        msg: 'Activate Odds-Package in User-Panel to retrieve odds.',
+        regularTime: null,
       },
       referees: [],
     },
@@ -612,9 +594,7 @@ export let jogos: Root = {
           home: null,
           away: null,
         },
-      },
-      odds: {
-        msg: 'Activate Odds-Package in User-Panel to retrieve odds.',
+        regularTime: null,
       },
       referees: [],
     },
@@ -674,9 +654,6 @@ export let jogos: Root = {
         regularTime: null,
         extraTime: null,
         penalties: null,
-      },
-      odds: {
-        msg: 'Activate Odds-Package in User-Panel to retrieve odds.',
       },
       referees: [
         {
@@ -744,9 +721,6 @@ export let jogos: Root = {
         extraTime: null,
         penalties: null,
       },
-      odds: {
-        msg: 'Activate Odds-Package in User-Panel to retrieve odds.',
-      },
       referees: [],
     },
     {
@@ -805,9 +779,6 @@ export let jogos: Root = {
         regularTime: null,
         extraTime: null,
         penalties: null,
-      },
-      odds: {
-        msg: 'Activate Odds-Package in User-Panel to retrieve odds.',
       },
       referees: [
         {
@@ -875,9 +846,6 @@ export let jogos: Root = {
         extraTime: null,
         penalties: null,
       },
-      odds: {
-        msg: 'Activate Odds-Package in User-Panel to retrieve odds.',
-      },
       referees: [
         {
           id: 11065,
@@ -944,9 +912,6 @@ export let jogos: Root = {
         extraTime: null,
         penalties: null,
       },
-      odds: {
-        msg: 'Activate Odds-Package in User-Panel to retrieve odds.',
-      },
       referees: [],
     },
     {
@@ -1005,9 +970,6 @@ export let jogos: Root = {
         regularTime: null,
         extraTime: null,
         penalties: null,
-      },
-      odds: {
-        msg: 'Activate Odds-Package in User-Panel to retrieve odds.',
       },
       referees: [],
     },
@@ -1068,9 +1030,6 @@ export let jogos: Root = {
         extraTime: null,
         penalties: null,
       },
-      odds: {
-        msg: 'Activate Odds-Package in User-Panel to retrieve odds.',
-      },
       referees: [],
     },
     {
@@ -1129,9 +1088,6 @@ export let jogos: Root = {
         regularTime: null,
         extraTime: null,
         penalties: null,
-      },
-      odds: {
-        msg: 'Activate Odds-Package in User-Panel to retrieve odds.',
       },
       referees: [],
     },
@@ -1192,9 +1148,6 @@ export let jogos: Root = {
         extraTime: null,
         penalties: null,
       },
-      odds: {
-        msg: 'Activate Odds-Package in User-Panel to retrieve odds.',
-      },
       referees: [],
     },
     {
@@ -1253,9 +1206,6 @@ export let jogos: Root = {
         regularTime: null,
         extraTime: null,
         penalties: null,
-      },
-      odds: {
-        msg: 'Activate Odds-Package in User-Panel to retrieve odds.',
       },
       referees: [],
     },
@@ -1316,9 +1266,6 @@ export let jogos: Root = {
         extraTime: null,
         penalties: null,
       },
-      odds: {
-        msg: 'Activate Odds-Package in User-Panel to retrieve odds.',
-      },
       referees: [],
     },
     {
@@ -1377,9 +1324,6 @@ export let jogos: Root = {
         regularTime: null,
         extraTime: null,
         penalties: null,
-      },
-      odds: {
-        msg: 'Activate Odds-Package in User-Panel to retrieve odds.',
       },
       referees: [
         {
@@ -1447,9 +1391,6 @@ export let jogos: Root = {
         extraTime: null,
         penalties: null,
       },
-      odds: {
-        msg: 'Activate Odds-Package in User-Panel to retrieve odds.',
-      },
       referees: [],
     },
     {
@@ -1508,9 +1449,6 @@ export let jogos: Root = {
         regularTime: null,
         extraTime: null,
         penalties: null,
-      },
-      odds: {
-        msg: 'Activate Odds-Package in User-Panel to retrieve odds.',
       },
       referees: [
         {
@@ -1578,9 +1516,6 @@ export let jogos: Root = {
         extraTime: null,
         penalties: null,
       },
-      odds: {
-        msg: 'Activate Odds-Package in User-Panel to retrieve odds.',
-      },
       referees: [],
     },
     {
@@ -1639,9 +1574,6 @@ export let jogos: Root = {
         regularTime: null,
         extraTime: null,
         penalties: null,
-      },
-      odds: {
-        msg: 'Activate Odds-Package in User-Panel to retrieve odds.',
       },
       referees: [
         {
@@ -1709,9 +1641,6 @@ export let jogos: Root = {
         extraTime: null,
         penalties: null,
       },
-      odds: {
-        msg: 'Activate Odds-Package in User-Panel to retrieve odds.',
-      },
       referees: [
         {
           id: 207105,
@@ -1778,9 +1707,6 @@ export let jogos: Root = {
         extraTime: null,
         penalties: null,
       },
-      odds: {
-        msg: 'Activate Odds-Package in User-Panel to retrieve odds.',
-      },
       referees: [],
     },
     {
@@ -1840,9 +1766,6 @@ export let jogos: Root = {
         extraTime: null,
         penalties: null,
       },
-      odds: {
-        msg: 'Activate Odds-Package in User-Panel to retrieve odds.',
-      },
       referees: [],
     },
     {
@@ -1901,9 +1824,6 @@ export let jogos: Root = {
         regularTime: null,
         extraTime: null,
         penalties: null,
-      },
-      odds: {
-        msg: 'Activate Odds-Package in User-Panel to retrieve odds.',
       },
       referees: [
         {
@@ -1971,9 +1891,6 @@ export let jogos: Root = {
         extraTime: null,
         penalties: null,
       },
-      odds: {
-        msg: 'Activate Odds-Package in User-Panel to retrieve odds.',
-      },
       referees: [
         {
           id: 56923,
@@ -2039,9 +1956,6 @@ export let jogos: Root = {
         regularTime: null,
         extraTime: null,
         penalties: null,
-      },
-      odds: {
-        msg: 'Activate Odds-Package in User-Panel to retrieve odds.',
       },
       referees: [
         {
@@ -2109,9 +2023,6 @@ export let jogos: Root = {
         extraTime: null,
         penalties: null,
       },
-      odds: {
-        msg: 'Activate Odds-Package in User-Panel to retrieve odds.',
-      },
       referees: [
         {
           id: 11605,
@@ -2177,9 +2088,6 @@ export let jogos: Root = {
         regularTime: null,
         extraTime: null,
         penalties: null,
-      },
-      odds: {
-        msg: 'Activate Odds-Package in User-Panel to retrieve odds.',
       },
       referees: [
         {
@@ -2247,9 +2155,6 @@ export let jogos: Root = {
         extraTime: null,
         penalties: null,
       },
-      odds: {
-        msg: 'Activate Odds-Package in User-Panel to retrieve odds.',
-      },
       referees: [
         {
           id: 11620,
@@ -2315,9 +2220,6 @@ export let jogos: Root = {
         regularTime: null,
         extraTime: null,
         penalties: null,
-      },
-      odds: {
-        msg: 'Activate Odds-Package in User-Panel to retrieve odds.',
       },
       referees: [
         {
@@ -2385,9 +2287,6 @@ export let jogos: Root = {
         extraTime: null,
         penalties: null,
       },
-      odds: {
-        msg: 'Activate Odds-Package in User-Panel to retrieve odds.',
-      },
       referees: [
         {
           id: 11327,
@@ -2454,9 +2353,6 @@ export let jogos: Root = {
         extraTime: null,
         penalties: null,
       },
-      odds: {
-        msg: 'Activate Odds-Package in User-Panel to retrieve odds.',
-      },
       referees: [],
     },
     {
@@ -2515,9 +2411,6 @@ export let jogos: Root = {
         regularTime: null,
         extraTime: null,
         penalties: null,
-      },
-      odds: {
-        msg: 'Activate Odds-Package in User-Panel to retrieve odds.',
       },
       referees: [
         {
@@ -2585,9 +2478,6 @@ export let jogos: Root = {
         extraTime: null,
         penalties: null,
       },
-      odds: {
-        msg: 'Activate Odds-Package in User-Panel to retrieve odds.',
-      },
       referees: [],
     },
     {
@@ -2646,9 +2536,6 @@ export let jogos: Root = {
         regularTime: null,
         extraTime: null,
         penalties: null,
-      },
-      odds: {
-        msg: 'Activate Odds-Package in User-Panel to retrieve odds.',
       },
       referees: [
         {
@@ -2716,9 +2603,6 @@ export let jogos: Root = {
         extraTime: null,
         penalties: null,
       },
-      odds: {
-        msg: 'Activate Odds-Package in User-Panel to retrieve odds.',
-      },
       referees: [
         {
           id: 28438,
@@ -2784,9 +2668,6 @@ export let jogos: Root = {
         regularTime: null,
         extraTime: null,
         penalties: null,
-      },
-      odds: {
-        msg: 'Activate Odds-Package in User-Panel to retrieve odds.',
       },
       referees: [
         {
@@ -2854,9 +2735,6 @@ export let jogos: Root = {
         extraTime: null,
         penalties: null,
       },
-      odds: {
-        msg: 'Activate Odds-Package in User-Panel to retrieve odds.',
-      },
       referees: [
         {
           id: 43858,
@@ -2922,9 +2800,6 @@ export let jogos: Root = {
         regularTime: null,
         extraTime: null,
         penalties: null,
-      },
-      odds: {
-        msg: 'Activate Odds-Package in User-Panel to retrieve odds.',
       },
       referees: [
         {
@@ -2992,9 +2867,6 @@ export let jogos: Root = {
         extraTime: null,
         penalties: null,
       },
-      odds: {
-        msg: 'Activate Odds-Package in User-Panel to retrieve odds.',
-      },
       referees: [
         {
           id: 11585,
@@ -3060,9 +2932,6 @@ export let jogos: Root = {
         regularTime: null,
         extraTime: null,
         penalties: null,
-      },
-      odds: {
-        msg: 'Activate Odds-Package in User-Panel to retrieve odds.',
       },
       referees: [
         {
@@ -3130,9 +2999,6 @@ export let jogos: Root = {
         extraTime: null,
         penalties: null,
       },
-      odds: {
-        msg: 'Activate Odds-Package in User-Panel to retrieve odds.',
-      },
       referees: [
         {
           id: 11469,
@@ -3199,9 +3065,6 @@ export let jogos: Root = {
         extraTime: null,
         penalties: null,
       },
-      odds: {
-        msg: 'Activate Odds-Package in User-Panel to retrieve odds.',
-      },
       referees: [],
     },
     {
@@ -3260,9 +3123,6 @@ export let jogos: Root = {
         regularTime: null,
         extraTime: null,
         penalties: null,
-      },
-      odds: {
-        msg: 'Activate Odds-Package in User-Panel to retrieve odds.',
       },
       referees: [],
     },
@@ -3323,9 +3183,6 @@ export let jogos: Root = {
         extraTime: null,
         penalties: null,
       },
-      odds: {
-        msg: 'Activate Odds-Package in User-Panel to retrieve odds.',
-      },
       referees: [],
     },
     {
@@ -3384,9 +3241,6 @@ export let jogos: Root = {
         regularTime: null,
         extraTime: null,
         penalties: null,
-      },
-      odds: {
-        msg: 'Activate Odds-Package in User-Panel to retrieve odds.',
       },
       referees: [],
     },
@@ -3447,9 +3301,6 @@ export let jogos: Root = {
         extraTime: null,
         penalties: null,
       },
-      odds: {
-        msg: 'Activate Odds-Package in User-Panel to retrieve odds.',
-      },
       referees: [],
     },
     {
@@ -3509,9 +3360,6 @@ export let jogos: Root = {
         extraTime: null,
         penalties: null,
       },
-      odds: {
-        msg: 'Activate Odds-Package in User-Panel to retrieve odds.',
-      },
       referees: [],
     },
     {
@@ -3570,9 +3418,6 @@ export let jogos: Root = {
         regularTime: null,
         extraTime: null,
         penalties: null,
-      },
-      odds: {
-        msg: 'Activate Odds-Package in User-Panel to retrieve odds.',
       },
       referees: [
         {
@@ -3640,9 +3485,6 @@ export let jogos: Root = {
         extraTime: null,
         penalties: null,
       },
-      odds: {
-        msg: 'Activate Odds-Package in User-Panel to retrieve odds.',
-      },
       referees: [
         {
           id: 56910,
@@ -3708,9 +3550,6 @@ export let jogos: Root = {
         regularTime: null,
         extraTime: null,
         penalties: null,
-      },
-      odds: {
-        msg: 'Activate Odds-Package in User-Panel to retrieve odds.',
       },
       referees: [
         {
@@ -3778,9 +3617,6 @@ export let jogos: Root = {
         extraTime: null,
         penalties: null,
       },
-      odds: {
-        msg: 'Activate Odds-Package in User-Panel to retrieve odds.',
-      },
       referees: [
         {
           id: 11494,
@@ -3846,9 +3682,6 @@ export let jogos: Root = {
         regularTime: null,
         extraTime: null,
         penalties: null,
-      },
-      odds: {
-        msg: 'Activate Odds-Package in User-Panel to retrieve odds.',
       },
       referees: [
         {
@@ -3916,9 +3749,6 @@ export let jogos: Root = {
         extraTime: null,
         penalties: null,
       },
-      odds: {
-        msg: 'Activate Odds-Package in User-Panel to retrieve odds.',
-      },
       referees: [
         {
           id: 23568,
@@ -3984,9 +3814,6 @@ export let jogos: Root = {
         regularTime: null,
         extraTime: null,
         penalties: null,
-      },
-      odds: {
-        msg: 'Activate Odds-Package in User-Panel to retrieve odds.',
       },
       referees: [
         {
@@ -4054,9 +3881,6 @@ export let jogos: Root = {
         extraTime: null,
         penalties: null,
       },
-      odds: {
-        msg: 'Activate Odds-Package in User-Panel to retrieve odds.',
-      },
       referees: [],
     },
     {
@@ -4115,9 +3939,6 @@ export let jogos: Root = {
         regularTime: null,
         extraTime: null,
         penalties: null,
-      },
-      odds: {
-        msg: 'Activate Odds-Package in User-Panel to retrieve odds.',
       },
       referees: [
         {
@@ -4185,9 +4006,6 @@ export let jogos: Root = {
         extraTime: null,
         penalties: null,
       },
-      odds: {
-        msg: 'Activate Odds-Package in User-Panel to retrieve odds.',
-      },
       referees: [],
     },
     {
@@ -4246,9 +4064,6 @@ export let jogos: Root = {
         regularTime: null,
         extraTime: null,
         penalties: null,
-      },
-      odds: {
-        msg: 'Activate Odds-Package in User-Panel to retrieve odds.',
       },
       referees: [
         {
@@ -4316,9 +4131,6 @@ export let jogos: Root = {
         extraTime: null,
         penalties: null,
       },
-      odds: {
-        msg: 'Activate Odds-Package in User-Panel to retrieve odds.',
-      },
       referees: [
         {
           id: 57504,
@@ -4384,9 +4196,6 @@ export let jogos: Root = {
         regularTime: null,
         extraTime: null,
         penalties: null,
-      },
-      odds: {
-        msg: 'Activate Odds-Package in User-Panel to retrieve odds.',
       },
       referees: [
         {
@@ -4454,9 +4263,6 @@ export let jogos: Root = {
         extraTime: null,
         penalties: null,
       },
-      odds: {
-        msg: 'Activate Odds-Package in User-Panel to retrieve odds.',
-      },
       referees: [
         {
           id: 11287,
@@ -4522,9 +4328,6 @@ export let jogos: Root = {
         regularTime: null,
         extraTime: null,
         penalties: null,
-      },
-      odds: {
-        msg: 'Activate Odds-Package in User-Panel to retrieve odds.',
       },
       referees: [
         {
@@ -4592,9 +4395,6 @@ export let jogos: Root = {
         extraTime: null,
         penalties: null,
       },
-      odds: {
-        msg: 'Activate Odds-Package in User-Panel to retrieve odds.',
-      },
       referees: [],
     },
     {
@@ -4653,9 +4453,6 @@ export let jogos: Root = {
         regularTime: null,
         extraTime: null,
         penalties: null,
-      },
-      odds: {
-        msg: 'Activate Odds-Package in User-Panel to retrieve odds.',
       },
       referees: [
         {
@@ -4723,9 +4520,6 @@ export let jogos: Root = {
         extraTime: null,
         penalties: null,
       },
-      odds: {
-        msg: 'Activate Odds-Package in User-Panel to retrieve odds.',
-      },
       referees: [
         {
           id: 11520,
@@ -4791,9 +4585,6 @@ export let jogos: Root = {
         regularTime: null,
         extraTime: null,
         penalties: null,
-      },
-      odds: {
-        msg: 'Activate Odds-Package in User-Panel to retrieve odds.',
       },
       referees: [
         {
@@ -4861,9 +4652,6 @@ export let jogos: Root = {
         extraTime: null,
         penalties: null,
       },
-      odds: {
-        msg: 'Activate Odds-Package in User-Panel to retrieve odds.',
-      },
       referees: [
         {
           id: 43922,
@@ -4929,9 +4717,6 @@ export let jogos: Root = {
         regularTime: null,
         extraTime: null,
         penalties: null,
-      },
-      odds: {
-        msg: 'Activate Odds-Package in User-Panel to retrieve odds.',
       },
       referees: [
         {
@@ -4999,9 +4784,6 @@ export let jogos: Root = {
         extraTime: null,
         penalties: null,
       },
-      odds: {
-        msg: 'Activate Odds-Package in User-Panel to retrieve odds.',
-      },
       referees: [
         {
           id: 57517,
@@ -5067,9 +4849,6 @@ export let jogos: Root = {
         regularTime: null,
         extraTime: null,
         penalties: null,
-      },
-      odds: {
-        msg: 'Activate Odds-Package in User-Panel to retrieve odds.',
       },
       referees: [
         {
@@ -5137,9 +4916,6 @@ export let jogos: Root = {
         extraTime: null,
         penalties: null,
       },
-      odds: {
-        msg: 'Activate Odds-Package in User-Panel to retrieve odds.',
-      },
       referees: [
         {
           id: 15408,
@@ -5205,9 +4981,6 @@ export let jogos: Root = {
         regularTime: null,
         extraTime: null,
         penalties: null,
-      },
-      odds: {
-        msg: 'Activate Odds-Package in User-Panel to retrieve odds.',
       },
       referees: [
         {
@@ -5275,9 +5048,6 @@ export let jogos: Root = {
         extraTime: null,
         penalties: null,
       },
-      odds: {
-        msg: 'Activate Odds-Package in User-Panel to retrieve odds.',
-      },
       referees: [
         {
           id: 11635,
@@ -5343,9 +5113,6 @@ export let jogos: Root = {
         regularTime: null,
         extraTime: null,
         penalties: null,
-      },
-      odds: {
-        msg: 'Activate Odds-Package in User-Panel to retrieve odds.',
       },
       referees: [
         {
@@ -5413,9 +5180,6 @@ export let jogos: Root = {
         extraTime: null,
         penalties: null,
       },
-      odds: {
-        msg: 'Activate Odds-Package in User-Panel to retrieve odds.',
-      },
       referees: [
         {
           id: 11605,
@@ -5481,9 +5245,6 @@ export let jogos: Root = {
         regularTime: null,
         extraTime: null,
         penalties: null,
-      },
-      odds: {
-        msg: 'Activate Odds-Package in User-Panel to retrieve odds.',
       },
       referees: [
         {
@@ -5551,9 +5312,6 @@ export let jogos: Root = {
         extraTime: null,
         penalties: null,
       },
-      odds: {
-        msg: 'Activate Odds-Package in User-Panel to retrieve odds.',
-      },
       referees: [
         {
           id: 113767,
@@ -5619,9 +5377,6 @@ export let jogos: Root = {
         regularTime: null,
         extraTime: null,
         penalties: null,
-      },
-      odds: {
-        msg: 'Activate Odds-Package in User-Panel to retrieve odds.',
       },
       referees: [
         {
@@ -5689,9 +5444,6 @@ export let jogos: Root = {
         extraTime: null,
         penalties: null,
       },
-      odds: {
-        msg: 'Activate Odds-Package in User-Panel to retrieve odds.',
-      },
       referees: [
         {
           id: 11503,
@@ -5757,9 +5509,6 @@ export let jogos: Root = {
         regularTime: null,
         extraTime: null,
         penalties: null,
-      },
-      odds: {
-        msg: 'Activate Odds-Package in User-Panel to retrieve odds.',
       },
       referees: [
         {
@@ -5827,9 +5576,6 @@ export let jogos: Root = {
         extraTime: null,
         penalties: null,
       },
-      odds: {
-        msg: 'Activate Odds-Package in User-Panel to retrieve odds.',
-      },
       referees: [
         {
           id: 11378,
@@ -5895,9 +5641,6 @@ export let jogos: Root = {
         regularTime: null,
         extraTime: null,
         penalties: null,
-      },
-      odds: {
-        msg: 'Activate Odds-Package in User-Panel to retrieve odds.',
       },
       referees: [
         {
@@ -5965,9 +5708,6 @@ export let jogos: Root = {
         extraTime: null,
         penalties: null,
       },
-      odds: {
-        msg: 'Activate Odds-Package in User-Panel to retrieve odds.',
-      },
       referees: [
         {
           id: 11423,
@@ -6033,9 +5773,6 @@ export let jogos: Root = {
         regularTime: null,
         extraTime: null,
         penalties: null,
-      },
-      odds: {
-        msg: 'Activate Odds-Package in User-Panel to retrieve odds.',
       },
       referees: [
         {
@@ -6103,9 +5840,6 @@ export let jogos: Root = {
         extraTime: null,
         penalties: null,
       },
-      odds: {
-        msg: 'Activate Odds-Package in User-Panel to retrieve odds.',
-      },
       referees: [
         {
           id: 11561,
@@ -6171,9 +5905,6 @@ export let jogos: Root = {
         regularTime: null,
         extraTime: null,
         penalties: null,
-      },
-      odds: {
-        msg: 'Activate Odds-Package in User-Panel to retrieve odds.',
       },
       referees: [
         {
@@ -6241,9 +5972,6 @@ export let jogos: Root = {
         extraTime: null,
         penalties: null,
       },
-      odds: {
-        msg: 'Activate Odds-Package in User-Panel to retrieve odds.',
-      },
       referees: [],
     },
     {
@@ -6302,9 +6030,6 @@ export let jogos: Root = {
         regularTime: null,
         extraTime: null,
         penalties: null,
-      },
-      odds: {
-        msg: 'Activate Odds-Package in User-Panel to retrieve odds.',
       },
       referees: [
         {
@@ -6372,9 +6097,6 @@ export let jogos: Root = {
         extraTime: null,
         penalties: null,
       },
-      odds: {
-        msg: 'Activate Odds-Package in User-Panel to retrieve odds.',
-      },
       referees: [],
     },
     {
@@ -6433,9 +6155,6 @@ export let jogos: Root = {
         regularTime: null,
         extraTime: null,
         penalties: null,
-      },
-      odds: {
-        msg: 'Activate Odds-Package in User-Panel to retrieve odds.',
       },
       referees: [
         {
@@ -6503,9 +6222,6 @@ export let jogos: Root = {
         extraTime: null,
         penalties: null,
       },
-      odds: {
-        msg: 'Activate Odds-Package in User-Panel to retrieve odds.',
-      },
       referees: [
         {
           id: 11079,
@@ -6571,9 +6287,6 @@ export let jogos: Root = {
         regularTime: null,
         extraTime: null,
         penalties: null,
-      },
-      odds: {
-        msg: 'Activate Odds-Package in User-Panel to retrieve odds.',
       },
       referees: [
         {
@@ -6641,9 +6354,6 @@ export let jogos: Root = {
         extraTime: null,
         penalties: null,
       },
-      odds: {
-        msg: 'Activate Odds-Package in User-Panel to retrieve odds.',
-      },
       referees: [
         {
           id: 56230,
@@ -6709,9 +6419,6 @@ export let jogos: Root = {
         regularTime: null,
         extraTime: null,
         penalties: null,
-      },
-      odds: {
-        msg: 'Activate Odds-Package in User-Panel to retrieve odds.',
       },
       referees: [
         {
@@ -6779,9 +6486,6 @@ export let jogos: Root = {
         extraTime: null,
         penalties: null,
       },
-      odds: {
-        msg: 'Activate Odds-Package in User-Panel to retrieve odds.',
-      },
       referees: [],
     },
     {
@@ -6840,9 +6544,6 @@ export let jogos: Root = {
         regularTime: null,
         extraTime: null,
         penalties: null,
-      },
-      odds: {
-        msg: 'Activate Odds-Package in User-Panel to retrieve odds.',
       },
       referees: [
         {
@@ -6910,9 +6611,6 @@ export let jogos: Root = {
         extraTime: null,
         penalties: null,
       },
-      odds: {
-        msg: 'Activate Odds-Package in User-Panel to retrieve odds.',
-      },
       referees: [
         {
           id: 11029,
@@ -6978,9 +6676,6 @@ export let jogos: Root = {
         regularTime: null,
         extraTime: null,
         penalties: null,
-      },
-      odds: {
-        msg: 'Activate Odds-Package in User-Panel to retrieve odds.',
       },
       referees: [
         {
@@ -7048,9 +6743,6 @@ export let jogos: Root = {
         extraTime: null,
         penalties: null,
       },
-      odds: {
-        msg: 'Activate Odds-Package in User-Panel to retrieve odds.',
-      },
       referees: [
         {
           id: 17141,
@@ -7117,9 +6809,6 @@ export let jogos: Root = {
         extraTime: null,
         penalties: null,
       },
-      odds: {
-        msg: 'Activate Odds-Package in User-Panel to retrieve odds.',
-      },
       referees: [],
     },
     {
@@ -7178,9 +6867,6 @@ export let jogos: Root = {
         regularTime: null,
         extraTime: null,
         penalties: null,
-      },
-      odds: {
-        msg: 'Activate Odds-Package in User-Panel to retrieve odds.',
       },
       referees: [
         {
@@ -7248,9 +6934,6 @@ export let jogos: Root = {
         extraTime: null,
         penalties: null,
       },
-      odds: {
-        msg: 'Activate Odds-Package in User-Panel to retrieve odds.',
-      },
       referees: [
         {
           id: 11116,
@@ -7316,9 +6999,6 @@ export let jogos: Root = {
         regularTime: null,
         extraTime: null,
         penalties: null,
-      },
-      odds: {
-        msg: 'Activate Odds-Package in User-Panel to retrieve odds.',
       },
       referees: [
         {
@@ -7386,9 +7066,6 @@ export let jogos: Root = {
         extraTime: null,
         penalties: null,
       },
-      odds: {
-        msg: 'Activate Odds-Package in User-Panel to retrieve odds.',
-      },
       referees: [
         {
           id: 43899,
@@ -7454,9 +7131,6 @@ export let jogos: Root = {
         regularTime: null,
         extraTime: null,
         penalties: null,
-      },
-      odds: {
-        msg: 'Activate Odds-Package in User-Panel to retrieve odds.',
       },
       referees: [
         {
@@ -7524,9 +7198,6 @@ export let jogos: Root = {
         extraTime: null,
         penalties: null,
       },
-      odds: {
-        msg: 'Activate Odds-Package in User-Panel to retrieve odds.',
-      },
       referees: [
         {
           id: 11065,
@@ -7592,9 +7263,6 @@ export let jogos: Root = {
         regularTime: null,
         extraTime: null,
         penalties: null,
-      },
-      odds: {
-        msg: 'Activate Odds-Package in User-Panel to retrieve odds.',
       },
       referees: [
         {
@@ -7662,9 +7330,6 @@ export let jogos: Root = {
         extraTime: null,
         penalties: null,
       },
-      odds: {
-        msg: 'Activate Odds-Package in User-Panel to retrieve odds.',
-      },
       referees: [
         {
           id: 43886,
@@ -7730,9 +7395,6 @@ export let jogos: Root = {
         regularTime: null,
         extraTime: null,
         penalties: null,
-      },
-      odds: {
-        msg: 'Activate Odds-Package in User-Panel to retrieve odds.',
       },
       referees: [
         {
@@ -7800,9 +7462,6 @@ export let jogos: Root = {
         extraTime: null,
         penalties: null,
       },
-      odds: {
-        msg: 'Activate Odds-Package in User-Panel to retrieve odds.',
-      },
       referees: [
         {
           id: 58466,
@@ -7868,9 +7527,6 @@ export let jogos: Root = {
         regularTime: null,
         extraTime: null,
         penalties: null,
-      },
-      odds: {
-        msg: 'Activate Odds-Package in User-Panel to retrieve odds.',
       },
       referees: [
         {
@@ -7938,9 +7594,6 @@ export let jogos: Root = {
         extraTime: null,
         penalties: null,
       },
-      odds: {
-        msg: 'Activate Odds-Package in User-Panel to retrieve odds.',
-      },
       referees: [],
     },
     {
@@ -7999,9 +7652,6 @@ export let jogos: Root = {
         regularTime: null,
         extraTime: null,
         penalties: null,
-      },
-      odds: {
-        msg: 'Activate Odds-Package in User-Panel to retrieve odds.',
       },
       referees: [
         {
@@ -8069,9 +7719,6 @@ export let jogos: Root = {
         extraTime: null,
         penalties: null,
       },
-      odds: {
-        msg: 'Activate Odds-Package in User-Panel to retrieve odds.',
-      },
       referees: [
         {
           id: 25786,
@@ -8137,9 +7784,6 @@ export let jogos: Root = {
         regularTime: null,
         extraTime: null,
         penalties: null,
-      },
-      odds: {
-        msg: 'Activate Odds-Package in User-Panel to retrieve odds.',
       },
       referees: [
         {
@@ -8207,9 +7851,6 @@ export let jogos: Root = {
         extraTime: null,
         penalties: null,
       },
-      odds: {
-        msg: 'Activate Odds-Package in User-Panel to retrieve odds.',
-      },
       referees: [
         {
           id: 11018,
@@ -8275,9 +7916,6 @@ export let jogos: Root = {
         regularTime: null,
         extraTime: null,
         penalties: null,
-      },
-      odds: {
-        msg: 'Activate Odds-Package in User-Panel to retrieve odds.',
       },
       referees: [
         {
@@ -8345,9 +7983,6 @@ export let jogos: Root = {
         extraTime: null,
         penalties: null,
       },
-      odds: {
-        msg: 'Activate Odds-Package in User-Panel to retrieve odds.',
-      },
       referees: [
         {
           id: 11446,
@@ -8413,9 +8048,6 @@ export let jogos: Root = {
         regularTime: null,
         extraTime: null,
         penalties: null,
-      },
-      odds: {
-        msg: 'Activate Odds-Package in User-Panel to retrieve odds.',
       },
       referees: [
         {
@@ -8483,9 +8115,6 @@ export let jogos: Root = {
         extraTime: null,
         penalties: null,
       },
-      odds: {
-        msg: 'Activate Odds-Package in User-Panel to retrieve odds.',
-      },
       referees: [],
     },
     {
@@ -8544,9 +8173,6 @@ export let jogos: Root = {
         regularTime: null,
         extraTime: null,
         penalties: null,
-      },
-      odds: {
-        msg: 'Activate Odds-Package in User-Panel to retrieve odds.',
       },
       referees: [
         {
@@ -8614,9 +8240,6 @@ export let jogos: Root = {
         extraTime: null,
         penalties: null,
       },
-      odds: {
-        msg: 'Activate Odds-Package in User-Panel to retrieve odds.',
-      },
       referees: [
         {
           id: 10980,
@@ -8682,9 +8305,6 @@ export let jogos: Root = {
         regularTime: null,
         extraTime: null,
         penalties: null,
-      },
-      odds: {
-        msg: 'Activate Odds-Package in User-Panel to retrieve odds.',
       },
       referees: [
         {
@@ -8752,9 +8372,6 @@ export let jogos: Root = {
         extraTime: null,
         penalties: null,
       },
-      odds: {
-        msg: 'Activate Odds-Package in User-Panel to retrieve odds.',
-      },
       referees: [],
     },
     {
@@ -8813,9 +8430,6 @@ export let jogos: Root = {
         regularTime: null,
         extraTime: null,
         penalties: null,
-      },
-      odds: {
-        msg: 'Activate Odds-Package in User-Panel to retrieve odds.',
       },
       referees: [
         {
@@ -8883,9 +8497,6 @@ export let jogos: Root = {
         extraTime: null,
         penalties: null,
       },
-      odds: {
-        msg: 'Activate Odds-Package in User-Panel to retrieve odds.',
-      },
       referees: [],
     },
     {
@@ -8944,9 +8555,6 @@ export let jogos: Root = {
         regularTime: null,
         extraTime: null,
         penalties: null,
-      },
-      odds: {
-        msg: 'Activate Odds-Package in User-Panel to retrieve odds.',
       },
       referees: [
         {
@@ -9014,9 +8622,6 @@ export let jogos: Root = {
         extraTime: null,
         penalties: null,
       },
-      odds: {
-        msg: 'Activate Odds-Package in User-Panel to retrieve odds.',
-      },
       referees: [],
     },
     {
@@ -9075,9 +8680,6 @@ export let jogos: Root = {
         regularTime: null,
         extraTime: null,
         penalties: null,
-      },
-      odds: {
-        msg: 'Activate Odds-Package in User-Panel to retrieve odds.',
       },
       referees: [
         {
@@ -9145,9 +8747,6 @@ export let jogos: Root = {
         extraTime: null,
         penalties: null,
       },
-      odds: {
-        msg: 'Activate Odds-Package in User-Panel to retrieve odds.',
-      },
       referees: [
         {
           id: 81840,
@@ -9213,9 +8812,6 @@ export let jogos: Root = {
         regularTime: null,
         extraTime: null,
         penalties: null,
-      },
-      odds: {
-        msg: 'Activate Odds-Package in User-Panel to retrieve odds.',
       },
       referees: [
         {
@@ -9283,9 +8879,6 @@ export let jogos: Root = {
         extraTime: null,
         penalties: null,
       },
-      odds: {
-        msg: 'Activate Odds-Package in User-Panel to retrieve odds.',
-      },
       referees: [
         {
           id: 43918,
@@ -9351,9 +8944,6 @@ export let jogos: Root = {
         regularTime: null,
         extraTime: null,
         penalties: null,
-      },
-      odds: {
-        msg: 'Activate Odds-Package in User-Panel to retrieve odds.',
       },
       referees: [
         {
@@ -9421,9 +9011,6 @@ export let jogos: Root = {
         extraTime: null,
         penalties: null,
       },
-      odds: {
-        msg: 'Activate Odds-Package in User-Panel to retrieve odds.',
-      },
       referees: [
         {
           id: 11396,
@@ -9490,9 +9077,6 @@ export let jogos: Root = {
         extraTime: null,
         penalties: null,
       },
-      odds: {
-        msg: 'Activate Odds-Package in User-Panel to retrieve odds.',
-      },
       referees: [],
     },
     {
@@ -9551,9 +9135,6 @@ export let jogos: Root = {
         regularTime: null,
         extraTime: null,
         penalties: null,
-      },
-      odds: {
-        msg: 'Activate Odds-Package in User-Panel to retrieve odds.',
       },
       referees: [],
     },
@@ -9614,9 +9195,6 @@ export let jogos: Root = {
         extraTime: null,
         penalties: null,
       },
-      odds: {
-        msg: 'Activate Odds-Package in User-Panel to retrieve odds.',
-      },
       referees: [],
     },
     {
@@ -9675,9 +9253,6 @@ export let jogos: Root = {
         regularTime: null,
         extraTime: null,
         penalties: null,
-      },
-      odds: {
-        msg: 'Activate Odds-Package in User-Panel to retrieve odds.',
       },
       referees: [],
     },
@@ -9738,9 +9313,6 @@ export let jogos: Root = {
         extraTime: null,
         penalties: null,
       },
-      odds: {
-        msg: 'Activate Odds-Package in User-Panel to retrieve odds.',
-      },
       referees: [],
     },
     {
@@ -9799,9 +9371,6 @@ export let jogos: Root = {
         regularTime: null,
         extraTime: null,
         penalties: null,
-      },
-      odds: {
-        msg: 'Activate Odds-Package in User-Panel to retrieve odds.',
       },
       referees: [
         {
@@ -9869,9 +9438,6 @@ export let jogos: Root = {
         extraTime: null,
         penalties: null,
       },
-      odds: {
-        msg: 'Activate Odds-Package in User-Panel to retrieve odds.',
-      },
       referees: [
         {
           id: 11635,
@@ -9937,9 +9503,6 @@ export let jogos: Root = {
         regularTime: null,
         extraTime: null,
         penalties: null,
-      },
-      odds: {
-        msg: 'Activate Odds-Package in User-Panel to retrieve odds.',
       },
       referees: [
         {
@@ -10007,9 +9570,6 @@ export let jogos: Root = {
         extraTime: null,
         penalties: null,
       },
-      odds: {
-        msg: 'Activate Odds-Package in User-Panel to retrieve odds.',
-      },
       referees: [
         {
           id: 9382,
@@ -10075,9 +9635,6 @@ export let jogos: Root = {
         regularTime: null,
         extraTime: null,
         penalties: null,
-      },
-      odds: {
-        msg: 'Activate Odds-Package in User-Panel to retrieve odds.',
       },
       referees: [
         {
@@ -10145,9 +9702,6 @@ export let jogos: Root = {
         extraTime: null,
         penalties: null,
       },
-      odds: {
-        msg: 'Activate Odds-Package in User-Panel to retrieve odds.',
-      },
       referees: [
         {
           id: 11079,
@@ -10213,9 +9767,6 @@ export let jogos: Root = {
         regularTime: null,
         extraTime: null,
         penalties: null,
-      },
-      odds: {
-        msg: 'Activate Odds-Package in User-Panel to retrieve odds.',
       },
       referees: [
         {
@@ -10283,9 +9834,6 @@ export let jogos: Root = {
         extraTime: null,
         penalties: null,
       },
-      odds: {
-        msg: 'Activate Odds-Package in User-Panel to retrieve odds.',
-      },
       referees: [
         {
           id: 11519,
@@ -10352,9 +9900,6 @@ export let jogos: Root = {
         extraTime: null,
         penalties: null,
       },
-      odds: {
-        msg: 'Activate Odds-Package in User-Panel to retrieve odds.',
-      },
       referees: [],
     },
     {
@@ -10413,9 +9958,6 @@ export let jogos: Root = {
         regularTime: null,
         extraTime: null,
         penalties: null,
-      },
-      odds: {
-        msg: 'Activate Odds-Package in User-Panel to retrieve odds.',
       },
       referees: [],
     },
@@ -10476,9 +10018,6 @@ export let jogos: Root = {
         extraTime: null,
         penalties: null,
       },
-      odds: {
-        msg: 'Activate Odds-Package in User-Panel to retrieve odds.',
-      },
       referees: [],
     },
     {
@@ -10537,9 +10076,6 @@ export let jogos: Root = {
         regularTime: null,
         extraTime: null,
         penalties: null,
-      },
-      odds: {
-        msg: 'Activate Odds-Package in User-Panel to retrieve odds.',
       },
       referees: [],
     },
@@ -10600,9 +10136,6 @@ export let jogos: Root = {
         extraTime: null,
         penalties: null,
       },
-      odds: {
-        msg: 'Activate Odds-Package in User-Panel to retrieve odds.',
-      },
       referees: [],
     },
     {
@@ -10661,9 +10194,6 @@ export let jogos: Root = {
         regularTime: null,
         extraTime: null,
         penalties: null,
-      },
-      odds: {
-        msg: 'Activate Odds-Package in User-Panel to retrieve odds.',
       },
       referees: [
         {
@@ -10731,9 +10261,6 @@ export let jogos: Root = {
         extraTime: null,
         penalties: null,
       },
-      odds: {
-        msg: 'Activate Odds-Package in User-Panel to retrieve odds.',
-      },
       referees: [
         {
           id: 43899,
@@ -10799,9 +10326,6 @@ export let jogos: Root = {
         regularTime: null,
         extraTime: null,
         penalties: null,
-      },
-      odds: {
-        msg: 'Activate Odds-Package in User-Panel to retrieve odds.',
       },
       referees: [
         {
@@ -10869,9 +10393,6 @@ export let jogos: Root = {
         extraTime: null,
         penalties: null,
       },
-      odds: {
-        msg: 'Activate Odds-Package in User-Panel to retrieve odds.',
-      },
       referees: [
         {
           id: 57764,
@@ -10937,9 +10458,6 @@ export let jogos: Root = {
         regularTime: null,
         extraTime: null,
         penalties: null,
-      },
-      odds: {
-        msg: 'Activate Odds-Package in User-Panel to retrieve odds.',
       },
       referees: [
         {
@@ -11007,9 +10525,6 @@ export let jogos: Root = {
         extraTime: null,
         penalties: null,
       },
-      odds: {
-        msg: 'Activate Odds-Package in User-Panel to retrieve odds.',
-      },
       referees: [
         {
           id: 11446,
@@ -11075,9 +10590,6 @@ export let jogos: Root = {
         regularTime: null,
         extraTime: null,
         penalties: null,
-      },
-      odds: {
-        msg: 'Activate Odds-Package in User-Panel to retrieve odds.',
       },
       referees: [
         {
@@ -11145,9 +10657,6 @@ export let jogos: Root = {
         extraTime: null,
         penalties: null,
       },
-      odds: {
-        msg: 'Activate Odds-Package in User-Panel to retrieve odds.',
-      },
       referees: [],
     },
     {
@@ -11206,9 +10715,6 @@ export let jogos: Root = {
         regularTime: null,
         extraTime: null,
         penalties: null,
-      },
-      odds: {
-        msg: 'Activate Odds-Package in User-Panel to retrieve odds.',
       },
       referees: [],
     },
@@ -11269,9 +10775,6 @@ export let jogos: Root = {
         extraTime: null,
         penalties: null,
       },
-      odds: {
-        msg: 'Activate Odds-Package in User-Panel to retrieve odds.',
-      },
       referees: [],
     },
     {
@@ -11330,9 +10833,6 @@ export let jogos: Root = {
         regularTime: null,
         extraTime: null,
         penalties: null,
-      },
-      odds: {
-        msg: 'Activate Odds-Package in User-Panel to retrieve odds.',
       },
       referees: [],
     },
@@ -11393,9 +10893,6 @@ export let jogos: Root = {
         extraTime: null,
         penalties: null,
       },
-      odds: {
-        msg: 'Activate Odds-Package in User-Panel to retrieve odds.',
-      },
       referees: [],
     },
     {
@@ -11454,9 +10951,6 @@ export let jogos: Root = {
         regularTime: null,
         extraTime: null,
         penalties: null,
-      },
-      odds: {
-        msg: 'Activate Odds-Package in User-Panel to retrieve odds.',
       },
       referees: [],
     },
@@ -11517,9 +11011,6 @@ export let jogos: Root = {
         extraTime: null,
         penalties: null,
       },
-      odds: {
-        msg: 'Activate Odds-Package in User-Panel to retrieve odds.',
-      },
       referees: [],
     },
     {
@@ -11578,9 +11069,6 @@ export let jogos: Root = {
         regularTime: null,
         extraTime: null,
         penalties: null,
-      },
-      odds: {
-        msg: 'Activate Odds-Package in User-Panel to retrieve odds.',
       },
       referees: [],
     },
@@ -11641,9 +11129,6 @@ export let jogos: Root = {
         extraTime: null,
         penalties: null,
       },
-      odds: {
-        msg: 'Activate Odds-Package in User-Panel to retrieve odds.',
-      },
       referees: [],
     },
     {
@@ -11702,9 +11187,6 @@ export let jogos: Root = {
         regularTime: null,
         extraTime: null,
         penalties: null,
-      },
-      odds: {
-        msg: 'Activate Odds-Package in User-Panel to retrieve odds.',
       },
       referees: [],
     },
@@ -11765,9 +11247,6 @@ export let jogos: Root = {
         extraTime: null,
         penalties: null,
       },
-      odds: {
-        msg: 'Activate Odds-Package in User-Panel to retrieve odds.',
-      },
       referees: [],
     },
     {
@@ -11826,9 +11305,6 @@ export let jogos: Root = {
         regularTime: null,
         extraTime: null,
         penalties: null,
-      },
-      odds: {
-        msg: 'Activate Odds-Package in User-Panel to retrieve odds.',
       },
       referees: [],
     },
@@ -11889,9 +11365,6 @@ export let jogos: Root = {
         extraTime: null,
         penalties: null,
       },
-      odds: {
-        msg: 'Activate Odds-Package in User-Panel to retrieve odds.',
-      },
       referees: [],
     },
     {
@@ -11950,9 +11423,6 @@ export let jogos: Root = {
         regularTime: null,
         extraTime: null,
         penalties: null,
-      },
-      odds: {
-        msg: 'Activate Odds-Package in User-Panel to retrieve odds.',
       },
       referees: [],
     },
@@ -12013,9 +11483,6 @@ export let jogos: Root = {
         extraTime: null,
         penalties: null,
       },
-      odds: {
-        msg: 'Activate Odds-Package in User-Panel to retrieve odds.',
-      },
       referees: [],
     },
     {
@@ -12074,9 +11541,6 @@ export let jogos: Root = {
         regularTime: null,
         extraTime: null,
         penalties: null,
-      },
-      odds: {
-        msg: 'Activate Odds-Package in User-Panel to retrieve odds.',
       },
       referees: [],
     },
@@ -12137,9 +11601,6 @@ export let jogos: Root = {
         extraTime: null,
         penalties: null,
       },
-      odds: {
-        msg: 'Activate Odds-Package in User-Panel to retrieve odds.',
-      },
       referees: [],
     },
     {
@@ -12198,9 +11659,6 @@ export let jogos: Root = {
         regularTime: null,
         extraTime: null,
         penalties: null,
-      },
-      odds: {
-        msg: 'Activate Odds-Package in User-Panel to retrieve odds.',
       },
       referees: [],
     },
@@ -12261,9 +11719,6 @@ export let jogos: Root = {
         extraTime: null,
         penalties: null,
       },
-      odds: {
-        msg: 'Activate Odds-Package in User-Panel to retrieve odds.',
-      },
       referees: [],
     },
     {
@@ -12322,9 +11777,6 @@ export let jogos: Root = {
         regularTime: null,
         extraTime: null,
         penalties: null,
-      },
-      odds: {
-        msg: 'Activate Odds-Package in User-Panel to retrieve odds.',
       },
       referees: [],
     },
@@ -12385,9 +11837,6 @@ export let jogos: Root = {
         extraTime: null,
         penalties: null,
       },
-      odds: {
-        msg: 'Activate Odds-Package in User-Panel to retrieve odds.',
-      },
       referees: [],
     },
     {
@@ -12446,9 +11895,6 @@ export let jogos: Root = {
         regularTime: null,
         extraTime: null,
         penalties: null,
-      },
-      odds: {
-        msg: 'Activate Odds-Package in User-Panel to retrieve odds.',
       },
       referees: [],
     },
@@ -12509,9 +11955,6 @@ export let jogos: Root = {
         extraTime: null,
         penalties: null,
       },
-      odds: {
-        msg: 'Activate Odds-Package in User-Panel to retrieve odds.',
-      },
       referees: [],
     },
     {
@@ -12570,9 +12013,6 @@ export let jogos: Root = {
         regularTime: null,
         extraTime: null,
         penalties: null,
-      },
-      odds: {
-        msg: 'Activate Odds-Package in User-Panel to retrieve odds.',
       },
       referees: [],
     },
@@ -12633,9 +12073,6 @@ export let jogos: Root = {
         extraTime: null,
         penalties: null,
       },
-      odds: {
-        msg: 'Activate Odds-Package in User-Panel to retrieve odds.',
-      },
       referees: [],
     },
     {
@@ -12694,9 +12131,6 @@ export let jogos: Root = {
         regularTime: null,
         extraTime: null,
         penalties: null,
-      },
-      odds: {
-        msg: 'Activate Odds-Package in User-Panel to retrieve odds.',
       },
       referees: [],
     },
@@ -12757,9 +12191,6 @@ export let jogos: Root = {
         extraTime: null,
         penalties: null,
       },
-      odds: {
-        msg: 'Activate Odds-Package in User-Panel to retrieve odds.',
-      },
       referees: [],
     },
     {
@@ -12818,9 +12249,6 @@ export let jogos: Root = {
         regularTime: null,
         extraTime: null,
         penalties: null,
-      },
-      odds: {
-        msg: 'Activate Odds-Package in User-Panel to retrieve odds.',
       },
       referees: [],
     },
@@ -12881,9 +12309,6 @@ export let jogos: Root = {
         extraTime: null,
         penalties: null,
       },
-      odds: {
-        msg: 'Activate Odds-Package in User-Panel to retrieve odds.',
-      },
       referees: [],
     },
     {
@@ -12942,9 +12367,6 @@ export let jogos: Root = {
         regularTime: null,
         extraTime: null,
         penalties: null,
-      },
-      odds: {
-        msg: 'Activate Odds-Package in User-Panel to retrieve odds.',
       },
       referees: [],
     },
@@ -13005,9 +12427,6 @@ export let jogos: Root = {
         extraTime: null,
         penalties: null,
       },
-      odds: {
-        msg: 'Activate Odds-Package in User-Panel to retrieve odds.',
-      },
       referees: [],
     },
     {
@@ -13066,9 +12485,6 @@ export let jogos: Root = {
         regularTime: null,
         extraTime: null,
         penalties: null,
-      },
-      odds: {
-        msg: 'Activate Odds-Package in User-Panel to retrieve odds.',
       },
       referees: [],
     },
@@ -13129,9 +12545,6 @@ export let jogos: Root = {
         extraTime: null,
         penalties: null,
       },
-      odds: {
-        msg: 'Activate Odds-Package in User-Panel to retrieve odds.',
-      },
       referees: [],
     },
     {
@@ -13190,9 +12603,6 @@ export let jogos: Root = {
         regularTime: null,
         extraTime: null,
         penalties: null,
-      },
-      odds: {
-        msg: 'Activate Odds-Package in User-Panel to retrieve odds.',
       },
       referees: [],
     },
@@ -13253,9 +12663,6 @@ export let jogos: Root = {
         extraTime: null,
         penalties: null,
       },
-      odds: {
-        msg: 'Activate Odds-Package in User-Panel to retrieve odds.',
-      },
       referees: [],
     },
     {
@@ -13314,9 +12721,6 @@ export let jogos: Root = {
         regularTime: null,
         extraTime: null,
         penalties: null,
-      },
-      odds: {
-        msg: 'Activate Odds-Package in User-Panel to retrieve odds.',
       },
       referees: [],
     },
@@ -13377,9 +12781,6 @@ export let jogos: Root = {
         extraTime: null,
         penalties: null,
       },
-      odds: {
-        msg: 'Activate Odds-Package in User-Panel to retrieve odds.',
-      },
       referees: [],
     },
     {
@@ -13438,9 +12839,6 @@ export let jogos: Root = {
         regularTime: null,
         extraTime: null,
         penalties: null,
-      },
-      odds: {
-        msg: 'Activate Odds-Package in User-Panel to retrieve odds.',
       },
       referees: [],
     },
@@ -13501,9 +12899,6 @@ export let jogos: Root = {
         extraTime: null,
         penalties: null,
       },
-      odds: {
-        msg: 'Activate Odds-Package in User-Panel to retrieve odds.',
-      },
       referees: [],
     },
     {
@@ -13562,9 +12957,6 @@ export let jogos: Root = {
         regularTime: null,
         extraTime: null,
         penalties: null,
-      },
-      odds: {
-        msg: 'Activate Odds-Package in User-Panel to retrieve odds.',
       },
       referees: [],
     },
@@ -13625,9 +13017,6 @@ export let jogos: Root = {
         extraTime: null,
         penalties: null,
       },
-      odds: {
-        msg: 'Activate Odds-Package in User-Panel to retrieve odds.',
-      },
       referees: [],
     },
     {
@@ -13687,9 +13076,6 @@ export let jogos: Root = {
         extraTime: null,
         penalties: null,
       },
-      odds: {
-        msg: 'Activate Odds-Package in User-Panel to retrieve odds.',
-      },
       referees: [],
     },
     {
@@ -13748,9 +13134,6 @@ export let jogos: Root = {
         regularTime: null,
         extraTime: null,
         penalties: null,
-      },
-      odds: {
-        msg: 'Activate Odds-Package in User-Panel to retrieve odds.',
       },
       referees: [],
     },
@@ -13823,9 +13206,6 @@ export let jogos: Root = {
         regularTime: null,
         extraTime: null,
         penalties: null,
-      },
-      odds: {
-        msg: 'Activate Odds-Package in User-Panel to retrieve odds.',
       },
       referees: [
         {
@@ -13905,9 +13285,6 @@ export let jogos: Root = {
         extraTime: null,
         penalties: null,
       },
-      odds: {
-        msg: 'Activate Odds-Package in User-Panel to retrieve odds.',
-      },
       referees: [
         {
           id: 11260,
@@ -13985,9 +13362,6 @@ export let jogos: Root = {
         regularTime: null,
         extraTime: null,
         penalties: null,
-      },
-      odds: {
-        msg: 'Activate Odds-Package in User-Panel to retrieve odds.',
       },
       referees: [
         {
@@ -14067,9 +13441,6 @@ export let jogos: Root = {
         extraTime: null,
         penalties: null,
       },
-      odds: {
-        msg: 'Activate Odds-Package in User-Panel to retrieve odds.',
-      },
       referees: [
         {
           id: 56026,
@@ -14147,9 +13518,6 @@ export let jogos: Root = {
         regularTime: null,
         extraTime: null,
         penalties: null,
-      },
-      odds: {
-        msg: 'Activate Odds-Package in User-Panel to retrieve odds.',
       },
       referees: [
         {
@@ -14229,9 +13597,6 @@ export let jogos: Root = {
         extraTime: null,
         penalties: null,
       },
-      odds: {
-        msg: 'Activate Odds-Package in User-Panel to retrieve odds.',
-      },
       referees: [
         {
           id: 56007,
@@ -14309,9 +13674,6 @@ export let jogos: Root = {
         regularTime: null,
         extraTime: null,
         penalties: null,
-      },
-      odds: {
-        msg: 'Activate Odds-Package in User-Panel to retrieve odds.',
       },
       referees: [
         {
@@ -14391,9 +13753,6 @@ export let jogos: Root = {
         extraTime: null,
         penalties: null,
       },
-      odds: {
-        msg: 'Activate Odds-Package in User-Panel to retrieve odds.',
-      },
       referees: [
         {
           id: 34018,
@@ -14471,9 +13830,6 @@ export let jogos: Root = {
         regularTime: null,
         extraTime: null,
         penalties: null,
-      },
-      odds: {
-        msg: 'Activate Odds-Package in User-Panel to retrieve odds.',
       },
       referees: [
         {
@@ -14553,9 +13909,6 @@ export let jogos: Root = {
         extraTime: null,
         penalties: null,
       },
-      odds: {
-        msg: 'Activate Odds-Package in User-Panel to retrieve odds.',
-      },
       referees: [
         {
           id: 190010,
@@ -14633,9 +13986,6 @@ export let jogos: Root = {
         regularTime: null,
         extraTime: null,
         penalties: null,
-      },
-      odds: {
-        msg: 'Activate Odds-Package in User-Panel to retrieve odds.',
       },
       referees: [
         {
@@ -14715,9 +14065,6 @@ export let jogos: Root = {
         extraTime: null,
         penalties: null,
       },
-      odds: {
-        msg: 'Activate Odds-Package in User-Panel to retrieve odds.',
-      },
       referees: [
         {
           id: 56021,
@@ -14795,9 +14142,6 @@ export let jogos: Root = {
         regularTime: null,
         extraTime: null,
         penalties: null,
-      },
-      odds: {
-        msg: 'Activate Odds-Package in User-Panel to retrieve odds.',
       },
       referees: [
         {
@@ -14877,9 +14221,6 @@ export let jogos: Root = {
         extraTime: null,
         penalties: null,
       },
-      odds: {
-        msg: 'Activate Odds-Package in User-Panel to retrieve odds.',
-      },
       referees: [
         {
           id: 9374,
@@ -14957,9 +14298,6 @@ export let jogos: Root = {
         regularTime: null,
         extraTime: null,
         penalties: null,
-      },
-      odds: {
-        msg: 'Activate Odds-Package in User-Panel to retrieve odds.',
       },
       referees: [
         {
@@ -15039,9 +14377,6 @@ export let jogos: Root = {
         extraTime: null,
         penalties: null,
       },
-      odds: {
-        msg: 'Activate Odds-Package in User-Panel to retrieve odds.',
-      },
       referees: [
         {
           id: 55970,
@@ -15119,9 +14454,6 @@ export let jogos: Root = {
         regularTime: null,
         extraTime: null,
         penalties: null,
-      },
-      odds: {
-        msg: 'Activate Odds-Package in User-Panel to retrieve odds.',
       },
       referees: [
         {
@@ -15201,9 +14533,6 @@ export let jogos: Root = {
         extraTime: null,
         penalties: null,
       },
-      odds: {
-        msg: 'Activate Odds-Package in User-Panel to retrieve odds.',
-      },
       referees: [
         {
           id: 43869,
@@ -15281,9 +14610,6 @@ export let jogos: Root = {
         regularTime: null,
         extraTime: null,
         penalties: null,
-      },
-      odds: {
-        msg: 'Activate Odds-Package in User-Panel to retrieve odds.',
       },
       referees: [
         {
@@ -15363,9 +14689,6 @@ export let jogos: Root = {
         extraTime: null,
         penalties: null,
       },
-      odds: {
-        msg: 'Activate Odds-Package in User-Panel to retrieve odds.',
-      },
       referees: [
         {
           id: 28805,
@@ -15443,9 +14766,6 @@ export let jogos: Root = {
         regularTime: null,
         extraTime: null,
         penalties: null,
-      },
-      odds: {
-        msg: 'Activate Odds-Package in User-Panel to retrieve odds.',
       },
       referees: [
         {
@@ -15525,9 +14845,6 @@ export let jogos: Root = {
         extraTime: null,
         penalties: null,
       },
-      odds: {
-        msg: 'Activate Odds-Package in User-Panel to retrieve odds.',
-      },
       referees: [
         {
           id: 11412,
@@ -15605,9 +14922,6 @@ export let jogos: Root = {
         regularTime: null,
         extraTime: null,
         penalties: null,
-      },
-      odds: {
-        msg: 'Activate Odds-Package in User-Panel to retrieve odds.',
       },
       referees: [
         {
@@ -15687,9 +15001,6 @@ export let jogos: Root = {
         extraTime: null,
         penalties: null,
       },
-      odds: {
-        msg: 'Activate Odds-Package in User-Panel to retrieve odds.',
-      },
       referees: [
         {
           id: 11116,
@@ -15767,9 +15078,6 @@ export let jogos: Root = {
         regularTime: null,
         extraTime: null,
         penalties: null,
-      },
-      odds: {
-        msg: 'Activate Odds-Package in User-Panel to retrieve odds.',
       },
       referees: [
         {
@@ -15849,9 +15157,6 @@ export let jogos: Root = {
         extraTime: null,
         penalties: null,
       },
-      odds: {
-        msg: 'Activate Odds-Package in User-Panel to retrieve odds.',
-      },
       referees: [
         {
           id: 56007,
@@ -15929,9 +15234,6 @@ export let jogos: Root = {
         regularTime: null,
         extraTime: null,
         penalties: null,
-      },
-      odds: {
-        msg: 'Activate Odds-Package in User-Panel to retrieve odds.',
       },
       referees: [
         {
@@ -16011,9 +15313,6 @@ export let jogos: Root = {
         extraTime: null,
         penalties: null,
       },
-      odds: {
-        msg: 'Activate Odds-Package in User-Panel to retrieve odds.',
-      },
       referees: [
         {
           id: 43899,
@@ -16091,9 +15390,6 @@ export let jogos: Root = {
         regularTime: null,
         extraTime: null,
         penalties: null,
-      },
-      odds: {
-        msg: 'Activate Odds-Package in User-Panel to retrieve odds.',
       },
       referees: [
         {
@@ -16173,9 +15469,6 @@ export let jogos: Root = {
         extraTime: null,
         penalties: null,
       },
-      odds: {
-        msg: 'Activate Odds-Package in User-Panel to retrieve odds.',
-      },
       referees: [
         {
           id: 11580,
@@ -16253,9 +15546,6 @@ export let jogos: Root = {
         regularTime: null,
         extraTime: null,
         penalties: null,
-      },
-      odds: {
-        msg: 'Activate Odds-Package in User-Panel to retrieve odds.',
       },
       referees: [
         {
@@ -16335,9 +15625,6 @@ export let jogos: Root = {
         extraTime: null,
         penalties: null,
       },
-      odds: {
-        msg: 'Activate Odds-Package in User-Panel to retrieve odds.',
-      },
       referees: [
         {
           id: 55970,
@@ -16415,9 +15702,6 @@ export let jogos: Root = {
         regularTime: null,
         extraTime: null,
         penalties: null,
-      },
-      odds: {
-        msg: 'Activate Odds-Package in User-Panel to retrieve odds.',
       },
       referees: [
         {
@@ -16497,9 +15781,6 @@ export let jogos: Root = {
         extraTime: null,
         penalties: null,
       },
-      odds: {
-        msg: 'Activate Odds-Package in User-Panel to retrieve odds.',
-      },
       referees: [
         {
           id: 9374,
@@ -16577,9 +15858,6 @@ export let jogos: Root = {
         regularTime: null,
         extraTime: null,
         penalties: null,
-      },
-      odds: {
-        msg: 'Activate Odds-Package in User-Panel to retrieve odds.',
       },
       referees: [
         {
@@ -16659,9 +15937,6 @@ export let jogos: Root = {
         extraTime: null,
         penalties: null,
       },
-      odds: {
-        msg: 'Activate Odds-Package in User-Panel to retrieve odds.',
-      },
       referees: [
         {
           id: 43869,
@@ -16739,9 +16014,6 @@ export let jogos: Root = {
         regularTime: null,
         extraTime: null,
         penalties: null,
-      },
-      odds: {
-        msg: 'Activate Odds-Package in User-Panel to retrieve odds.',
       },
       referees: [
         {
@@ -16821,9 +16093,6 @@ export let jogos: Root = {
         extraTime: null,
         penalties: null,
       },
-      odds: {
-        msg: 'Activate Odds-Package in User-Panel to retrieve odds.',
-      },
       referees: [
         {
           id: 190017,
@@ -16901,9 +16170,6 @@ export let jogos: Root = {
         regularTime: null,
         extraTime: null,
         penalties: null,
-      },
-      odds: {
-        msg: 'Activate Odds-Package in User-Panel to retrieve odds.',
       },
       referees: [
         {
@@ -16983,9 +16249,6 @@ export let jogos: Root = {
         extraTime: null,
         penalties: null,
       },
-      odds: {
-        msg: 'Activate Odds-Package in User-Panel to retrieve odds.',
-      },
       referees: [
         {
           id: 11605,
@@ -17063,9 +16326,6 @@ export let jogos: Root = {
         regularTime: null,
         extraTime: null,
         penalties: null,
-      },
-      odds: {
-        msg: 'Activate Odds-Package in User-Panel to retrieve odds.',
       },
       referees: [
         {
@@ -17145,9 +16405,6 @@ export let jogos: Root = {
         extraTime: null,
         penalties: null,
       },
-      odds: {
-        msg: 'Activate Odds-Package in User-Panel to retrieve odds.',
-      },
       referees: [
         {
           id: 11260,
@@ -17225,9 +16482,6 @@ export let jogos: Root = {
         regularTime: null,
         extraTime: null,
         penalties: null,
-      },
-      odds: {
-        msg: 'Activate Odds-Package in User-Panel to retrieve odds.',
       },
       referees: [
         {
@@ -17307,9 +16561,6 @@ export let jogos: Root = {
         extraTime: null,
         penalties: null,
       },
-      odds: {
-        msg: 'Activate Odds-Package in User-Panel to retrieve odds.',
-      },
       referees: [
         {
           id: 25786,
@@ -17387,9 +16638,6 @@ export let jogos: Root = {
         regularTime: null,
         extraTime: null,
         penalties: null,
-      },
-      odds: {
-        msg: 'Activate Odds-Package in User-Panel to retrieve odds.',
       },
       referees: [
         {
@@ -17469,9 +16717,6 @@ export let jogos: Root = {
         extraTime: null,
         penalties: null,
       },
-      odds: {
-        msg: 'Activate Odds-Package in User-Panel to retrieve odds.',
-      },
       referees: [
         {
           id: 15408,
@@ -17549,9 +16794,6 @@ export let jogos: Root = {
         regularTime: null,
         extraTime: null,
         penalties: null,
-      },
-      odds: {
-        msg: 'Activate Odds-Package in User-Panel to retrieve odds.',
       },
       referees: [
         {
@@ -17631,9 +16873,6 @@ export let jogos: Root = {
         extraTime: null,
         penalties: null,
       },
-      odds: {
-        msg: 'Activate Odds-Package in User-Panel to retrieve odds.',
-      },
       referees: [
         {
           id: 11686,
@@ -17711,9 +16950,6 @@ export let jogos: Root = {
         regularTime: null,
         extraTime: null,
         penalties: null,
-      },
-      odds: {
-        msg: 'Activate Odds-Package in User-Panel to retrieve odds.',
       },
       referees: [
         {
@@ -17793,9 +17029,6 @@ export let jogos: Root = {
         extraTime: null,
         penalties: null,
       },
-      odds: {
-        msg: 'Activate Odds-Package in User-Panel to retrieve odds.',
-      },
       referees: [
         {
           id: 43888,
@@ -17874,9 +17107,6 @@ export let jogos: Root = {
         extraTime: null,
         penalties: null,
       },
-      odds: {
-        msg: 'Activate Odds-Package in User-Panel to retrieve odds.',
-      },
       referees: [
         {
           id: 28805,
@@ -17954,9 +17184,6 @@ export let jogos: Root = {
         regularTime: null,
         extraTime: null,
         penalties: null,
-      },
-      odds: {
-        msg: 'Activate Odds-Package in User-Panel to retrieve odds.',
       },
       referees: [
         {
@@ -18045,9 +17272,6 @@ export let jogos: Root = {
           away: 3,
         },
       },
-      odds: {
-        msg: 'Activate Odds-Package in User-Panel to retrieve odds.',
-      },
       referees: [
         {
           id: 76608,
@@ -18125,9 +17349,6 @@ export let jogos: Root = {
         regularTime: null,
         extraTime: null,
         penalties: null,
-      },
-      odds: {
-        msg: 'Activate Odds-Package in User-Panel to retrieve odds.',
       },
       referees: [
         {
@@ -18216,9 +17437,6 @@ export let jogos: Root = {
           away: 0,
         },
       },
-      odds: {
-        msg: 'Activate Odds-Package in User-Panel to retrieve odds.',
-      },
       referees: [
         {
           id: 11686,
@@ -18296,9 +17514,6 @@ export let jogos: Root = {
         regularTime: null,
         extraTime: null,
         penalties: null,
-      },
-      odds: {
-        msg: 'Activate Odds-Package in User-Panel to retrieve odds.',
       },
       referees: [
         {
@@ -18387,9 +17602,6 @@ export let jogos: Root = {
           away: 2,
         },
       },
-      odds: {
-        msg: 'Activate Odds-Package in User-Panel to retrieve odds.',
-      },
       referees: [
         {
           id: 11605,
@@ -18477,9 +17689,6 @@ export let jogos: Root = {
           away: 4,
         },
       },
-      odds: {
-        msg: 'Activate Odds-Package in User-Panel to retrieve odds.',
-      },
       referees: [
         {
           id: 43869,
@@ -18557,9 +17766,6 @@ export let jogos: Root = {
         regularTime: null,
         extraTime: null,
         penalties: null,
-      },
-      odds: {
-        msg: 'Activate Odds-Package in User-Panel to retrieve odds.',
       },
       referees: [
         {
@@ -18639,9 +17845,6 @@ export let jogos: Root = {
         extraTime: null,
         penalties: null,
       },
-      odds: {
-        msg: 'Activate Odds-Package in User-Panel to retrieve odds.',
-      },
       referees: [
         {
           id: 11412,
@@ -18719,9 +17922,6 @@ export let jogos: Root = {
         regularTime: null,
         extraTime: null,
         penalties: null,
-      },
-      odds: {
-        msg: 'Activate Odds-Package in User-Panel to retrieve odds.',
       },
       referees: [
         {
@@ -18801,9 +18001,6 @@ export let jogos: Root = {
         extraTime: null,
         penalties: null,
       },
-      odds: {
-        msg: 'Activate Odds-Package in User-Panel to retrieve odds.',
-      },
       referees: [
         {
           id: 56007,
@@ -18881,9 +18078,6 @@ export let jogos: Root = {
         regularTime: null,
         extraTime: null,
         penalties: null,
-      },
-      odds: {
-        msg: 'Activate Odds-Package in User-Panel to retrieve odds.',
       },
       referees: [
         {
@@ -18971,9 +18165,6 @@ export let jogos: Root = {
           home: 4,
           away: 2,
         },
-      },
-      odds: {
-        msg: 'Activate Odds-Package in User-Panel to retrieve odds.',
       },
       referees: [
         {

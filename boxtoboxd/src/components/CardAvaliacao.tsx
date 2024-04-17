@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import {
   X,
-  MapPin,
   Calendar,
   UserCircle,
   Star,
@@ -9,11 +8,9 @@ import {
   Trash,
   Clock,
   DotsThree,
-  Pencil,
   PencilSimple,
 } from '@phosphor-icons/react';
 import { Rating } from 'react-simple-star-rating';
-import Avaliacao from '../models/Avaliacao';
 import { Heart } from '@phosphor-icons/react/dist/ssr';
 import Popup from 'reactjs-popup';
 import { TwitterIcon, TwitterShareButton } from 'react-share';
