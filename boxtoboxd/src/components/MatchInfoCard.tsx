@@ -43,7 +43,11 @@ function MatchInfo(partida: Match) {
           ) : (
             <h3
               className={
-                partida.score.winner == 'HOME_TEAM' ? 'text-green-500' : 'text-red-500'
+                partida.score.winner == 'HOME_TEAM'
+                  ? 'text-green-500'
+                  : partida.score.winner == 'DRAW'
+                  ? ''
+                  : 'text-red-500'
               }
             >
               {partida.score.fullTime.home}
@@ -66,7 +70,11 @@ function MatchInfo(partida: Match) {
           ) : (
             <h3
               className={
-                partida.score.winner == 'AWAY_TEAM' ? 'text-green-500' : 'text-red-500'
+                partida.score.winner == 'AWAY_TEAM'
+                  ? 'text-green-500'
+                  : partida.score.winner == 'DRAW'
+                  ? ''
+                  : 'text-red-500'
               }
             >
               {partida.score.fullTime.away}

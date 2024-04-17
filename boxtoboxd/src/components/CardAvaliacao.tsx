@@ -206,7 +206,11 @@ function CardAvaliacao(avaliacao) {
           ) : (
             <h3
               className={
-                match!.score.winner == 'HOME_TEAM' ? 'text-green-500' : 'text-red-500'
+                match!.score.winner == 'HOME_TEAM'
+                  ? 'text-green-500'
+                  : match!.score.winner == 'DRAW'
+                  ? ''
+                  : 'text-red-500'
               }
             >
               {match!.score.fullTime.home}
@@ -229,7 +233,11 @@ function CardAvaliacao(avaliacao) {
           ) : (
             <h3
               className={
-                match!.score.winner == 'AWAY_TEAM' ? 'text-green-500' : 'text-red-500'
+                match!.score.winner == 'AWAY_TEAM'
+                  ? 'text-green-500'
+                  : match!.score.winner == 'DRAW'
+                  ? ''
+                  : 'text-red-500'
               }
             >
               {match!.score.fullTime.away}
