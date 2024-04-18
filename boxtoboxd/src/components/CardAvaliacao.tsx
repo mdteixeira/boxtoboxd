@@ -280,15 +280,12 @@ function CardAvaliacao(avaliacao) {
         </div>
       </div>
 
-      <div className="mt-3 flex flex-col">
-        <div className="grid grid-cols-2 items-center w-full">
+      <div className="flex flex-col">
+        <div className="grid grid-cols-2 items-center w-full py-2">
           <div className="">
             <Rating
-              fillIcon={<Star className="text-2xl" weight="fill" />}
-              emptyIcon={<Star className="text-2xl dark:text-slate-600" />}
-              className="float-start"
-              style={{ display: 'flex' }}
-              size={36}
+              fillIcon={<Star className="text-4xl" weight="fill" />}
+              emptyIcon={<Star className=" text-4xl dark:text-slate-600" />}
               allowFraction
               transition
               readonly
@@ -338,8 +335,8 @@ function CardAvaliacao(avaliacao) {
         <p
           className={
             showAll
-              ? 'bg-slate-50 dark:bg-slate-800 rounded-2xl mt-2 resize-none pl-3 py-2 hover:none active:none focus-within:outline-none  cursor-pointer min-h-[3.5lh]'
-              : 'bg-slate-50 dark:bg-slate-800 rounded-2xl mt-2 resize-none pl-3 py-2 hover:none active:none focus-within:outline-none  cursor-pointer line-clamp-3 h-[3.5lh]'
+              ? 'bg-slate-50 dark:bg-slate-800 rounded-2xl resize-none pl-3 py-2 hover:none active:none focus-within:outline-none  cursor-pointer min-h-[3.5lh]'
+              : 'bg-slate-50 dark:bg-slate-800 rounded-2xl resize-none pl-3 py-2 hover:none active:none focus-within:outline-none  cursor-pointer line-clamp-3 h-[3.5lh]'
           }
           id="comentario"
           onClick={() => {

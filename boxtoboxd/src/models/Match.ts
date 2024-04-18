@@ -32,7 +32,7 @@ export interface Match {
   homeTeam: HomeTeam;
   awayTeam: AwayTeam;
   score: Score;
-  referees: Referee[];
+  referees?: Referee[];
 }
 
 export interface Area {
@@ -63,7 +63,7 @@ export interface HomeTeam {
   name: string;
   shortName: string;
   tla: string | null;
-  crest: string;
+  crest: string | null;
 }
 
 export interface AwayTeam {
@@ -71,17 +71,17 @@ export interface AwayTeam {
   name: string;
   shortName: string;
   tla: string | null;
-  crest: string;
+  crest: string | null;
 }
 
 export interface Score {
   winner: string | null;
   duration: string;
-  regularTime: RegularTime | null;
+  regularTime?: RegularTime | null;
   fullTime: FullTime;
   halfTime: HalfTime;
-  extraTime: ExtraTime | null;
-  penalties: Penalties | null;
+  extraTime?: ExtraTime | null;
+  penalties?: Penalties | null;
 }
 
 export interface Penalties {

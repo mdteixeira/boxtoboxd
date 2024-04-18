@@ -81,8 +81,8 @@ function UserMenu() {
             <img
               className="rounded-full border-2 border-emerald-300 object-cover  size-10"
               src={
-                user?.photoURL != null
-                  ? user?.photoURL
+                user?.photoURL != null && user?.photoURL != ''
+                  ? user.photoURL
                   : 'https://i.pinimg.com/564x/51/65/bb/5165bbc3564b4296c70371b75c9774b0.jpg'
               }
               alt="Foto de Usuário"
@@ -106,7 +106,7 @@ function UserMenu() {
             }}
           >
             <>
-              <CircleHalfTilt />
+              {<CircleHalfTilt />}
               <span>Mudar tema</span>
             </>
           </button>
