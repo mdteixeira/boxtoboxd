@@ -47,9 +47,9 @@ function ListMatches() {
   return (
     <>
       <div className="sm:container sm:mx-auto mt-10 mb-32 mx-2">
-        <div className="mb-5 bg-white  dark:bg-opacity-5 rounded-2xl p-2 ps-5 flex justify-between items-center">
+        <div className="mb-5 bg-white dark:bg-opacity-5 rounded-2xl p-2 ps-5 flex justify-between flex-wrap gap-3 items-center ">
           <h3 className="text-2xl text-emerald-500 font-medium">Pesquisar partidas</h3>
-          <div className="flex justify-center items-stretch gap-4">
+          <div className="flex flex-wrap justify-center items-stretch gap-4">
             <input
               type="radio"
               name="status_filter"
@@ -156,7 +156,7 @@ function ListMatches() {
                   ></input>
                   <label
                     className={`grid gap-1 cursor-pointer px-4 py-2 bg-opacity-10 dark:bg-opacity-5 border-2 bg-slate-400 dark:border-slate-700 rounded-xl items-center hover:bg-opacity-20 dark:text-slate-200 w-32
-                    peer-checked/${competicao.id}:bg-emerald-500
+                    peer-checked/${competicao.id}:bg-emerald-500 h-full
                     `}
                     htmlFor={`${competicao.id}`}
                   >

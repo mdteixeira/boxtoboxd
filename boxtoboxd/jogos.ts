@@ -25858,7 +25858,7 @@ export let jogos: Root = {
       },
       competition: {
         id: 2152,
-        name: 'Copa Libertadores',
+        name: 'Libertadores',
         code: 'CLI',
         type: 'CUP',
         emblem: 'https://crests.football-data.org/CLI.svg',
@@ -25922,7 +25922,7 @@ export let jogos: Root = {
       },
       competition: {
         id: 2152,
-        name: 'Copa Libertadores',
+        name: 'Libertadores',
         code: 'CLI',
         type: 'CUP',
         emblem: 'https://crests.football-data.org/CLI.svg',
@@ -25986,7 +25986,7 @@ export let jogos: Root = {
       },
       competition: {
         id: 2152,
-        name: 'Copa Libertadores',
+        name: 'Libertadores',
         code: 'CLI',
         type: 'CUP',
         emblem: 'https://crests.football-data.org/CLI.svg',
@@ -26050,7 +26050,7 @@ export let jogos: Root = {
       },
       competition: {
         id: 2152,
-        name: 'Copa Libertadores',
+        name: 'Libertadores',
         code: 'CLI',
         type: 'CUP',
         emblem: 'https://crests.football-data.org/CLI.svg',
@@ -26105,7 +26105,7 @@ export let jogos: Root = {
       },
       competition: {
         id: 2152,
-        name: 'Copa Libertadores',
+        name: 'Libertadores',
         code: 'CLI',
         type: 'CUP',
         emblem: 'https://crests.football-data.org/CLI.svg',
@@ -26160,7 +26160,7 @@ export let jogos: Root = {
       },
       competition: {
         id: 2152,
-        name: 'Copa Libertadores',
+        name: 'Libertadores',
         code: 'CLI',
         type: 'CUP',
         emblem: 'https://crests.football-data.org/CLI.svg',
@@ -26215,7 +26215,7 @@ export let jogos: Root = {
       },
       competition: {
         id: 2152,
-        name: 'Copa Libertadores',
+        name: 'Libertadores',
         code: 'CLI',
         type: 'CUP',
         emblem: 'https://crests.football-data.org/CLI.svg',
@@ -26270,7 +26270,7 @@ export let jogos: Root = {
       },
       competition: {
         id: 2152,
-        name: 'Copa Libertadores',
+        name: 'Libertadores',
         code: 'CLI',
         type: 'CUP',
         emblem: 'https://crests.football-data.org/CLI.svg',
@@ -26325,7 +26325,7 @@ export let jogos: Root = {
       },
       competition: {
         id: 2152,
-        name: 'Copa Libertadores',
+        name: 'Libertadores',
         code: 'CLI',
         type: 'CUP',
         emblem: 'https://crests.football-data.org/CLI.svg',
@@ -26389,7 +26389,7 @@ export let jogos: Root = {
       },
       competition: {
         id: 2152,
-        name: 'Copa Libertadores',
+        name: 'Libertadores',
         code: 'CLI',
         type: 'CUP',
         emblem: 'https://crests.football-data.org/CLI.svg',
@@ -26453,7 +26453,7 @@ export let jogos: Root = {
       },
       competition: {
         id: 2152,
-        name: 'Copa Libertadores',
+        name: 'Libertadores',
         code: 'CLI',
         type: 'CUP',
         emblem: 'https://crests.football-data.org/CLI.svg',
@@ -26508,7 +26508,7 @@ export let jogos: Root = {
       },
       competition: {
         id: 2152,
-        name: 'Copa Libertadores',
+        name: 'Libertadores',
         code: 'CLI',
         type: 'CUP',
         emblem: 'https://crests.football-data.org/CLI.svg',
@@ -26563,7 +26563,7 @@ export let jogos: Root = {
       },
       competition: {
         id: 2152,
-        name: 'Copa Libertadores',
+        name: 'Libertadores',
         code: 'CLI',
         type: 'CUP',
         emblem: 'https://crests.football-data.org/CLI.svg',
@@ -26627,7 +26627,7 @@ export let jogos: Root = {
       },
       competition: {
         id: 2152,
-        name: 'Copa Libertadores',
+        name: 'Libertadores',
         code: 'CLI',
         type: 'CUP',
         emblem: 'https://crests.football-data.org/CLI.svg',
@@ -26682,7 +26682,7 @@ export let jogos: Root = {
       },
       competition: {
         id: 2152,
-        name: 'Copa Libertadores',
+        name: 'Libertadores',
         code: 'CLI',
         type: 'CUP',
         emblem: 'https://crests.football-data.org/CLI.svg',
@@ -26737,7 +26737,7 @@ export let jogos: Root = {
       },
       competition: {
         id: 2152,
-        name: 'Copa Libertadores',
+        name: 'Libertadores',
         code: 'CLI',
         type: 'CUP',
         emblem: 'https://crests.football-data.org/CLI.svg',
@@ -26792,7 +26792,7 @@ export let jogos: Root = {
       },
       competition: {
         id: 2152,
-        name: 'Copa Libertadores',
+        name: 'Libertadores',
         code: 'CLI',
         type: 'CUP',
         emblem: 'https://crests.football-data.org/CLI.svg',
@@ -26847,7 +26847,7 @@ export let jogos: Root = {
       },
       competition: {
         id: 2152,
-        name: 'Copa Libertadores',
+        name: 'Libertadores',
         code: 'CLI',
         type: 'CUP',
         emblem: 'https://crests.football-data.org/CLI.svg',
@@ -26902,7 +26902,7 @@ export let jogos: Root = {
       },
       competition: {
         id: 2152,
-        name: 'Copa Libertadores',
+        name: 'Libertadores',
         code: 'CLI',
         type: 'CUP',
         emblem: 'https://crests.football-data.org/CLI.svg',
@@ -26957,7 +26957,7 @@ export let jogos: Root = {
       },
       competition: {
         id: 2152,
-        name: 'Copa Libertadores',
+        name: 'Libertadores',
         code: 'CLI',
         type: 'CUP',
         emblem: 'https://crests.football-data.org/CLI.svg',
@@ -27012,7 +27012,7 @@ export let jogos: Root = {
       },
       competition: {
         id: 2152,
-        name: 'Copa Libertadores',
+        name: 'Libertadores',
         code: 'CLI',
         type: 'CUP',
         emblem: 'https://crests.football-data.org/CLI.svg',
@@ -27067,7 +27067,7 @@ export let jogos: Root = {
       },
       competition: {
         id: 2152,
-        name: 'Copa Libertadores',
+        name: 'Libertadores',
         code: 'CLI',
         type: 'CUP',
         emblem: 'https://crests.football-data.org/CLI.svg',
@@ -27122,7 +27122,7 @@ export let jogos: Root = {
       },
       competition: {
         id: 2152,
-        name: 'Copa Libertadores',
+        name: 'Libertadores',
         code: 'CLI',
         type: 'CUP',
         emblem: 'https://crests.football-data.org/CLI.svg',
@@ -27177,7 +27177,7 @@ export let jogos: Root = {
       },
       competition: {
         id: 2152,
-        name: 'Copa Libertadores',
+        name: 'Libertadores',
         code: 'CLI',
         type: 'CUP',
         emblem: 'https://crests.football-data.org/CLI.svg',
@@ -27232,7 +27232,7 @@ export let jogos: Root = {
       },
       competition: {
         id: 2152,
-        name: 'Copa Libertadores',
+        name: 'Libertadores',
         code: 'CLI',
         type: 'CUP',
         emblem: 'https://crests.football-data.org/CLI.svg',
@@ -27287,7 +27287,7 @@ export let jogos: Root = {
       },
       competition: {
         id: 2152,
-        name: 'Copa Libertadores',
+        name: 'Libertadores',
         code: 'CLI',
         type: 'CUP',
         emblem: 'https://crests.football-data.org/CLI.svg',
@@ -27342,7 +27342,7 @@ export let jogos: Root = {
       },
       competition: {
         id: 2152,
-        name: 'Copa Libertadores',
+        name: 'Libertadores',
         code: 'CLI',
         type: 'CUP',
         emblem: 'https://crests.football-data.org/CLI.svg',
@@ -27397,7 +27397,7 @@ export let jogos: Root = {
       },
       competition: {
         id: 2152,
-        name: 'Copa Libertadores',
+        name: 'Libertadores',
         code: 'CLI',
         type: 'CUP',
         emblem: 'https://crests.football-data.org/CLI.svg',
@@ -27452,7 +27452,7 @@ export let jogos: Root = {
       },
       competition: {
         id: 2152,
-        name: 'Copa Libertadores',
+        name: 'Libertadores',
         code: 'CLI',
         type: 'CUP',
         emblem: 'https://crests.football-data.org/CLI.svg',
@@ -27507,7 +27507,7 @@ export let jogos: Root = {
       },
       competition: {
         id: 2152,
-        name: 'Copa Libertadores',
+        name: 'Libertadores',
         code: 'CLI',
         type: 'CUP',
         emblem: 'https://crests.football-data.org/CLI.svg',
@@ -27571,7 +27571,7 @@ export let jogos: Root = {
       },
       competition: {
         id: 2152,
-        name: 'Copa Libertadores',
+        name: 'Libertadores',
         code: 'CLI',
         type: 'CUP',
         emblem: 'https://crests.football-data.org/CLI.svg',
@@ -27635,7 +27635,7 @@ export let jogos: Root = {
       },
       competition: {
         id: 2152,
-        name: 'Copa Libertadores',
+        name: 'Libertadores',
         code: 'CLI',
         type: 'CUP',
         emblem: 'https://crests.football-data.org/CLI.svg',
@@ -27690,7 +27690,7 @@ export let jogos: Root = {
       },
       competition: {
         id: 2152,
-        name: 'Copa Libertadores',
+        name: 'Libertadores',
         code: 'CLI',
         type: 'CUP',
         emblem: 'https://crests.football-data.org/CLI.svg',
@@ -27745,7 +27745,7 @@ export let jogos: Root = {
       },
       competition: {
         id: 2152,
-        name: 'Copa Libertadores',
+        name: 'Libertadores',
         code: 'CLI',
         type: 'CUP',
         emblem: 'https://crests.football-data.org/CLI.svg',
@@ -27809,7 +27809,7 @@ export let jogos: Root = {
       },
       competition: {
         id: 2152,
-        name: 'Copa Libertadores',
+        name: 'Libertadores',
         code: 'CLI',
         type: 'CUP',
         emblem: 'https://crests.football-data.org/CLI.svg',
@@ -27873,7 +27873,7 @@ export let jogos: Root = {
       },
       competition: {
         id: 2152,
-        name: 'Copa Libertadores',
+        name: 'Libertadores',
         code: 'CLI',
         type: 'CUP',
         emblem: 'https://crests.football-data.org/CLI.svg',
@@ -27928,7 +27928,7 @@ export let jogos: Root = {
       },
       competition: {
         id: 2152,
-        name: 'Copa Libertadores',
+        name: 'Libertadores',
         code: 'CLI',
         type: 'CUP',
         emblem: 'https://crests.football-data.org/CLI.svg',
@@ -27983,7 +27983,7 @@ export let jogos: Root = {
       },
       competition: {
         id: 2152,
-        name: 'Copa Libertadores',
+        name: 'Libertadores',
         code: 'CLI',
         type: 'CUP',
         emblem: 'https://crests.football-data.org/CLI.svg',
@@ -28038,7 +28038,7 @@ export let jogos: Root = {
       },
       competition: {
         id: 2152,
-        name: 'Copa Libertadores',
+        name: 'Libertadores',
         code: 'CLI',
         type: 'CUP',
         emblem: 'https://crests.football-data.org/CLI.svg',
@@ -28093,7 +28093,7 @@ export let jogos: Root = {
       },
       competition: {
         id: 2152,
-        name: 'Copa Libertadores',
+        name: 'Libertadores',
         code: 'CLI',
         type: 'CUP',
         emblem: 'https://crests.football-data.org/CLI.svg',
@@ -28148,7 +28148,7 @@ export let jogos: Root = {
       },
       competition: {
         id: 2152,
-        name: 'Copa Libertadores',
+        name: 'Libertadores',
         code: 'CLI',
         type: 'CUP',
         emblem: 'https://crests.football-data.org/CLI.svg',
@@ -28203,7 +28203,7 @@ export let jogos: Root = {
       },
       competition: {
         id: 2152,
-        name: 'Copa Libertadores',
+        name: 'Libertadores',
         code: 'CLI',
         type: 'CUP',
         emblem: 'https://crests.football-data.org/CLI.svg',
@@ -28267,7 +28267,7 @@ export let jogos: Root = {
       },
       competition: {
         id: 2152,
-        name: 'Copa Libertadores',
+        name: 'Libertadores',
         code: 'CLI',
         type: 'CUP',
         emblem: 'https://crests.football-data.org/CLI.svg',
@@ -28322,7 +28322,7 @@ export let jogos: Root = {
       },
       competition: {
         id: 2152,
-        name: 'Copa Libertadores',
+        name: 'Libertadores',
         code: 'CLI',
         type: 'CUP',
         emblem: 'https://crests.football-data.org/CLI.svg',
@@ -28386,7 +28386,7 @@ export let jogos: Root = {
       },
       competition: {
         id: 2152,
-        name: 'Copa Libertadores',
+        name: 'Libertadores',
         code: 'CLI',
         type: 'CUP',
         emblem: 'https://crests.football-data.org/CLI.svg',
@@ -28450,7 +28450,7 @@ export let jogos: Root = {
       },
       competition: {
         id: 2152,
-        name: 'Copa Libertadores',
+        name: 'Libertadores',
         code: 'CLI',
         type: 'CUP',
         emblem: 'https://crests.football-data.org/CLI.svg',
@@ -28505,7 +28505,7 @@ export let jogos: Root = {
       },
       competition: {
         id: 2152,
-        name: 'Copa Libertadores',
+        name: 'Libertadores',
         code: 'CLI',
         type: 'CUP',
         emblem: 'https://crests.football-data.org/CLI.svg',
@@ -28560,7 +28560,7 @@ export let jogos: Root = {
       },
       competition: {
         id: 2152,
-        name: 'Copa Libertadores',
+        name: 'Libertadores',
         code: 'CLI',
         type: 'CUP',
         emblem: 'https://crests.football-data.org/CLI.svg',
@@ -28615,7 +28615,7 @@ export let jogos: Root = {
       },
       competition: {
         id: 2152,
-        name: 'Copa Libertadores',
+        name: 'Libertadores',
         code: 'CLI',
         type: 'CUP',
         emblem: 'https://crests.football-data.org/CLI.svg',
@@ -28670,7 +28670,7 @@ export let jogos: Root = {
       },
       competition: {
         id: 2152,
-        name: 'Copa Libertadores',
+        name: 'Libertadores',
         code: 'CLI',
         type: 'CUP',
         emblem: 'https://crests.football-data.org/CLI.svg',
@@ -28725,7 +28725,7 @@ export let jogos: Root = {
       },
       competition: {
         id: 2152,
-        name: 'Copa Libertadores',
+        name: 'Libertadores',
         code: 'CLI',
         type: 'CUP',
         emblem: 'https://crests.football-data.org/CLI.svg',
@@ -28780,7 +28780,7 @@ export let jogos: Root = {
       },
       competition: {
         id: 2152,
-        name: 'Copa Libertadores',
+        name: 'Libertadores',
         code: 'CLI',
         type: 'CUP',
         emblem: 'https://crests.football-data.org/CLI.svg',
@@ -28835,7 +28835,7 @@ export let jogos: Root = {
       },
       competition: {
         id: 2152,
-        name: 'Copa Libertadores',
+        name: 'Libertadores',
         code: 'CLI',
         type: 'CUP',
         emblem: 'https://crests.football-data.org/CLI.svg',
@@ -28890,7 +28890,7 @@ export let jogos: Root = {
       },
       competition: {
         id: 2152,
-        name: 'Copa Libertadores',
+        name: 'Libertadores',
         code: 'CLI',
         type: 'CUP',
         emblem: 'https://crests.football-data.org/CLI.svg',
@@ -28945,7 +28945,7 @@ export let jogos: Root = {
       },
       competition: {
         id: 2152,
-        name: 'Copa Libertadores',
+        name: 'Libertadores',
         code: 'CLI',
         type: 'CUP',
         emblem: 'https://crests.football-data.org/CLI.svg',
@@ -29000,7 +29000,7 @@ export let jogos: Root = {
       },
       competition: {
         id: 2152,
-        name: 'Copa Libertadores',
+        name: 'Libertadores',
         code: 'CLI',
         type: 'CUP',
         emblem: 'https://crests.football-data.org/CLI.svg',
@@ -29055,7 +29055,7 @@ export let jogos: Root = {
       },
       competition: {
         id: 2152,
-        name: 'Copa Libertadores',
+        name: 'Libertadores',
         code: 'CLI',
         type: 'CUP',
         emblem: 'https://crests.football-data.org/CLI.svg',
@@ -29110,7 +29110,7 @@ export let jogos: Root = {
       },
       competition: {
         id: 2152,
-        name: 'Copa Libertadores',
+        name: 'Libertadores',
         code: 'CLI',
         type: 'CUP',
         emblem: 'https://crests.football-data.org/CLI.svg',
@@ -29165,7 +29165,7 @@ export let jogos: Root = {
       },
       competition: {
         id: 2152,
-        name: 'Copa Libertadores',
+        name: 'Libertadores',
         code: 'CLI',
         type: 'CUP',
         emblem: 'https://crests.football-data.org/CLI.svg',
@@ -29229,7 +29229,7 @@ export let jogos: Root = {
       },
       competition: {
         id: 2152,
-        name: 'Copa Libertadores',
+        name: 'Libertadores',
         code: 'CLI',
         type: 'CUP',
         emblem: 'https://crests.football-data.org/CLI.svg',
@@ -29284,7 +29284,7 @@ export let jogos: Root = {
       },
       competition: {
         id: 2152,
-        name: 'Copa Libertadores',
+        name: 'Libertadores',
         code: 'CLI',
         type: 'CUP',
         emblem: 'https://crests.football-data.org/CLI.svg',
@@ -29348,7 +29348,7 @@ export let jogos: Root = {
       },
       competition: {
         id: 2152,
-        name: 'Copa Libertadores',
+        name: 'Libertadores',
         code: 'CLI',
         type: 'CUP',
         emblem: 'https://crests.football-data.org/CLI.svg',
@@ -29403,7 +29403,7 @@ export let jogos: Root = {
       },
       competition: {
         id: 2152,
-        name: 'Copa Libertadores',
+        name: 'Libertadores',
         code: 'CLI',
         type: 'CUP',
         emblem: 'https://crests.football-data.org/CLI.svg',
@@ -29458,7 +29458,7 @@ export let jogos: Root = {
       },
       competition: {
         id: 2152,
-        name: 'Copa Libertadores',
+        name: 'Libertadores',
         code: 'CLI',
         type: 'CUP',
         emblem: 'https://crests.football-data.org/CLI.svg',
@@ -29513,7 +29513,7 @@ export let jogos: Root = {
       },
       competition: {
         id: 2152,
-        name: 'Copa Libertadores',
+        name: 'Libertadores',
         code: 'CLI',
         type: 'CUP',
         emblem: 'https://crests.football-data.org/CLI.svg',
@@ -29568,7 +29568,7 @@ export let jogos: Root = {
       },
       competition: {
         id: 2152,
-        name: 'Copa Libertadores',
+        name: 'Libertadores',
         code: 'CLI',
         type: 'CUP',
         emblem: 'https://crests.football-data.org/CLI.svg',
@@ -29623,7 +29623,7 @@ export let jogos: Root = {
       },
       competition: {
         id: 2152,
-        name: 'Copa Libertadores',
+        name: 'Libertadores',
         code: 'CLI',
         type: 'CUP',
         emblem: 'https://crests.football-data.org/CLI.svg',
@@ -29678,7 +29678,7 @@ export let jogos: Root = {
       },
       competition: {
         id: 2152,
-        name: 'Copa Libertadores',
+        name: 'Libertadores',
         code: 'CLI',
         type: 'CUP',
         emblem: 'https://crests.football-data.org/CLI.svg',
@@ -29733,7 +29733,7 @@ export let jogos: Root = {
       },
       competition: {
         id: 2152,
-        name: 'Copa Libertadores',
+        name: 'Libertadores',
         code: 'CLI',
         type: 'CUP',
         emblem: 'https://crests.football-data.org/CLI.svg',
@@ -29788,7 +29788,7 @@ export let jogos: Root = {
       },
       competition: {
         id: 2152,
-        name: 'Copa Libertadores',
+        name: 'Libertadores',
         code: 'CLI',
         type: 'CUP',
         emblem: 'https://crests.football-data.org/CLI.svg',
@@ -29843,7 +29843,7 @@ export let jogos: Root = {
       },
       competition: {
         id: 2152,
-        name: 'Copa Libertadores',
+        name: 'Libertadores',
         code: 'CLI',
         type: 'CUP',
         emblem: 'https://crests.football-data.org/CLI.svg',
@@ -29898,7 +29898,7 @@ export let jogos: Root = {
       },
       competition: {
         id: 2152,
-        name: 'Copa Libertadores',
+        name: 'Libertadores',
         code: 'CLI',
         type: 'CUP',
         emblem: 'https://crests.football-data.org/CLI.svg',
@@ -29953,7 +29953,7 @@ export let jogos: Root = {
       },
       competition: {
         id: 2152,
-        name: 'Copa Libertadores',
+        name: 'Libertadores',
         code: 'CLI',
         type: 'CUP',
         emblem: 'https://crests.football-data.org/CLI.svg',
@@ -30008,7 +30008,7 @@ export let jogos: Root = {
       },
       competition: {
         id: 2152,
-        name: 'Copa Libertadores',
+        name: 'Libertadores',
         code: 'CLI',
         type: 'CUP',
         emblem: 'https://crests.football-data.org/CLI.svg',
@@ -30063,7 +30063,7 @@ export let jogos: Root = {
       },
       competition: {
         id: 2152,
-        name: 'Copa Libertadores',
+        name: 'Libertadores',
         code: 'CLI',
         type: 'CUP',
         emblem: 'https://crests.football-data.org/CLI.svg',
@@ -30118,7 +30118,7 @@ export let jogos: Root = {
       },
       competition: {
         id: 2152,
-        name: 'Copa Libertadores',
+        name: 'Libertadores',
         code: 'CLI',
         type: 'CUP',
         emblem: 'https://crests.football-data.org/CLI.svg',
@@ -30173,7 +30173,7 @@ export let jogos: Root = {
       },
       competition: {
         id: 2152,
-        name: 'Copa Libertadores',
+        name: 'Libertadores',
         code: 'CLI',
         type: 'CUP',
         emblem: 'https://crests.football-data.org/CLI.svg',
@@ -30228,7 +30228,7 @@ export let jogos: Root = {
       },
       competition: {
         id: 2152,
-        name: 'Copa Libertadores',
+        name: 'Libertadores',
         code: 'CLI',
         type: 'CUP',
         emblem: 'https://crests.football-data.org/CLI.svg',
@@ -30283,7 +30283,7 @@ export let jogos: Root = {
       },
       competition: {
         id: 2152,
-        name: 'Copa Libertadores',
+        name: 'Libertadores',
         code: 'CLI',
         type: 'CUP',
         emblem: 'https://crests.football-data.org/CLI.svg',
@@ -30338,7 +30338,7 @@ export let jogos: Root = {
       },
       competition: {
         id: 2152,
-        name: 'Copa Libertadores',
+        name: 'Libertadores',
         code: 'CLI',
         type: 'CUP',
         emblem: 'https://crests.football-data.org/CLI.svg',
@@ -30393,7 +30393,7 @@ export let jogos: Root = {
       },
       competition: {
         id: 2152,
-        name: 'Copa Libertadores',
+        name: 'Libertadores',
         code: 'CLI',
         type: 'CUP',
         emblem: 'https://crests.football-data.org/CLI.svg',
@@ -30448,7 +30448,7 @@ export let jogos: Root = {
       },
       competition: {
         id: 2152,
-        name: 'Copa Libertadores',
+        name: 'Libertadores',
         code: 'CLI',
         type: 'CUP',
         emblem: 'https://crests.football-data.org/CLI.svg',
@@ -30503,7 +30503,7 @@ export let jogos: Root = {
       },
       competition: {
         id: 2152,
-        name: 'Copa Libertadores',
+        name: 'Libertadores',
         code: 'CLI',
         type: 'CUP',
         emblem: 'https://crests.football-data.org/CLI.svg',
@@ -30558,7 +30558,7 @@ export let jogos: Root = {
       },
       competition: {
         id: 2152,
-        name: 'Copa Libertadores',
+        name: 'Libertadores',
         code: 'CLI',
         type: 'CUP',
         emblem: 'https://crests.football-data.org/CLI.svg',
@@ -30613,7 +30613,7 @@ export let jogos: Root = {
       },
       competition: {
         id: 2152,
-        name: 'Copa Libertadores',
+        name: 'Libertadores',
         code: 'CLI',
         type: 'CUP',
         emblem: 'https://crests.football-data.org/CLI.svg',
@@ -30668,7 +30668,7 @@ export let jogos: Root = {
       },
       competition: {
         id: 2152,
-        name: 'Copa Libertadores',
+        name: 'Libertadores',
         code: 'CLI',
         type: 'CUP',
         emblem: 'https://crests.football-data.org/CLI.svg',
@@ -30723,7 +30723,7 @@ export let jogos: Root = {
       },
       competition: {
         id: 2152,
-        name: 'Copa Libertadores',
+        name: 'Libertadores',
         code: 'CLI',
         type: 'CUP',
         emblem: 'https://crests.football-data.org/CLI.svg',
@@ -30778,7 +30778,7 @@ export let jogos: Root = {
       },
       competition: {
         id: 2152,
-        name: 'Copa Libertadores',
+        name: 'Libertadores',
         code: 'CLI',
         type: 'CUP',
         emblem: 'https://crests.football-data.org/CLI.svg',
@@ -30833,7 +30833,7 @@ export let jogos: Root = {
       },
       competition: {
         id: 2152,
-        name: 'Copa Libertadores',
+        name: 'Libertadores',
         code: 'CLI',
         type: 'CUP',
         emblem: 'https://crests.football-data.org/CLI.svg',
@@ -30888,7 +30888,7 @@ export let jogos: Root = {
       },
       competition: {
         id: 2152,
-        name: 'Copa Libertadores',
+        name: 'Libertadores',
         code: 'CLI',
         type: 'CUP',
         emblem: 'https://crests.football-data.org/CLI.svg',
@@ -30943,7 +30943,7 @@ export let jogos: Root = {
       },
       competition: {
         id: 2152,
-        name: 'Copa Libertadores',
+        name: 'Libertadores',
         code: 'CLI',
         type: 'CUP',
         emblem: 'https://crests.football-data.org/CLI.svg',
@@ -30998,7 +30998,7 @@ export let jogos: Root = {
       },
       competition: {
         id: 2152,
-        name: 'Copa Libertadores',
+        name: 'Libertadores',
         code: 'CLI',
         type: 'CUP',
         emblem: 'https://crests.football-data.org/CLI.svg',
@@ -31053,7 +31053,7 @@ export let jogos: Root = {
       },
       competition: {
         id: 2152,
-        name: 'Copa Libertadores',
+        name: 'Libertadores',
         code: 'CLI',
         type: 'CUP',
         emblem: 'https://crests.football-data.org/CLI.svg',
@@ -31108,7 +31108,7 @@ export let jogos: Root = {
       },
       competition: {
         id: 2152,
-        name: 'Copa Libertadores',
+        name: 'Libertadores',
         code: 'CLI',
         type: 'CUP',
         emblem: 'https://crests.football-data.org/CLI.svg',
@@ -31163,7 +31163,7 @@ export let jogos: Root = {
       },
       competition: {
         id: 2152,
-        name: 'Copa Libertadores',
+        name: 'Libertadores',
         code: 'CLI',
         type: 'CUP',
         emblem: 'https://crests.football-data.org/CLI.svg',
@@ -31218,7 +31218,7 @@ export let jogos: Root = {
       },
       competition: {
         id: 2152,
-        name: 'Copa Libertadores',
+        name: 'Libertadores',
         code: 'CLI',
         type: 'CUP',
         emblem: 'https://crests.football-data.org/CLI.svg',
@@ -31273,7 +31273,7 @@ export let jogos: Root = {
       },
       competition: {
         id: 2152,
-        name: 'Copa Libertadores',
+        name: 'Libertadores',
         code: 'CLI',
         type: 'CUP',
         emblem: 'https://crests.football-data.org/CLI.svg',
@@ -31328,7 +31328,7 @@ export let jogos: Root = {
       },
       competition: {
         id: 2152,
-        name: 'Copa Libertadores',
+        name: 'Libertadores',
         code: 'CLI',
         type: 'CUP',
         emblem: 'https://crests.football-data.org/CLI.svg',
@@ -31383,7 +31383,7 @@ export let jogos: Root = {
       },
       competition: {
         id: 2152,
-        name: 'Copa Libertadores',
+        name: 'Libertadores',
         code: 'CLI',
         type: 'CUP',
         emblem: 'https://crests.football-data.org/CLI.svg',
@@ -31438,7 +31438,7 @@ export let jogos: Root = {
       },
       competition: {
         id: 2152,
-        name: 'Copa Libertadores',
+        name: 'Libertadores',
         code: 'CLI',
         type: 'CUP',
         emblem: 'https://crests.football-data.org/CLI.svg',
@@ -31493,7 +31493,7 @@ export let jogos: Root = {
       },
       competition: {
         id: 2152,
-        name: 'Copa Libertadores',
+        name: 'Libertadores',
         code: 'CLI',
         type: 'CUP',
         emblem: 'https://crests.football-data.org/CLI.svg',
@@ -31548,7 +31548,7 @@ export let jogos: Root = {
       },
       competition: {
         id: 2152,
-        name: 'Copa Libertadores',
+        name: 'Libertadores',
         code: 'CLI',
         type: 'CUP',
         emblem: 'https://crests.football-data.org/CLI.svg',
@@ -31603,7 +31603,7 @@ export let jogos: Root = {
       },
       competition: {
         id: 2152,
-        name: 'Copa Libertadores',
+        name: 'Libertadores',
         code: 'CLI',
         type: 'CUP',
         emblem: 'https://crests.football-data.org/CLI.svg',
@@ -31658,7 +31658,7 @@ export let jogos: Root = {
       },
       competition: {
         id: 2152,
-        name: 'Copa Libertadores',
+        name: 'Libertadores',
         code: 'CLI',
         type: 'CUP',
         emblem: 'https://crests.football-data.org/CLI.svg',
@@ -31713,7 +31713,7 @@ export let jogos: Root = {
       },
       competition: {
         id: 2152,
-        name: 'Copa Libertadores',
+        name: 'Libertadores',
         code: 'CLI',
         type: 'CUP',
         emblem: 'https://crests.football-data.org/CLI.svg',
@@ -31768,7 +31768,7 @@ export let jogos: Root = {
       },
       competition: {
         id: 2152,
-        name: 'Copa Libertadores',
+        name: 'Libertadores',
         code: 'CLI',
         type: 'CUP',
         emblem: 'https://crests.football-data.org/CLI.svg',
@@ -31823,7 +31823,7 @@ export let jogos: Root = {
       },
       competition: {
         id: 2152,
-        name: 'Copa Libertadores',
+        name: 'Libertadores',
         code: 'CLI',
         type: 'CUP',
         emblem: 'https://crests.football-data.org/CLI.svg',
@@ -31878,7 +31878,7 @@ export let jogos: Root = {
       },
       competition: {
         id: 2152,
-        name: 'Copa Libertadores',
+        name: 'Libertadores',
         code: 'CLI',
         type: 'CUP',
         emblem: 'https://crests.football-data.org/CLI.svg',
@@ -31933,7 +31933,7 @@ export let jogos: Root = {
       },
       competition: {
         id: 2152,
-        name: 'Copa Libertadores',
+        name: 'Libertadores',
         code: 'CLI',
         type: 'CUP',
         emblem: 'https://crests.football-data.org/CLI.svg',
@@ -31988,7 +31988,7 @@ export let jogos: Root = {
       },
       competition: {
         id: 2152,
-        name: 'Copa Libertadores',
+        name: 'Libertadores',
         code: 'CLI',
         type: 'CUP',
         emblem: 'https://crests.football-data.org/CLI.svg',
@@ -32043,7 +32043,7 @@ export let jogos: Root = {
       },
       competition: {
         id: 2152,
-        name: 'Copa Libertadores',
+        name: 'Libertadores',
         code: 'CLI',
         type: 'CUP',
         emblem: 'https://crests.football-data.org/CLI.svg',
@@ -32098,7 +32098,7 @@ export let jogos: Root = {
       },
       competition: {
         id: 2152,
-        name: 'Copa Libertadores',
+        name: 'Libertadores',
         code: 'CLI',
         type: 'CUP',
         emblem: 'https://crests.football-data.org/CLI.svg',
@@ -32153,7 +32153,7 @@ export let jogos: Root = {
       },
       competition: {
         id: 2152,
-        name: 'Copa Libertadores',
+        name: 'Libertadores',
         code: 'CLI',
         type: 'CUP',
         emblem: 'https://crests.football-data.org/CLI.svg',
@@ -32208,7 +32208,7 @@ export let jogos: Root = {
       },
       competition: {
         id: 2152,
-        name: 'Copa Libertadores',
+        name: 'Libertadores',
         code: 'CLI',
         type: 'CUP',
         emblem: 'https://crests.football-data.org/CLI.svg',
@@ -32263,7 +32263,7 @@ export let jogos: Root = {
       },
       competition: {
         id: 2152,
-        name: 'Copa Libertadores',
+        name: 'Libertadores',
         code: 'CLI',
         type: 'CUP',
         emblem: 'https://crests.football-data.org/CLI.svg',
@@ -32318,7 +32318,7 @@ export let jogos: Root = {
       },
       competition: {
         id: 2152,
-        name: 'Copa Libertadores',
+        name: 'Libertadores',
         code: 'CLI',
         type: 'CUP',
         emblem: 'https://crests.football-data.org/CLI.svg',
@@ -32373,7 +32373,7 @@ export let jogos: Root = {
       },
       competition: {
         id: 2152,
-        name: 'Copa Libertadores',
+        name: 'Libertadores',
         code: 'CLI',
         type: 'CUP',
         emblem: 'https://crests.football-data.org/CLI.svg',
@@ -32428,7 +32428,7 @@ export let jogos: Root = {
       },
       competition: {
         id: 2152,
-        name: 'Copa Libertadores',
+        name: 'Libertadores',
         code: 'CLI',
         type: 'CUP',
         emblem: 'https://crests.football-data.org/CLI.svg',
@@ -32483,7 +32483,7 @@ export let jogos: Root = {
       },
       competition: {
         id: 2152,
-        name: 'Copa Libertadores',
+        name: 'Libertadores',
         code: 'CLI',
         type: 'CUP',
         emblem: 'https://crests.football-data.org/CLI.svg',
@@ -32538,7 +32538,7 @@ export let jogos: Root = {
       },
       competition: {
         id: 2152,
-        name: 'Copa Libertadores',
+        name: 'Libertadores',
         code: 'CLI',
         type: 'CUP',
         emblem: 'https://crests.football-data.org/CLI.svg',
@@ -32593,7 +32593,7 @@ export let jogos: Root = {
       },
       competition: {
         id: 2152,
-        name: 'Copa Libertadores',
+        name: 'Libertadores',
         code: 'CLI',
         type: 'CUP',
         emblem: 'https://crests.football-data.org/CLI.svg',
@@ -32648,7 +32648,7 @@ export let jogos: Root = {
       },
       competition: {
         id: 2152,
-        name: 'Copa Libertadores',
+        name: 'Libertadores',
         code: 'CLI',
         type: 'CUP',
         emblem: 'https://crests.football-data.org/CLI.svg',
@@ -32703,7 +32703,7 @@ export let jogos: Root = {
       },
       competition: {
         id: 2152,
-        name: 'Copa Libertadores',
+        name: 'Libertadores',
         code: 'CLI',
         type: 'CUP',
         emblem: 'https://crests.football-data.org/CLI.svg',
@@ -32758,7 +32758,7 @@ export let jogos: Root = {
       },
       competition: {
         id: 2152,
-        name: 'Copa Libertadores',
+        name: 'Libertadores',
         code: 'CLI',
         type: 'CUP',
         emblem: 'https://crests.football-data.org/CLI.svg',
@@ -32813,7 +32813,7 @@ export let jogos: Root = {
       },
       competition: {
         id: 2152,
-        name: 'Copa Libertadores',
+        name: 'Libertadores',
         code: 'CLI',
         type: 'CUP',
         emblem: 'https://crests.football-data.org/CLI.svg',
@@ -32868,7 +32868,7 @@ export let jogos: Root = {
       },
       competition: {
         id: 2152,
-        name: 'Copa Libertadores',
+        name: 'Libertadores',
         code: 'CLI',
         type: 'CUP',
         emblem: 'https://crests.football-data.org/CLI.svg',
@@ -32924,7 +32924,7 @@ export let jogos: Root = {
       },
       competition: {
         id: 2001,
-        name: 'UEFA Champions League',
+        name: 'Champions League',
         code: 'CL',
         type: 'CUP',
         emblem: 'https://crests.football-data.org/CL.png',
@@ -32987,7 +32987,7 @@ export let jogos: Root = {
       },
       competition: {
         id: 2001,
-        name: 'UEFA Champions League',
+        name: 'Champions League',
         code: 'CL',
         type: 'CUP',
         emblem: 'https://crests.football-data.org/CL.png',
@@ -33051,7 +33051,7 @@ export let jogos: Root = {
       },
       competition: {
         id: 2001,
-        name: 'UEFA Champions League',
+        name: 'Champions League',
         code: 'CL',
         type: 'CUP',
         emblem: 'https://crests.football-data.org/CL.png',
@@ -33115,7 +33115,7 @@ export let jogos: Root = {
       },
       competition: {
         id: 2001,
-        name: 'UEFA Champions League',
+        name: 'Champions League',
         code: 'CL',
         type: 'CUP',
         emblem: 'https://crests.football-data.org/CL.png',
@@ -33179,7 +33179,7 @@ export let jogos: Root = {
       },
       competition: {
         id: 2001,
-        name: 'UEFA Champions League',
+        name: 'Champions League',
         code: 'CL',
         type: 'CUP',
         emblem: 'https://crests.football-data.org/CL.png',
@@ -33243,7 +33243,7 @@ export let jogos: Root = {
       },
       competition: {
         id: 2001,
-        name: 'UEFA Champions League',
+        name: 'Champions League',
         code: 'CL',
         type: 'CUP',
         emblem: 'https://crests.football-data.org/CL.png',
@@ -33307,7 +33307,7 @@ export let jogos: Root = {
       },
       competition: {
         id: 2001,
-        name: 'UEFA Champions League',
+        name: 'Champions League',
         code: 'CL',
         type: 'CUP',
         emblem: 'https://crests.football-data.org/CL.png',
@@ -33371,7 +33371,7 @@ export let jogos: Root = {
       },
       competition: {
         id: 2001,
-        name: 'UEFA Champions League',
+        name: 'Champions League',
         code: 'CL',
         type: 'CUP',
         emblem: 'https://crests.football-data.org/CL.png',
@@ -33435,7 +33435,7 @@ export let jogos: Root = {
       },
       competition: {
         id: 2001,
-        name: 'UEFA Champions League',
+        name: 'Champions League',
         code: 'CL',
         type: 'CUP',
         emblem: 'https://crests.football-data.org/CL.png',
@@ -33499,7 +33499,7 @@ export let jogos: Root = {
       },
       competition: {
         id: 2001,
-        name: 'UEFA Champions League',
+        name: 'Champions League',
         code: 'CL',
         type: 'CUP',
         emblem: 'https://crests.football-data.org/CL.png',
@@ -33563,7 +33563,7 @@ export let jogos: Root = {
       },
       competition: {
         id: 2001,
-        name: 'UEFA Champions League',
+        name: 'Champions League',
         code: 'CL',
         type: 'CUP',
         emblem: 'https://crests.football-data.org/CL.png',
@@ -33627,7 +33627,7 @@ export let jogos: Root = {
       },
       competition: {
         id: 2001,
-        name: 'UEFA Champions League',
+        name: 'Champions League',
         code: 'CL',
         type: 'CUP',
         emblem: 'https://crests.football-data.org/CL.png',
@@ -33691,7 +33691,7 @@ export let jogos: Root = {
       },
       competition: {
         id: 2001,
-        name: 'UEFA Champions League',
+        name: 'Champions League',
         code: 'CL',
         type: 'CUP',
         emblem: 'https://crests.football-data.org/CL.png',
@@ -33755,7 +33755,7 @@ export let jogos: Root = {
       },
       competition: {
         id: 2001,
-        name: 'UEFA Champions League',
+        name: 'Champions League',
         code: 'CL',
         type: 'CUP',
         emblem: 'https://crests.football-data.org/CL.png',
@@ -33819,7 +33819,7 @@ export let jogos: Root = {
       },
       competition: {
         id: 2001,
-        name: 'UEFA Champions League',
+        name: 'Champions League',
         code: 'CL',
         type: 'CUP',
         emblem: 'https://crests.football-data.org/CL.png',
@@ -33883,7 +33883,7 @@ export let jogos: Root = {
       },
       competition: {
         id: 2001,
-        name: 'UEFA Champions League',
+        name: 'Champions League',
         code: 'CL',
         type: 'CUP',
         emblem: 'https://crests.football-data.org/CL.png',
@@ -33947,7 +33947,7 @@ export let jogos: Root = {
       },
       competition: {
         id: 2001,
-        name: 'UEFA Champions League',
+        name: 'Champions League',
         code: 'CL',
         type: 'CUP',
         emblem: 'https://crests.football-data.org/CL.png',
@@ -34011,7 +34011,7 @@ export let jogos: Root = {
       },
       competition: {
         id: 2001,
-        name: 'UEFA Champions League',
+        name: 'Champions League',
         code: 'CL',
         type: 'CUP',
         emblem: 'https://crests.football-data.org/CL.png',
@@ -34075,7 +34075,7 @@ export let jogos: Root = {
       },
       competition: {
         id: 2001,
-        name: 'UEFA Champions League',
+        name: 'Champions League',
         code: 'CL',
         type: 'CUP',
         emblem: 'https://crests.football-data.org/CL.png',
@@ -34139,7 +34139,7 @@ export let jogos: Root = {
       },
       competition: {
         id: 2001,
-        name: 'UEFA Champions League',
+        name: 'Champions League',
         code: 'CL',
         type: 'CUP',
         emblem: 'https://crests.football-data.org/CL.png',
@@ -34203,7 +34203,7 @@ export let jogos: Root = {
       },
       competition: {
         id: 2001,
-        name: 'UEFA Champions League',
+        name: 'Champions League',
         code: 'CL',
         type: 'CUP',
         emblem: 'https://crests.football-data.org/CL.png',
@@ -34267,7 +34267,7 @@ export let jogos: Root = {
       },
       competition: {
         id: 2001,
-        name: 'UEFA Champions League',
+        name: 'Champions League',
         code: 'CL',
         type: 'CUP',
         emblem: 'https://crests.football-data.org/CL.png',
@@ -34331,7 +34331,7 @@ export let jogos: Root = {
       },
       competition: {
         id: 2001,
-        name: 'UEFA Champions League',
+        name: 'Champions League',
         code: 'CL',
         type: 'CUP',
         emblem: 'https://crests.football-data.org/CL.png',
@@ -34395,7 +34395,7 @@ export let jogos: Root = {
       },
       competition: {
         id: 2001,
-        name: 'UEFA Champions League',
+        name: 'Champions League',
         code: 'CL',
         type: 'CUP',
         emblem: 'https://crests.football-data.org/CL.png',
@@ -34459,7 +34459,7 @@ export let jogos: Root = {
       },
       competition: {
         id: 2001,
-        name: 'UEFA Champions League',
+        name: 'Champions League',
         code: 'CL',
         type: 'CUP',
         emblem: 'https://crests.football-data.org/CL.png',
@@ -34523,7 +34523,7 @@ export let jogos: Root = {
       },
       competition: {
         id: 2001,
-        name: 'UEFA Champions League',
+        name: 'Champions League',
         code: 'CL',
         type: 'CUP',
         emblem: 'https://crests.football-data.org/CL.png',
@@ -34587,7 +34587,7 @@ export let jogos: Root = {
       },
       competition: {
         id: 2001,
-        name: 'UEFA Champions League',
+        name: 'Champions League',
         code: 'CL',
         type: 'CUP',
         emblem: 'https://crests.football-data.org/CL.png',
@@ -34651,7 +34651,7 @@ export let jogos: Root = {
       },
       competition: {
         id: 2001,
-        name: 'UEFA Champions League',
+        name: 'Champions League',
         code: 'CL',
         type: 'CUP',
         emblem: 'https://crests.football-data.org/CL.png',
@@ -34715,7 +34715,7 @@ export let jogos: Root = {
       },
       competition: {
         id: 2001,
-        name: 'UEFA Champions League',
+        name: 'Champions League',
         code: 'CL',
         type: 'CUP',
         emblem: 'https://crests.football-data.org/CL.png',
@@ -34779,7 +34779,7 @@ export let jogos: Root = {
       },
       competition: {
         id: 2001,
-        name: 'UEFA Champions League',
+        name: 'Champions League',
         code: 'CL',
         type: 'CUP',
         emblem: 'https://crests.football-data.org/CL.png',
@@ -34843,7 +34843,7 @@ export let jogos: Root = {
       },
       competition: {
         id: 2001,
-        name: 'UEFA Champions League',
+        name: 'Champions League',
         code: 'CL',
         type: 'CUP',
         emblem: 'https://crests.football-data.org/CL.png',
@@ -34907,7 +34907,7 @@ export let jogos: Root = {
       },
       competition: {
         id: 2001,
-        name: 'UEFA Champions League',
+        name: 'Champions League',
         code: 'CL',
         type: 'CUP',
         emblem: 'https://crests.football-data.org/CL.png',
@@ -34971,7 +34971,7 @@ export let jogos: Root = {
       },
       competition: {
         id: 2001,
-        name: 'UEFA Champions League',
+        name: 'Champions League',
         code: 'CL',
         type: 'CUP',
         emblem: 'https://crests.football-data.org/CL.png',
@@ -35035,7 +35035,7 @@ export let jogos: Root = {
       },
       competition: {
         id: 2001,
-        name: 'UEFA Champions League',
+        name: 'Champions League',
         code: 'CL',
         type: 'CUP',
         emblem: 'https://crests.football-data.org/CL.png',
@@ -35099,7 +35099,7 @@ export let jogos: Root = {
       },
       competition: {
         id: 2001,
-        name: 'UEFA Champions League',
+        name: 'Champions League',
         code: 'CL',
         type: 'CUP',
         emblem: 'https://crests.football-data.org/CL.png',
@@ -35163,7 +35163,7 @@ export let jogos: Root = {
       },
       competition: {
         id: 2001,
-        name: 'UEFA Champions League',
+        name: 'Champions League',
         code: 'CL',
         type: 'CUP',
         emblem: 'https://crests.football-data.org/CL.png',
@@ -35227,7 +35227,7 @@ export let jogos: Root = {
       },
       competition: {
         id: 2001,
-        name: 'UEFA Champions League',
+        name: 'Champions League',
         code: 'CL',
         type: 'CUP',
         emblem: 'https://crests.football-data.org/CL.png',
@@ -35291,7 +35291,7 @@ export let jogos: Root = {
       },
       competition: {
         id: 2001,
-        name: 'UEFA Champions League',
+        name: 'Champions League',
         code: 'CL',
         type: 'CUP',
         emblem: 'https://crests.football-data.org/CL.png',
@@ -35355,7 +35355,7 @@ export let jogos: Root = {
       },
       competition: {
         id: 2001,
-        name: 'UEFA Champions League',
+        name: 'Champions League',
         code: 'CL',
         type: 'CUP',
         emblem: 'https://crests.football-data.org/CL.png',
@@ -35419,7 +35419,7 @@ export let jogos: Root = {
       },
       competition: {
         id: 2001,
-        name: 'UEFA Champions League',
+        name: 'Champions League',
         code: 'CL',
         type: 'CUP',
         emblem: 'https://crests.football-data.org/CL.png',
@@ -35483,7 +35483,7 @@ export let jogos: Root = {
       },
       competition: {
         id: 2001,
-        name: 'UEFA Champions League',
+        name: 'Champions League',
         code: 'CL',
         type: 'CUP',
         emblem: 'https://crests.football-data.org/CL.png',
@@ -35547,7 +35547,7 @@ export let jogos: Root = {
       },
       competition: {
         id: 2001,
-        name: 'UEFA Champions League',
+        name: 'Champions League',
         code: 'CL',
         type: 'CUP',
         emblem: 'https://crests.football-data.org/CL.png',
@@ -35611,7 +35611,7 @@ export let jogos: Root = {
       },
       competition: {
         id: 2001,
-        name: 'UEFA Champions League',
+        name: 'Champions League',
         code: 'CL',
         type: 'CUP',
         emblem: 'https://crests.football-data.org/CL.png',
@@ -35675,7 +35675,7 @@ export let jogos: Root = {
       },
       competition: {
         id: 2001,
-        name: 'UEFA Champions League',
+        name: 'Champions League',
         code: 'CL',
         type: 'CUP',
         emblem: 'https://crests.football-data.org/CL.png',
@@ -35739,7 +35739,7 @@ export let jogos: Root = {
       },
       competition: {
         id: 2001,
-        name: 'UEFA Champions League',
+        name: 'Champions League',
         code: 'CL',
         type: 'CUP',
         emblem: 'https://crests.football-data.org/CL.png',
@@ -35803,7 +35803,7 @@ export let jogos: Root = {
       },
       competition: {
         id: 2001,
-        name: 'UEFA Champions League',
+        name: 'Champions League',
         code: 'CL',
         type: 'CUP',
         emblem: 'https://crests.football-data.org/CL.png',
@@ -35867,7 +35867,7 @@ export let jogos: Root = {
       },
       competition: {
         id: 2001,
-        name: 'UEFA Champions League',
+        name: 'Champions League',
         code: 'CL',
         type: 'CUP',
         emblem: 'https://crests.football-data.org/CL.png',
@@ -35931,7 +35931,7 @@ export let jogos: Root = {
       },
       competition: {
         id: 2001,
-        name: 'UEFA Champions League',
+        name: 'Champions League',
         code: 'CL',
         type: 'CUP',
         emblem: 'https://crests.football-data.org/CL.png',
@@ -35995,7 +35995,7 @@ export let jogos: Root = {
       },
       competition: {
         id: 2001,
-        name: 'UEFA Champions League',
+        name: 'Champions League',
         code: 'CL',
         type: 'CUP',
         emblem: 'https://crests.football-data.org/CL.png',
@@ -36059,7 +36059,7 @@ export let jogos: Root = {
       },
       competition: {
         id: 2001,
-        name: 'UEFA Champions League',
+        name: 'Champions League',
         code: 'CL',
         type: 'CUP',
         emblem: 'https://crests.football-data.org/CL.png',
@@ -36123,7 +36123,7 @@ export let jogos: Root = {
       },
       competition: {
         id: 2001,
-        name: 'UEFA Champions League',
+        name: 'Champions League',
         code: 'CL',
         type: 'CUP',
         emblem: 'https://crests.football-data.org/CL.png',
@@ -36187,7 +36187,7 @@ export let jogos: Root = {
       },
       competition: {
         id: 2001,
-        name: 'UEFA Champions League',
+        name: 'Champions League',
         code: 'CL',
         type: 'CUP',
         emblem: 'https://crests.football-data.org/CL.png',
@@ -36251,7 +36251,7 @@ export let jogos: Root = {
       },
       competition: {
         id: 2001,
-        name: 'UEFA Champions League',
+        name: 'Champions League',
         code: 'CL',
         type: 'CUP',
         emblem: 'https://crests.football-data.org/CL.png',
@@ -36315,7 +36315,7 @@ export let jogos: Root = {
       },
       competition: {
         id: 2001,
-        name: 'UEFA Champions League',
+        name: 'Champions League',
         code: 'CL',
         type: 'CUP',
         emblem: 'https://crests.football-data.org/CL.png',
@@ -36379,7 +36379,7 @@ export let jogos: Root = {
       },
       competition: {
         id: 2001,
-        name: 'UEFA Champions League',
+        name: 'Champions League',
         code: 'CL',
         type: 'CUP',
         emblem: 'https://crests.football-data.org/CL.png',
@@ -36443,7 +36443,7 @@ export let jogos: Root = {
       },
       competition: {
         id: 2001,
-        name: 'UEFA Champions League',
+        name: 'Champions League',
         code: 'CL',
         type: 'CUP',
         emblem: 'https://crests.football-data.org/CL.png',
@@ -36507,7 +36507,7 @@ export let jogos: Root = {
       },
       competition: {
         id: 2001,
-        name: 'UEFA Champions League',
+        name: 'Champions League',
         code: 'CL',
         type: 'CUP',
         emblem: 'https://crests.football-data.org/CL.png',
@@ -36571,7 +36571,7 @@ export let jogos: Root = {
       },
       competition: {
         id: 2001,
-        name: 'UEFA Champions League',
+        name: 'Champions League',
         code: 'CL',
         type: 'CUP',
         emblem: 'https://crests.football-data.org/CL.png',
@@ -36635,7 +36635,7 @@ export let jogos: Root = {
       },
       competition: {
         id: 2001,
-        name: 'UEFA Champions League',
+        name: 'Champions League',
         code: 'CL',
         type: 'CUP',
         emblem: 'https://crests.football-data.org/CL.png',
@@ -36699,7 +36699,7 @@ export let jogos: Root = {
       },
       competition: {
         id: 2001,
-        name: 'UEFA Champions League',
+        name: 'Champions League',
         code: 'CL',
         type: 'CUP',
         emblem: 'https://crests.football-data.org/CL.png',
@@ -36763,7 +36763,7 @@ export let jogos: Root = {
       },
       competition: {
         id: 2001,
-        name: 'UEFA Champions League',
+        name: 'Champions League',
         code: 'CL',
         type: 'CUP',
         emblem: 'https://crests.football-data.org/CL.png',
@@ -36827,7 +36827,7 @@ export let jogos: Root = {
       },
       competition: {
         id: 2001,
-        name: 'UEFA Champions League',
+        name: 'Champions League',
         code: 'CL',
         type: 'CUP',
         emblem: 'https://crests.football-data.org/CL.png',
@@ -36891,7 +36891,7 @@ export let jogos: Root = {
       },
       competition: {
         id: 2001,
-        name: 'UEFA Champions League',
+        name: 'Champions League',
         code: 'CL',
         type: 'CUP',
         emblem: 'https://crests.football-data.org/CL.png',
@@ -36955,7 +36955,7 @@ export let jogos: Root = {
       },
       competition: {
         id: 2001,
-        name: 'UEFA Champions League',
+        name: 'Champions League',
         code: 'CL',
         type: 'CUP',
         emblem: 'https://crests.football-data.org/CL.png',
@@ -37019,7 +37019,7 @@ export let jogos: Root = {
       },
       competition: {
         id: 2001,
-        name: 'UEFA Champions League',
+        name: 'Champions League',
         code: 'CL',
         type: 'CUP',
         emblem: 'https://crests.football-data.org/CL.png',
@@ -37083,7 +37083,7 @@ export let jogos: Root = {
       },
       competition: {
         id: 2001,
-        name: 'UEFA Champions League',
+        name: 'Champions League',
         code: 'CL',
         type: 'CUP',
         emblem: 'https://crests.football-data.org/CL.png',
@@ -37147,7 +37147,7 @@ export let jogos: Root = {
       },
       competition: {
         id: 2001,
-        name: 'UEFA Champions League',
+        name: 'Champions League',
         code: 'CL',
         type: 'CUP',
         emblem: 'https://crests.football-data.org/CL.png',
@@ -37211,7 +37211,7 @@ export let jogos: Root = {
       },
       competition: {
         id: 2001,
-        name: 'UEFA Champions League',
+        name: 'Champions League',
         code: 'CL',
         type: 'CUP',
         emblem: 'https://crests.football-data.org/CL.png',
@@ -37275,7 +37275,7 @@ export let jogos: Root = {
       },
       competition: {
         id: 2001,
-        name: 'UEFA Champions League',
+        name: 'Champions League',
         code: 'CL',
         type: 'CUP',
         emblem: 'https://crests.football-data.org/CL.png',
@@ -37339,7 +37339,7 @@ export let jogos: Root = {
       },
       competition: {
         id: 2001,
-        name: 'UEFA Champions League',
+        name: 'Champions League',
         code: 'CL',
         type: 'CUP',
         emblem: 'https://crests.football-data.org/CL.png',
@@ -37403,7 +37403,7 @@ export let jogos: Root = {
       },
       competition: {
         id: 2001,
-        name: 'UEFA Champions League',
+        name: 'Champions League',
         code: 'CL',
         type: 'CUP',
         emblem: 'https://crests.football-data.org/CL.png',
@@ -37467,7 +37467,7 @@ export let jogos: Root = {
       },
       competition: {
         id: 2001,
-        name: 'UEFA Champions League',
+        name: 'Champions League',
         code: 'CL',
         type: 'CUP',
         emblem: 'https://crests.football-data.org/CL.png',
@@ -37531,7 +37531,7 @@ export let jogos: Root = {
       },
       competition: {
         id: 2001,
-        name: 'UEFA Champions League',
+        name: 'Champions League',
         code: 'CL',
         type: 'CUP',
         emblem: 'https://crests.football-data.org/CL.png',
@@ -37595,7 +37595,7 @@ export let jogos: Root = {
       },
       competition: {
         id: 2001,
-        name: 'UEFA Champions League',
+        name: 'Champions League',
         code: 'CL',
         type: 'CUP',
         emblem: 'https://crests.football-data.org/CL.png',
@@ -37659,7 +37659,7 @@ export let jogos: Root = {
       },
       competition: {
         id: 2001,
-        name: 'UEFA Champions League',
+        name: 'Champions League',
         code: 'CL',
         type: 'CUP',
         emblem: 'https://crests.football-data.org/CL.png',
@@ -37723,7 +37723,7 @@ export let jogos: Root = {
       },
       competition: {
         id: 2001,
-        name: 'UEFA Champions League',
+        name: 'Champions League',
         code: 'CL',
         type: 'CUP',
         emblem: 'https://crests.football-data.org/CL.png',
@@ -37787,7 +37787,7 @@ export let jogos: Root = {
       },
       competition: {
         id: 2001,
-        name: 'UEFA Champions League',
+        name: 'Champions League',
         code: 'CL',
         type: 'CUP',
         emblem: 'https://crests.football-data.org/CL.png',
@@ -37851,7 +37851,7 @@ export let jogos: Root = {
       },
       competition: {
         id: 2001,
-        name: 'UEFA Champions League',
+        name: 'Champions League',
         code: 'CL',
         type: 'CUP',
         emblem: 'https://crests.football-data.org/CL.png',
@@ -37915,7 +37915,7 @@ export let jogos: Root = {
       },
       competition: {
         id: 2001,
-        name: 'UEFA Champions League',
+        name: 'Champions League',
         code: 'CL',
         type: 'CUP',
         emblem: 'https://crests.football-data.org/CL.png',
@@ -37979,7 +37979,7 @@ export let jogos: Root = {
       },
       competition: {
         id: 2001,
-        name: 'UEFA Champions League',
+        name: 'Champions League',
         code: 'CL',
         type: 'CUP',
         emblem: 'https://crests.football-data.org/CL.png',
@@ -38043,7 +38043,7 @@ export let jogos: Root = {
       },
       competition: {
         id: 2001,
-        name: 'UEFA Champions League',
+        name: 'Champions League',
         code: 'CL',
         type: 'CUP',
         emblem: 'https://crests.football-data.org/CL.png',
@@ -38107,7 +38107,7 @@ export let jogos: Root = {
       },
       competition: {
         id: 2001,
-        name: 'UEFA Champions League',
+        name: 'Champions League',
         code: 'CL',
         type: 'CUP',
         emblem: 'https://crests.football-data.org/CL.png',
@@ -38171,7 +38171,7 @@ export let jogos: Root = {
       },
       competition: {
         id: 2001,
-        name: 'UEFA Champions League',
+        name: 'Champions League',
         code: 'CL',
         type: 'CUP',
         emblem: 'https://crests.football-data.org/CL.png',
@@ -38235,7 +38235,7 @@ export let jogos: Root = {
       },
       competition: {
         id: 2001,
-        name: 'UEFA Champions League',
+        name: 'Champions League',
         code: 'CL',
         type: 'CUP',
         emblem: 'https://crests.football-data.org/CL.png',
@@ -38299,7 +38299,7 @@ export let jogos: Root = {
       },
       competition: {
         id: 2001,
-        name: 'UEFA Champions League',
+        name: 'Champions League',
         code: 'CL',
         type: 'CUP',
         emblem: 'https://crests.football-data.org/CL.png',
@@ -38363,7 +38363,7 @@ export let jogos: Root = {
       },
       competition: {
         id: 2001,
-        name: 'UEFA Champions League',
+        name: 'Champions League',
         code: 'CL',
         type: 'CUP',
         emblem: 'https://crests.football-data.org/CL.png',
@@ -38427,7 +38427,7 @@ export let jogos: Root = {
       },
       competition: {
         id: 2001,
-        name: 'UEFA Champions League',
+        name: 'Champions League',
         code: 'CL',
         type: 'CUP',
         emblem: 'https://crests.football-data.org/CL.png',
@@ -38491,7 +38491,7 @@ export let jogos: Root = {
       },
       competition: {
         id: 2001,
-        name: 'UEFA Champions League',
+        name: 'Champions League',
         code: 'CL',
         type: 'CUP',
         emblem: 'https://crests.football-data.org/CL.png',
@@ -38555,7 +38555,7 @@ export let jogos: Root = {
       },
       competition: {
         id: 2001,
-        name: 'UEFA Champions League',
+        name: 'Champions League',
         code: 'CL',
         type: 'CUP',
         emblem: 'https://crests.football-data.org/CL.png',
@@ -38619,7 +38619,7 @@ export let jogos: Root = {
       },
       competition: {
         id: 2001,
-        name: 'UEFA Champions League',
+        name: 'Champions League',
         code: 'CL',
         type: 'CUP',
         emblem: 'https://crests.football-data.org/CL.png',
@@ -38683,7 +38683,7 @@ export let jogos: Root = {
       },
       competition: {
         id: 2001,
-        name: 'UEFA Champions League',
+        name: 'Champions League',
         code: 'CL',
         type: 'CUP',
         emblem: 'https://crests.football-data.org/CL.png',
@@ -38747,7 +38747,7 @@ export let jogos: Root = {
       },
       competition: {
         id: 2001,
-        name: 'UEFA Champions League',
+        name: 'Champions League',
         code: 'CL',
         type: 'CUP',
         emblem: 'https://crests.football-data.org/CL.png',
@@ -38811,7 +38811,7 @@ export let jogos: Root = {
       },
       competition: {
         id: 2001,
-        name: 'UEFA Champions League',
+        name: 'Champions League',
         code: 'CL',
         type: 'CUP',
         emblem: 'https://crests.football-data.org/CL.png',
@@ -38875,7 +38875,7 @@ export let jogos: Root = {
       },
       competition: {
         id: 2001,
-        name: 'UEFA Champions League',
+        name: 'Champions League',
         code: 'CL',
         type: 'CUP',
         emblem: 'https://crests.football-data.org/CL.png',
@@ -38939,7 +38939,7 @@ export let jogos: Root = {
       },
       competition: {
         id: 2001,
-        name: 'UEFA Champions League',
+        name: 'Champions League',
         code: 'CL',
         type: 'CUP',
         emblem: 'https://crests.football-data.org/CL.png',
@@ -39003,7 +39003,7 @@ export let jogos: Root = {
       },
       competition: {
         id: 2001,
-        name: 'UEFA Champions League',
+        name: 'Champions League',
         code: 'CL',
         type: 'CUP',
         emblem: 'https://crests.football-data.org/CL.png',
@@ -39067,7 +39067,7 @@ export let jogos: Root = {
       },
       competition: {
         id: 2001,
-        name: 'UEFA Champions League',
+        name: 'Champions League',
         code: 'CL',
         type: 'CUP',
         emblem: 'https://crests.football-data.org/CL.png',
@@ -39131,7 +39131,7 @@ export let jogos: Root = {
       },
       competition: {
         id: 2001,
-        name: 'UEFA Champions League',
+        name: 'Champions League',
         code: 'CL',
         type: 'CUP',
         emblem: 'https://crests.football-data.org/CL.png',
@@ -39195,7 +39195,7 @@ export let jogos: Root = {
       },
       competition: {
         id: 2001,
-        name: 'UEFA Champions League',
+        name: 'Champions League',
         code: 'CL',
         type: 'CUP',
         emblem: 'https://crests.football-data.org/CL.png',
@@ -39259,7 +39259,7 @@ export let jogos: Root = {
       },
       competition: {
         id: 2001,
-        name: 'UEFA Champions League',
+        name: 'Champions League',
         code: 'CL',
         type: 'CUP',
         emblem: 'https://crests.football-data.org/CL.png',
@@ -39323,7 +39323,7 @@ export let jogos: Root = {
       },
       competition: {
         id: 2001,
-        name: 'UEFA Champions League',
+        name: 'Champions League',
         code: 'CL',
         type: 'CUP',
         emblem: 'https://crests.football-data.org/CL.png',
@@ -39387,7 +39387,7 @@ export let jogos: Root = {
       },
       competition: {
         id: 2001,
-        name: 'UEFA Champions League',
+        name: 'Champions League',
         code: 'CL',
         type: 'CUP',
         emblem: 'https://crests.football-data.org/CL.png',
@@ -39451,7 +39451,7 @@ export let jogos: Root = {
       },
       competition: {
         id: 2001,
-        name: 'UEFA Champions League',
+        name: 'Champions League',
         code: 'CL',
         type: 'CUP',
         emblem: 'https://crests.football-data.org/CL.png',
@@ -39515,7 +39515,7 @@ export let jogos: Root = {
       },
       competition: {
         id: 2001,
-        name: 'UEFA Champions League',
+        name: 'Champions League',
         code: 'CL',
         type: 'CUP',
         emblem: 'https://crests.football-data.org/CL.png',
@@ -39579,7 +39579,7 @@ export let jogos: Root = {
       },
       competition: {
         id: 2001,
-        name: 'UEFA Champions League',
+        name: 'Champions League',
         code: 'CL',
         type: 'CUP',
         emblem: 'https://crests.football-data.org/CL.png',
@@ -39643,7 +39643,7 @@ export let jogos: Root = {
       },
       competition: {
         id: 2001,
-        name: 'UEFA Champions League',
+        name: 'Champions League',
         code: 'CL',
         type: 'CUP',
         emblem: 'https://crests.football-data.org/CL.png',
@@ -39707,7 +39707,7 @@ export let jogos: Root = {
       },
       competition: {
         id: 2001,
-        name: 'UEFA Champions League',
+        name: 'Champions League',
         code: 'CL',
         type: 'CUP',
         emblem: 'https://crests.football-data.org/CL.png',
@@ -39771,7 +39771,7 @@ export let jogos: Root = {
       },
       competition: {
         id: 2001,
-        name: 'UEFA Champions League',
+        name: 'Champions League',
         code: 'CL',
         type: 'CUP',
         emblem: 'https://crests.football-data.org/CL.png',
@@ -39835,7 +39835,7 @@ export let jogos: Root = {
       },
       competition: {
         id: 2001,
-        name: 'UEFA Champions League',
+        name: 'Champions League',
         code: 'CL',
         type: 'CUP',
         emblem: 'https://crests.football-data.org/CL.png',
@@ -39911,7 +39911,7 @@ export let jogos: Root = {
       },
       competition: {
         id: 2001,
-        name: 'UEFA Champions League',
+        name: 'Champions League',
         code: 'CL',
         type: 'CUP',
         emblem: 'https://crests.football-data.org/CL.png',
@@ -39975,7 +39975,7 @@ export let jogos: Root = {
       },
       competition: {
         id: 2001,
-        name: 'UEFA Champions League',
+        name: 'Champions League',
         code: 'CL',
         type: 'CUP',
         emblem: 'https://crests.football-data.org/CL.png',
@@ -40051,7 +40051,7 @@ export let jogos: Root = {
       },
       competition: {
         id: 2001,
-        name: 'UEFA Champions League',
+        name: 'Champions League',
         code: 'CL',
         type: 'CUP',
         emblem: 'https://crests.football-data.org/CL.png',
@@ -40115,7 +40115,7 @@ export let jogos: Root = {
       },
       competition: {
         id: 2001,
-        name: 'UEFA Champions League',
+        name: 'Champions League',
         code: 'CL',
         type: 'CUP',
         emblem: 'https://crests.football-data.org/CL.png',
@@ -40179,7 +40179,7 @@ export let jogos: Root = {
       },
       competition: {
         id: 2001,
-        name: 'UEFA Champions League',
+        name: 'Champions League',
         code: 'CL',
         type: 'CUP',
         emblem: 'https://crests.football-data.org/CL.png',
@@ -40243,7 +40243,7 @@ export let jogos: Root = {
       },
       competition: {
         id: 2001,
-        name: 'UEFA Champions League',
+        name: 'Champions League',
         code: 'CL',
         type: 'CUP',
         emblem: 'https://crests.football-data.org/CL.png',
@@ -40307,7 +40307,7 @@ export let jogos: Root = {
       },
       competition: {
         id: 2001,
-        name: 'UEFA Champions League',
+        name: 'Champions League',
         code: 'CL',
         type: 'CUP',
         emblem: 'https://crests.football-data.org/CL.png',
@@ -40371,7 +40371,7 @@ export let jogos: Root = {
       },
       competition: {
         id: 2001,
-        name: 'UEFA Champions League',
+        name: 'Champions League',
         code: 'CL',
         type: 'CUP',
         emblem: 'https://crests.football-data.org/CL.png',
@@ -40435,7 +40435,7 @@ export let jogos: Root = {
       },
       competition: {
         id: 2001,
-        name: 'UEFA Champions League',
+        name: 'Champions League',
         code: 'CL',
         type: 'CUP',
         emblem: 'https://crests.football-data.org/CL.png',
@@ -40499,7 +40499,7 @@ export let jogos: Root = {
       },
       competition: {
         id: 2001,
-        name: 'UEFA Champions League',
+        name: 'Champions League',
         code: 'CL',
         type: 'CUP',
         emblem: 'https://crests.football-data.org/CL.png',
@@ -40563,7 +40563,7 @@ export let jogos: Root = {
       },
       competition: {
         id: 2001,
-        name: 'UEFA Champions League',
+        name: 'Champions League',
         code: 'CL',
         type: 'CUP',
         emblem: 'https://crests.football-data.org/CL.png',
@@ -40639,7 +40639,7 @@ export let jogos: Root = {
       },
       competition: {
         id: 2001,
-        name: 'UEFA Champions League',
+        name: 'Champions League',
         code: 'CL',
         type: 'CUP',
         emblem: 'https://crests.football-data.org/CL.png',
@@ -40694,7 +40694,7 @@ export let jogos: Root = {
       },
       competition: {
         id: 2001,
-        name: 'UEFA Champions League',
+        name: 'Champions League',
         code: 'CL',
         type: 'CUP',
         emblem: 'https://crests.football-data.org/CL.png',
@@ -40749,7 +40749,7 @@ export let jogos: Root = {
       },
       competition: {
         id: 2001,
-        name: 'UEFA Champions League',
+        name: 'Champions League',
         code: 'CL',
         type: 'CUP',
         emblem: 'https://crests.football-data.org/CL.png',
@@ -40804,7 +40804,7 @@ export let jogos: Root = {
       },
       competition: {
         id: 2001,
-        name: 'UEFA Champions League',
+        name: 'Champions League',
         code: 'CL',
         type: 'CUP',
         emblem: 'https://crests.football-data.org/CL.png',
