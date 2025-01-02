@@ -6,15 +6,12 @@ import ListMatches from './pages/ListMatches';
 import Footer from './components/Footer';
 
 function App() {
-  return (
-    <>
-      <Navbar />
-      <FloatButton />
-      <ListRatings />
-      <ListMatches />
-      <Footer />
-    </>
-  );
+    return (
+        <>
+            <Navbar />
+            <FloatButton />
+        </>
+    );
 }
 
 export default App;

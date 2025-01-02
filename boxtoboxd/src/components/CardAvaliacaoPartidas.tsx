@@ -30,6 +30,7 @@ function CardAvaliacao(avaliacao) {
     await deleteDoc(doc(db, 'ratings', rating));
     // reload();
   }
+
   let match = jogos.matches.find((partida) => partida.id == avaliacao.partida);
 
   // console.log(match);
@@ -44,6 +45,34 @@ function CardAvaliacao(avaliacao) {
     match = jogos.matches.find((match) => match!.id == avaliacao.partida);
   }, []);
 
+  const deletePopup: any = (close: any) => (
+    <>
+      <div className="p-2">
+        <h3 className="text-xl font-medium text-emerald-600 mb-6">
+          Deletar postagem
+        </h3>
+        <p>Tem certeza que deseja deletar essa postagem?</p>
+        <div className="flex w-full justify-around mt-6 font-medium">
+          <button
+            className="rounded-2xl py-2 px-5 hover:underline"
+            onClick={close}
+          >
+            Cancelar
+          </button>
+          <button
+            className="inline-flex items-center gap-2 border rounded-2xl py-2 px-5 text-red-500 border-red-500 hover:bg-red-600 hover:text-white"
+            onClick={() => {
+              deletePost(avaliacao.id);
+              close();
+            } }
+          >
+            <Trash weight="bold" />
+            Deletar
+          </button>
+        </div>
+      </div>
+    </>
+  ) as any;
   return (
     <div className="border dark:border-slate-700 rounded-3xl p-3 bg-white dark:bg-slate-900">
       <div className="flex items-center justify-between mb-3">
@@ -106,34 +135,7 @@ function CardAvaliacao(avaliacao) {
                     }
                     modal
                   >
-                    {(close) => (
-                      <>
-                        <div className="p-2">
-                          <h3 className="text-xl font-medium text-emerald-600 mb-6">
-                            Deletar postagem
-                          </h3>
-                          <p>Tem certeza que deseja deletar essa postagem?</p>
-                          <div className="flex w-full justify-around mt-6 font-medium">
-                            <button
-                              className="rounded-2xl py-2 px-5 hover:underline"
-                              onClick={close}
-                            >
-                              Cancelar
-                            </button>
-                            <button
-                              className="inline-flex items-center gap-2 border rounded-2xl py-2 px-5 text-red-500 border-red-500 hover:bg-red-600 hover:text-white"
-                              onClick={() => {
-                                deletePost(avaliacao.id);
-                                close();
-                              }}
-                            >
-                              <Trash weight="bold" />
-                              Deletar
-                            </button>
-                          </div>
-                        </div>
-                      </>
-                    )}
+                    {deletePopup}
                   </Popup>
                   <Popup
                     trigger={

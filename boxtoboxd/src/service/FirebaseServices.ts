@@ -2,9 +2,16 @@ import { getDocs, collection } from 'firebase/firestore';
 import { auth, db } from '../firebase';
 import { onAuthStateChanged } from 'firebase/auth';
 
-export const fetchPosts = async (setRatings: Function) => {
+export const fetchMatchesRatings = async (setRatings: Function) => {
   console.log('fetch (service)');
   await getDocs(collection(db, 'ratings')).then((querySnapshot) => {
+    setRatings(querySnapshot.docs.map((doc) => ({ ...doc.data(), id: doc.id })));
+  });
+};
+
+export const fetchBooksRatings = async (setRatings: Function) => {
+  console.log('fetch (service)');
+  await getDocs(collection(db, 'bookratings')).then((querySnapshot) => {
     setRatings(querySnapshot.docs.map((doc) => ({ ...doc.data(), id: doc.id })));
   });
 };

@@ -2,8 +2,8 @@ import { SoccerBall } from '@phosphor-icons/react/dist/ssr';
 import React, { useEffect } from 'react';
 import { ProhibitInset } from '@phosphor-icons/react';
 import UserMenu from './UserMenu';
-import AddRating from './AddRating';
 import { onAuthStateChanged } from 'firebase/auth';
+import AddRating from './RatingPopup';
 
 function Navbar() {
   return (

@@ -63,7 +63,7 @@ export interface HomeTeam {
   name: string;
   shortName: string;
   tla: string | null;
-  crest: string | null;
+  crest?: string;
 }
 
 export interface AwayTeam {
@@ -71,7 +71,7 @@ export interface AwayTeam {
   name: string;
   shortName: string;
   tla: string | null;
-  crest: string | null;
+  crest?: string;
 }
 
 export interface Score {

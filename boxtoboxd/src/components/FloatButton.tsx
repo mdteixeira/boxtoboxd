@@ -1,6 +1,6 @@
 import React from 'react';
 import { Broadcast, Gear, ProhibitInset, SoccerBall, Users } from '@phosphor-icons/react';
-import AddRating from './AddRating';
+import AddRating from './RatingPopup';
 
 function FloatButton() {
   return (
